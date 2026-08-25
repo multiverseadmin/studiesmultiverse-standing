@@ -82,15 +82,24 @@ jobs:
           TOTAL="${{ inputs.limit }}"
           BATCH=25
           DONE=0
+          PROGRESS=0
           : > run.log
           while [ "$DONE" -lt "$TOTAL" ]; do
             echo "=== batch starting at $DONE of $TOTAL ==="
             if python scripts/ca_ingest.py --backfill --limit "$BATCH" --sleep 2 2>&1 | tee -a run.log; then
-              :
+              PROGRESS=1
             else
-              echo "batch failed — committing what succeeded, then stopping"
+              echo "batch failed"
               save "partial after $DONE"
-              exit 0   # not a build failure: progress is saved and the next run resumes
+              # Only forgive the failure if earlier batches actually achieved
+              # something. A run that got nowhere must fail loudly — reporting
+              # success for zero work is how a broken pipeline stays broken.
+              if [ "$PROGRESS" -eq 1 ]; then
+                echo "earlier batches succeeded; stopping here and resuming next run"
+                exit 0
+              fi
+              echo "no progress at all — failing so the alert fires"
+              exit 1
             fi
             DONE=$((DONE + BATCH))
             save "$DONE of $TOTAL"
