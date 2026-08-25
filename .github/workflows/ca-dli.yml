@@ -43,31 +43,63 @@ jobs:
 
       - run: pip install -r requirements.txt
 
-      - name: Ingest
+      - name: Ingest and commit incrementally
         run: |
           set -o pipefail
-          if [ "${{ inputs.backfill }}" = "true" ]; then
-            python scripts/ca_ingest.py --backfill --limit "${{ inputs.limit }}" --sleep 2 2>&1 | tee run.log
-          else
-            python scripts/ca_ingest.py --latest 2>&1 | tee run.log
-          fi
-
-      - name: Publish JSON endpoints
-        if: success()
-        run: python scripts/publish.py --source ca-dli
-
-      - name: Commit snapshot
-        if: success()
-        run: |
-          if [ -z "$(git status --porcelain data public)" ]; then
-            echo "No change — the list is unchanged since our last capture."
-            exit 0
-          fi
           git config user.name  "studiesmultiverse-bot"
           git config user.email "bot@studiesmultiverse.com"
-          git add data public
-          git commit -m "DLI list snapshot $(date -u +%Y-%m-%d)" -m "$(tail -n 20 run.log)"
-          git push
+
+          save() {
+            python scripts/publish.py --source ca-dli || true
+            if [ -n "$(git status --porcelain data public)" ]; then
+              git add data public
+              git commit -q -m "DLI list snapshot $(date -u +%Y-%m-%dT%H:%M) ($1)" \
+                            -m "$(tail -n 15 run.log)"
+              git pull --rebase -q origin main || true
+              git push -q
+              echo "  committed: $1"
+            else
+              echo "  nothing new to commit ($1)"
+            fi
+          }
+
+          if [ "${{ inputs.backfill }}" != "true" ]; then
+            python scripts/ca_ingest.py --latest 2>&1 | tee run.log
+            save "daily"
+            exit 0
+          fi
+
+          # Backfill in batches, committing after each one.
+          #
+          # The first attempt at this ran 150 captures and committed once, at the
+          # very end. The Internet Archive started timing out partway through, the
+          # step died, and roughly a hundred already-ingested editions were thrown
+          # away with it. Long jobs against a free, heavily-loaded service WILL be
+          # interrupted; the only question is whether the work survives it.
+          #
+          # Batches of 25 mean a failure costs at most 25 captures, and every
+          # completed batch is already safe in the repository.
+          TOTAL="${{ inputs.limit }}"
+          BATCH=25
+          DONE=0
+          : > run.log
+          while [ "$DONE" -lt "$TOTAL" ]; do
+            echo "=== batch starting at $DONE of $TOTAL ==="
+            if python scripts/ca_ingest.py --backfill --limit "$BATCH" --sleep 2 2>&1 | tee -a run.log; then
+              :
+            else
+              echo "batch failed — committing what succeeded, then stopping"
+              save "partial after $DONE"
+              exit 0   # not a build failure: progress is saved and the next run resumes
+            fi
+            DONE=$((DONE + BATCH))
+            save "$DONE of $TOTAL"
+            # If the script found nothing new to do, stop early.
+            if grep -q "nothing to do\|ingesting 0 capture" run.log; then
+              echo "archive exhausted"
+              break
+            fi
+          done
 
       - name: Raise alert on failure
         if: failure()
