@@ -40,6 +40,7 @@ from __future__ import annotations
 import datetime as _dt
 import hashlib
 import re
+import time as _time
 from typing import Iterable
 
 import requests
@@ -272,11 +273,43 @@ def list_captures(session: requests.Session | None = None, limit: int = 3000) ->
     return [row[0] for row in data[1:]]
 
 
-def fetch_capture(timestamp: str, session: requests.Session | None = None) -> bytes:
+def fetch_capture(
+    timestamp: str,
+    session: requests.Session | None = None,
+    *,
+    attempts: int = 3,
+    backoff: float = 5.0,
+) -> bytes:
+    """
+    Fetch one archived capture, with retries.
+
+    The Internet Archive is a free service under constant load and it shows:
+    a long backfill reliably hits connect timeouts and dropped connections
+    partway through. The first Canadian backfill lost roughly a hundred
+    already-ingested editions that way. Retrying a few times with a widening
+    pause turns most of those into successes, and the ones it cannot rescue are
+    skipped rather than allowed to end the run.
+
+    We are a guest here. The pause between attempts is as much politeness as
+    it is patience.
+    """
     s = session or _session()
-    r = s.get(WAYBACK_RAW.format(ts=timestamp, url=LIVE_URL), timeout=180)
-    r.raise_for_status()
-    return r.content
+    url = WAYBACK_RAW.format(ts=timestamp, url=LIVE_URL)
+    last: Exception | None = None
+
+    for attempt in range(1, attempts + 1):
+        try:
+            r = s.get(url, timeout=120)
+            if r.status_code in (429, 503, 504):
+                raise requests.HTTPError(f"archive returned {r.status_code}")
+            r.raise_for_status()
+            return r.content
+        except Exception as exc:  # noqa: BLE001 - any transport failure is retryable
+            last = exc
+            if attempt < attempts:
+                _time.sleep(backoff * attempt)
+
+    raise RuntimeError(f"capture {timestamp} failed after {attempts} attempts: {last}")
 
 
 def capture_date(timestamp: str) -> str:
