@@ -462,6 +462,25 @@ THRESHOLDS: dict[str, Thresholds] = {
         max_removed_absolute=12,
         require_source_date_advance=False,
     ),
+    # 96 institutions as of 25 Aug 2026, accredited 2024-2026 under Japan's new
+    # accreditation law and growing at roughly 35 a year.
+    #
+    # A small, GROWING register needs different guards from a mature one. Removals
+    # should be near-zero — an accreditation granted last year rarely vanishes —
+    # so the absolute guard is tight at 6. Additions are the normal event here and
+    # can arrive in batches when a cohort is accredited together, so the added
+    # fraction is deliberately generous.
+    "jp-mext": Thresholds(
+        min_rows=50,
+        max_removed_fraction=0.10,
+        max_removed_absolute=6,
+        max_added_fraction=0.40,
+        max_churn_fraction=0.45,
+        require_columns=("certification_number", "jp_inst_name"),
+        # The API publishes no edition date; the newest certification date is
+        # recorded as a proxy but is not an edition boundary.
+        require_source_date_advance=False,
+    ),
     "deqar-heis": Thresholds(
         min_rows=3000,
         max_removed_fraction=0.03,
