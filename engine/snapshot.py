@@ -249,6 +249,22 @@ SOURCES: dict[str, SourceMeta] = {
         language="pl",
         notes="Licence not yet read from an authoritative page. Holds at change-record until it is.",
     ),
+    "jp-mext": SourceMeta(
+        source_id="jp-mext",
+        country="Japan",
+        register_name="認定日本語教育機関 — accredited Japanese-language education institutions",
+        publisher="文部科学省 (Ministry of Education, Culture, Sports, Science and Technology)",
+        source_url="https://www.nihongokyouiku.mext.go.jp/top/guide-japanese-language-institution",
+        licence="MEXT website terms of use — free reuse including commercial, with attribution",
+        licence_url="https://www.mext.go.jp/b_menu/1351168.htm",
+        attribution="出典：文部科学省 日本語教育機関認定法ポータル。Source: MEXT accreditation portal.",
+        publication_layer="mirror",
+        language="ja",
+        notes="MEXT terms state content may be freely reproduced, transmitted, translated and "
+        "adapted, and that 商用利用も可能です — commercial use is permitted. Verified 25 Aug 2026 "
+        "at the terms page above. Institution names are published in Japanese, kana and romanised "
+        "form; the romanised name is what an English-language reader needs.",
+    ),
     "ca-dli": SourceMeta(
         source_id="ca-dli",
         country="Canada",
