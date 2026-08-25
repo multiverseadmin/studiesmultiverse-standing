@@ -77,10 +77,13 @@ jobs:
           # away with it. Long jobs against a free, heavily-loaded service WILL be
           # interrupted; the only question is whether the work survives it.
           #
-          # Batches of 25 mean a failure costs at most 25 captures, and every
-          # completed batch is already safe in the repository.
+          # Batches of 10 mean a failure costs at most 10 captures, and every
+          # completed batch is already safe in the repository. Sized down from
+          # 25 once the archive was measured serving roughly one capture every
+          # 50 seconds — at that rate a batch of 25 is 20 minutes of exposure
+          # between saves.
           TOTAL="${{ inputs.limit }}"
-          BATCH=25
+          BATCH=10
           DONE=0
           PROGRESS=0
           : > run.log
