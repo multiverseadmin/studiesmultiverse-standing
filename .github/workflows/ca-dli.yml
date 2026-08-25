@@ -1,0 +1,103 @@
+name: Canada — designated learning institutions
+
+# IRCC updates this page in real time when a school is added, suspended or
+# delisted, and publishes no notice when it does. Daily is the right cadence:
+# the only public signal is that a row stopped being there.
+
+on:
+  schedule:
+    - cron: "41 5 * * *"      # 05:41 UTC daily
+  workflow_dispatch:
+    inputs:
+      backfill:
+        description: "Reconstruct history from Internet Archive captures"
+        type: boolean
+        default: false
+      limit:
+        description: "Captures per backfill run (0 = all; the archive is slow, so batches are kinder)"
+        type: string
+        default: "150"
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: ca-dli
+  cancel-in-progress: false
+
+jobs:
+  ingest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Ingest
+        run: |
+          set -o pipefail
+          if [ "${{ inputs.backfill }}" = "true" ]; then
+            python scripts/ca_ingest.py --backfill --limit "${{ inputs.limit }}" --sleep 2 2>&1 | tee run.log
+          else
+            python scripts/ca_ingest.py --latest 2>&1 | tee run.log
+          fi
+
+      - name: Publish JSON endpoints
+        if: success()
+        run: python scripts/publish.py --source ca-dli
+
+      - name: Commit snapshot
+        if: success()
+        run: |
+          if [ -z "$(git status --porcelain data public)" ]; then
+            echo "No change — the list is unchanged since our last capture."
+            exit 0
+          fi
+          git config user.name  "studiesmultiverse-bot"
+          git config user.email "bot@studiesmultiverse.com"
+          git add data public
+          git commit -m "DLI list snapshot $(date -u +%Y-%m-%d)" -m "$(tail -n 20 run.log)"
+          git push
+
+      - name: Raise alert on failure
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            let log = '';
+            try { log = fs.readFileSync('run.log', 'utf8').slice(-6000); } catch (e) {}
+            const body = [
+              'The Canadian DLI ingest failed. **Nothing was published — the previous snapshot still stands.**',
+              '',
+              'If this was the sanity gate, that is the gate working. Open the source by hand before',
+              'changing any threshold. Note that IRCC gives no notice of changes, so a large step is',
+              'not automatically wrong — but it is not automatically right either.',
+              '',
+              '```', log || '(no log captured)', '```',
+              '',
+              `[Run](${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId})`,
+            ].join('\n');
+            const open = (await github.rest.issues.listForRepo({
+              owner: context.repo.owner, repo: context.repo.repo,
+              state: 'open', labels: 'ingest-failure',
+            })).data.find(i => i.title.startsWith('DLI ingest'));
+            if (open) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner, repo: context.repo.repo, issue_number: open.number, body });
+            } else {
+              await github.rest.issues.create({
+                owner: context.repo.owner, repo: context.repo.repo,
+                title: `DLI ingest failed — ${new Date().toISOString().slice(0,10)}`,
+                body, labels: ['ingest-failure', 'canada'] });
+            }
