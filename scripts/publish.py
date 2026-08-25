@@ -117,13 +117,31 @@ def publish_source(source_id: str) -> None:
         )
 
     # ---- the change record, every source ----------------------------------
-    # The first Australian backfill recorded 8,027 changes and published 5,000
-    # of them under an earlier cap, with nothing on the page saying so. A record
-    # that silently truncates is worse than one that admits its limits, so the
-    # cap is now generous and, when it does bite, the file says what was dropped.
+    # ---- the change record, in three shapes -------------------------------
+    #
+    # The full Australian backfill produced 42,521 changes. Written as one file
+    # with every statement and caveat inline, that is 32 MB — which WordPress
+    # would have to download and json_decode before it could render a page. A
+    # register that is too heavy to read is not a register.
+    #
+    # So the same record is published three ways, each for a different consumer:
+    #
+    #   changes.json       the most recent entries, in full. What the site
+    #                      renders. Small enough to parse on every request.
+    #   entities.json      every change, compacted to the fields needed to
+    #                      answer "what happened to THIS institution" — no
+    #                      prose, because statements and caveats are generated
+    #                      from the kind and can be rebuilt on render.
+    #   changes-full.json  everything, in full, for API consumers and anyone
+    #                      auditing the record. Never fetched by the site.
+    #
+    # The prose is the bulk: the caveat text alone repeats across tens of
+    # thousands of entries. Hoisting it into a per-kind lookup is what makes
+    # entities.json roughly a twentieth the size of the full file.
     changes = archive.read_changes()
-    CAP = 50_000
-    published = changes[:CAP]
+    RECENT = 3_000
+    recent = changes[:RECENT]
+
     _write(
         PUBLIC / source_id / "changes.json",
         _envelope(
@@ -131,16 +149,58 @@ def publish_source(source_id: str) -> None:
             recording_since=dates[0],
             latest_edition=dates[-1],
             count=len(changes),
-            published_count=len(published),
+            published_count=len(recent),
             truncated=(
                 None
-                if len(published) == len(changes)
+                if len(recent) == len(changes)
                 else (
-                    f"{len(changes) - len(published)} older entries are held in the archive but not "
-                    f"included in this file. The complete record is in the repository's changes.jsonl."
+                    f"This file carries the {len(recent)} most recent entries. The complete record of "
+                    f"{len(changes)} is published at changes-full.json and in the repository's "
+                    f"changes.jsonl — nothing is discarded."
                 )
             ),
-            changes=published,
+            full_record=f"{SITE}/standing/{source_id}/changes-full.json",
+            changes=recent,
+        ),
+    )
+
+    _write(
+        PUBLIC / source_id / "changes-full.json",
+        _envelope(meta, recording_since=dates[0], latest_edition=dates[-1],
+                  count=len(changes), changes=changes),
+    )
+
+    # Compact per-institution history.
+    entities: dict[str, list] = {}
+    caveats: dict[str, str] = {}
+    for ch in changes:
+        key = str(ch.get("key") or "")
+        if not key:
+            continue
+        kind = str(ch.get("kind") or "")
+        if kind and kind not in caveats and ch.get("caveat"):
+            caveats[kind] = str(ch["caveat"])
+        entities.setdefault(key, []).append(
+            [
+                kind,
+                ch.get("old_edition"),
+                ch.get("new_edition"),
+                ch.get("name"),
+                ch.get("previous_name"),
+            ]
+        )
+
+    _write(
+        PUBLIC / source_id / "entities.json",
+        _envelope(
+            meta,
+            recording_since=dates[0],
+            latest_edition=dates[-1],
+            entity_count=len(entities),
+            change_count=len(changes),
+            schema=["kind", "old_edition", "new_edition", "name", "previous_name"],
+            caveats=caveats,
+            entities=entities,
         ),
     )
 
