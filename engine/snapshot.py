@@ -110,8 +110,30 @@ class Archive:
         raw_bytes: bytes | None = None,
         raw_ext: str = "bin",
         extra: dict | None = None,
+        projection=None,
     ) -> dict:
+        """
+        Write one edition to the archive.
+
+        `projection`, when given, reduces each row before it is written. This is
+        how a change-record source stays inside its licence: the archive is a
+        PUBLIC git repository, so committing a publisher's full rows there is
+        republication whatever the plugin later chooses to render. Canada is the
+        live case — canada.ca reserves commercial redistribution — so its rows
+        are reduced to the identifier and the few facts a change statement needs
+        before anything is committed, and the raw source bytes are not kept at
+        all.
+
+        The content hash is taken BEFORE the projection, so the integrity record
+        still refers to what we actually retrieved.
+        """
         content_hash = sha256_rows(list(rows))
+
+        if projection is not None:
+            rows = projection(rows)
+            # Keeping the raw HTML or spreadsheet would put the full compilation
+            # in the repository by another route.
+            raw_bytes = None
         record = {
             "source_id": self.source_id,
             "edition_date": edition_date,

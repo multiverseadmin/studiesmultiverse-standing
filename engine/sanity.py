@@ -422,13 +422,26 @@ THRESHOLDS: dict[str, Thresholds] = {
         # GOV.UK republishes near-daily, often byte-identical.
         allow_identical_content=True,
     ),
-    # Measured: 1,445 rows live, 1,450 in the 31 Jul 2026 archive capture.
+    # Measured 25 Aug 2026: 1,445 rows live, 1,450 in the 31 Jul 2026 capture —
+    # five gone in under a month.
+    #
+    # The ceilings are looser than the UK's because Canada's record is
+    # reconstructed from Internet Archive captures, and that coverage is uneven:
+    # 147 captures in 2025 against 19 in 2019. A step between two captures can
+    # legitimately span months, so a change that would be implausible in one
+    # month is ordinary across six. Anything beyond these limits is archived and
+    # flagged rather than interpreted, which is the honest treatment of a gap —
+    # we cannot tell a slow drift from a single event when nobody was watching
+    # in between.
     "ca-dli": Thresholds(
-        min_rows=1100,
-        max_removed_fraction=0.04,
-        max_added_fraction=0.08,
-        max_churn_fraction=0.10,
-        # IRCC stamps no edition date on the page.
+        min_rows=900,
+        max_removed_fraction=0.08,
+        max_added_fraction=0.12,
+        max_churn_fraction=0.18,
+        require_columns=("dli", "name"),
+        # canada.ca carries a dcterms.modified date, but it moves for any edit
+        # to the page, not only to the table — so it is recorded, not trusted as
+        # an edition boundary.
         require_source_date_advance=False,
     ),
     # 837 institutions over a JSON API with in-record status history.
