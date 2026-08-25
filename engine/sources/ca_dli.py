@@ -39,6 +39,7 @@ from __future__ import annotations
 
 import datetime as _dt
 import hashlib
+import json as _json
 import re
 import time as _time
 from typing import Iterable
@@ -245,7 +246,14 @@ def archive_projection(rows: Iterable[dict]) -> list[dict]:
 # ---------------------------------------------------------------------------
 
 
-def list_captures(session: requests.Session | None = None, limit: int = 3000) -> list[str]:
+def list_captures(
+    session: requests.Session | None = None,
+    limit: int = 3000,
+    *,
+    cache_path: str | None = None,
+    attempts: int = 4,
+    backoff: float = 8.0,
+) -> list[str]:
     """
     Unique-content captures of the DLI page, oldest first.
 
@@ -255,7 +263,25 @@ def list_captures(session: requests.Session | None = None, limit: int = 3000) ->
     record can therefore be reconstructed backwards rather than only
     accumulated forwards — which is the difference between a record that starts
     today and one that starts eight years ago.
+
+    The listing is retried and then cached to disk.
+
+    This call, not the per-capture fetch, is the fragile one: it asks the CDX
+    index to scan eight years of captures, and it regularly times out. It
+    crashed the first batched backfill outright — retries had been added to
+    `fetch_capture` but not here, so an unhandled TimeoutError ended the run
+    before a single edition was ingested.
+
+    Caching matters for a second reason. A batched backfill invokes this script
+    once per batch, and without a cache every batch would repeat the same
+    expensive query. Sixteen identical scans of the archive index is both slow
+    and rude to a service we are using for free.
     """
+    if cache_path:
+        cached = _read_cached_captures(cache_path)
+        if cached:
+            return cached
+
     s = session or _session()
     params = {
         "url": LIVE_URL.replace("https://", ""),
@@ -265,12 +291,55 @@ def list_captures(session: requests.Session | None = None, limit: int = 3000) ->
         "collapse": "digest",
         "limit": str(limit),
     }
-    r = s.get(CDX_URL, params=params, timeout=180)
-    r.raise_for_status()
-    data = r.json()
-    if not data or len(data) < 2:
+
+    last: Exception | None = None
+    for attempt in range(1, attempts + 1):
+        try:
+            r = s.get(CDX_URL, params=params, timeout=240)
+            if r.status_code in (429, 503, 504):
+                raise requests.HTTPError(f"archive index returned {r.status_code}")
+            r.raise_for_status()
+            data = r.json()
+            stamps = [row[0] for row in data[1:]] if data and len(data) > 1 else []
+            if stamps and cache_path:
+                _write_cached_captures(cache_path, stamps)
+            return stamps
+        except Exception as exc:  # noqa: BLE001
+            last = exc
+            if attempt < attempts:
+                _time.sleep(backoff * attempt)
+
+    raise RuntimeError(
+        f"could not list archive captures after {attempts} attempts: {last}. "
+        "The Internet Archive index is intermittently unavailable; try again later."
+    )
+
+
+def _read_cached_captures(path: str) -> list[str]:
+    try:
+        with open(path, encoding="utf-8") as fh:
+            data = _json.load(fh)
+        stamps = data.get("captures") or []
+        return [str(s) for s in stamps]
+    except Exception:  # noqa: BLE001 - a missing or unreadable cache is not an error
         return []
-    return [row[0] for row in data[1:]]
+
+
+def _write_cached_captures(path: str, stamps: list[str]) -> None:
+    try:
+        import os
+
+        os.makedirs(os.path.dirname(path) or ".", exist_ok=True)
+        with open(path, "w", encoding="utf-8") as fh:
+            _json.dump(
+                {"fetched": _dt.datetime.now(_dt.timezone.utc).isoformat(timespec="seconds"),
+                 "count": len(stamps), "captures": stamps},
+                fh,
+            )
+    except Exception:  # noqa: BLE001 - failing to cache must never fail the run
+        pass
+
+
 
 
 def fetch_capture(
