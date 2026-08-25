@@ -8,7 +8,7 @@ no agent commissions, no paid inclusion and no paid removal.
 
 ## What is here
 
-- **Australia** — Commonwealth Register of Institutions and Courses for Overseas Students (CRICOS) (Australian Government Department of Education). 11 editions held since 2021-10-31; 8027 changes recorded. Data: https://studiesmultiverse.com/standing/au-cricos/changes.json
+- **Australia** — Commonwealth Register of Institutions and Courses for Overseas Students (CRICOS) (Australian Government Department of Education). 57 editions held since 2021-10-31; 42521 changes recorded. Data: https://studiesmultiverse.com/standing/au-cricos/changes.json
 
 ## How to cite
 
