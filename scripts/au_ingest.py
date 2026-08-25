@@ -80,15 +80,31 @@ def ingest_edition(edition: dict, archive: Archive, *, strict: bool) -> dict:
     )
     course_verdict = sanity.evaluate(course_snap, course_prev, sanity.thresholds_for(COURSES))
 
-    for v in (verdict, course_verdict):
+    verdicts = [verdict, course_verdict]
+    for v in verdicts:
         for w in v.warnings:
             print(f"      warn: {w}")
-        if not v.ok:
+
+    failed = [v for v in verdicts if not v.ok]
+    structural = [v for v in failed if v.structural]
+    movement = [v for v in failed if v.movement_only]
+
+    if failed:
+        for v in failed:
             print(sanity.format_alert(v), file=sys.stderr)
-            if strict:
-                raise sanity.SanityError(v.source, v.failures)
-            print("      SKIPPED (non-strict backfill) — edition not archived", file=sys.stderr)
-            return {"edition_date": date, "skipped": True, "stats": v.stats}
+        if strict:
+            raise sanity.SanityError(failed[0].source, failed[0].failures)
+
+    # A file we could not READ must not enter the archive at any cost.
+    if structural:
+        print("      REFUSED — could not read this edition; not archived", file=sys.stderr)
+        return {"edition_date": date, "skipped": True, "reason": "structural",
+                "stats": structural[0].stats}
+
+    # A file we could read, whose movement looks implausible, IS archived — so
+    # the chain of edition-to-edition comparisons never breaks — but we publish
+    # no interpretation of it. See Verdict.movement_only for why this matters.
+    flagged = bool(movement)
 
     # ---- archive ----------------------------------------------------------
     archive.write_edition(
@@ -110,6 +126,39 @@ def ingest_edition(edition: dict, archive: Archive, *, strict: bool) -> dict:
 
     # ---- diff and change log ---------------------------------------------
     result = {"edition_date": date, "providers": len(institutions), "courses": len(courses)}
+
+    if flagged:
+        # Record the gap honestly rather than silently having none. A reader
+        # comparing our record against the source deserves to know we hold this
+        # edition but did not interpret the step into it.
+        result["flagged"] = [f.check for v in movement for f in v.failures]
+        archive.append_changes(
+            [
+                {
+                    "kind": "edition_held_not_interpreted",
+                    "level": "meta",
+                    "register": "CRICOS",
+                    "country": "Australia",
+                    "old_edition": prev["edition_date"] if prev else None,
+                    "new_edition": date,
+                    "key": f"meta|{date}",
+                    "name": f"CRICOS edition {date}",
+                    "statement": (
+                        f"The CRICOS edition published {date} is archived and can be inspected, but "
+                        f"no change entries were derived from the step into it."
+                    ),
+                    "caveat": (
+                        "Movement between this edition and the previous one exceeded the limits we "
+                        "set for automatic interpretation, so a person needs to confirm what the "
+                        "source actually did before we describe it. This says nothing about any "
+                        "institution — it is a statement about our own confidence. Checks exceeded: "
+                        + ", ".join(sorted({f.check for v in movement for f in v.failures}))
+                    ),
+                }
+            ]
+        )
+        print(f"      FLAGGED — archived but not interpreted ({result['flagged']})", file=sys.stderr)
+        return result
 
     if prev_inst is not None:
         prov_diff = diffmod.diff_editions(

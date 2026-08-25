@@ -117,11 +117,31 @@ def publish_source(source_id: str) -> None:
         )
 
     # ---- the change record, every source ----------------------------------
+    # The first Australian backfill recorded 8,027 changes and published 5,000
+    # of them under an earlier cap, with nothing on the page saying so. A record
+    # that silently truncates is worse than one that admits its limits, so the
+    # cap is now generous and, when it does bite, the file says what was dropped.
     changes = archive.read_changes()
+    CAP = 50_000
+    published = changes[:CAP]
     _write(
         PUBLIC / source_id / "changes.json",
-        _envelope(meta, recording_since=dates[0], latest_edition=dates[-1],
-                  count=len(changes), changes=changes[:5000]),
+        _envelope(
+            meta,
+            recording_since=dates[0],
+            latest_edition=dates[-1],
+            count=len(changes),
+            published_count=len(published),
+            truncated=(
+                None
+                if len(published) == len(changes)
+                else (
+                    f"{len(changes) - len(published)} older entries are held in the archive but not "
+                    f"included in this file. The complete record is in the repository's changes.jsonl."
+                )
+            ),
+            changes=published,
+        ),
     )
 
     # ---- the archive index — the tamper-evident record ---------------------
