@@ -117,6 +117,43 @@ def publish_source(source_id: str) -> None:
         )
 
     # ---- the change record, every source ----------------------------------
+    # ---- courses, where the source has them --------------------------------
+    #
+    # Without this the offer-letter check cannot do the one thing that makes it
+    # worth having. register.json carries institutions; the courses live in the
+    # edition's extra payload and were never published, so every CRICOS course
+    # code a student pasted came back "not found" — including valid ones.
+    #
+    # Only the fields needed to answer "is this course real, and is it
+    # registered to this provider" are published. The full course rows are in
+    # the archive for anyone who wants them.
+    courses = ( latest.get( "extra", {} ) or {} ).get( "courses" ) if mirror else None
+    if courses:
+        compact = [
+            {
+                "provider_code": c.get( "CRICOS Provider Code", "" ),
+                "course_code": c.get( "CRICOS Course Code", "" ),
+                "course_name": c.get( "Course Name", "" ),
+                "level": c.get( "Course Level", "" ),
+                "provider_name": c.get( "Institution Name", "" ),
+            }
+            for c in courses
+            if c.get( "CRICOS Course Code" )
+        ]
+        _write(
+            PUBLIC / source_id / "courses.json",
+            _envelope(
+                meta,
+                edition_date=latest["edition_date"],
+                source_date=latest.get("source_date"),
+                count=len(compact),
+                note="Course-level listings for the current edition, published so that a course code on an "
+                     "offer letter can be checked against the register — including whether it is registered "
+                     "to the provider named on the letter.",
+                courses=compact,
+            ),
+        )
+
     # ---- the change record, in three shapes -------------------------------
     #
     # The full Australian backfill produced 42,521 changes. Written as one file
