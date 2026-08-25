@@ -1,0 +1,25 @@
+# studiesmultiverse — Standing Register
+
+> The worldwide record of which institutions are officially permitted to enrol
+> international students, and which have quietly left those registers.
+
+This site earns nothing from where you apply. It carries no institution referral fees,
+no agent commissions, no paid inclusion and no paid removal.
+
+## What is here
+
+- **Australia** — Commonwealth Register of Institutions and Courses for Overseas Students (CRICOS) (Australian Government Department of Education). 11 editions held since 2021-10-31; 8027 changes recorded. Data: https://studiesmultiverse.com/standing/au-cricos/changes.json
+
+## How to cite
+
+Every change entry carries the edition dates it was derived from and a SHA-256 of the
+archived source edition. Cite the edition date, not the date you read the page.
+
+## What we will not say
+
+A row disappearing from a register is not evidence of wrongdoing. We never write that an
+institution was revoked, banned, or shut down. We write that it is no longer listed on the
+edition published on a given date, and we name the alternatives — withdrawal, merger,
+rename, voluntary surrender, lapse at renewal, or publisher correction — in the same breath.
+
+Corrections: https://studiesmultiverse.com/standing/corrections/
