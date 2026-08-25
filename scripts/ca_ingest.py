@@ -166,7 +166,15 @@ def main() -> int:
         print(f"  → {date} (live)")
         results.append(ingest(raw, date, archive, strict=strict))
     else:
-        stamps = ca.list_captures()
+        # Cached after the first success: a batched backfill runs this script
+        # once per batch, and re-scanning eight years of the archive index each
+        # time is slow, fragile and discourteous.
+        cache = f"data/{SOURCE}/captures.json"
+        try:
+            stamps = ca.list_captures(cache_path=cache)
+        except RuntimeError as exc:
+            print(f"FATAL: {exc}", file=sys.stderr)
+            return 2
         print(f"Internet Archive holds {len(stamps)} unique-content captures")
         todo = []
         seen_dates = set(held)
@@ -199,6 +207,16 @@ def main() -> int:
     }
     out.write_text(json.dumps(summary, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     print(f"\ndone — {summary['ingested']} ingested, {summary['skipped']} skipped")
+
+    # Distinguish "nothing to do" from "tried and got nowhere".
+    #
+    # The second batched run reported SUCCESS having ingested nothing at all,
+    # because the wrapper treated any non-zero exit as "partial progress, save
+    # and carry on". A run that had work to do and completed none of it is a
+    # failure and must say so, or the alerting is decorative.
+    if results and summary["ingested"] == 0:
+        print("FATAL: had captures to ingest but completed none of them", file=sys.stderr)
+        return 3
     return 0
 
 
