@@ -1,0 +1,116 @@
+name: Australia — CRICOS
+
+# CRICOS publishes monthly, on or near the first. We check daily anyway, because
+# the publication date drifts (observed: 2nd, 3rd, 4th, 11th) and because a run
+# that finds nothing costs seconds.
+#
+# This runs on GitHub's schedule, not WP-Cron. WP-Cron only fires when someone
+# visits the site, which is why the existing UK engine needs an `init` fallback.
+# A register that only updates when a visitor happens to arrive is not a register.
+
+on:
+  schedule:
+    - cron: "17 4 * * *"      # 04:17 UTC daily
+  workflow_dispatch:
+    inputs:
+      backfill:
+        description: "Reconstruct every missing historical edition (slow, one-off)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: au-cricos
+  cancel-in-progress: false
+
+jobs:
+  ingest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Ingest
+        id: ingest
+        run: |
+          set -o pipefail
+          if [ "${{ inputs.backfill }}" = "true" ]; then
+            python scripts/au_ingest.py --backfill --sleep 2 2>&1 | tee run.log
+          else
+            python scripts/au_ingest.py --latest 2>&1 | tee run.log
+          fi
+
+      - name: Publish JSON endpoints
+        if: success()
+        run: python scripts/publish.py --source au-cricos
+
+      - name: Commit snapshot
+        if: success()
+        run: |
+          if [ -z "$(git status --porcelain data public)" ]; then
+            echo "No change — quiet day. Nothing to commit."
+            exit 0
+          fi
+          git config user.name  "studiesmultiverse-bot"
+          git config user.email "bot@studiesmultiverse.com"
+          git add data public
+          # The commit message is part of the public record. State what the
+          # source said, never what we think it means.
+          git commit -m "CRICOS snapshot $(date -u +%Y-%m-%d)" \
+                     -m "$(tail -n 20 run.log)"
+          git push
+
+      # A failed sanity gate is not a build error to be retried away. It means
+      # the pipeline was about to publish something false about real
+      # institutions. Open an issue and stop.
+      - name: Raise alert on sanity failure
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            let log = '';
+            try { log = fs.readFileSync('run.log', 'utf8').slice(-6000); } catch (e) {}
+            const title = `CRICOS ingest refused publication — ${new Date().toISOString().slice(0,10)}`;
+            const body = [
+              'The Australian CRICOS ingest failed. **Nothing was published — the previous snapshot still stands.**',
+              '',
+              'If this was the sanity gate, that is the gate doing its job. Open the source by hand and',
+              'confirm what it actually says before changing any threshold.',
+              '',
+              '```',
+              log || '(no log captured)',
+              '```',
+              '',
+              `[Run](${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId})`,
+            ].join('\n');
+
+            const existing = await github.rest.issues.listForRepo({
+              owner: context.repo.owner, repo: context.repo.repo,
+              state: 'open', labels: 'ingest-failure',
+            });
+            const open = existing.data.find(i => i.title.startsWith('CRICOS ingest refused'));
+            if (open) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner, repo: context.repo.repo,
+                issue_number: open.number, body,
+              });
+            } else {
+              await github.rest.issues.create({
+                owner: context.repo.owner, repo: context.repo.repo,
+                title, body, labels: ['ingest-failure', 'australia'],
+              });
+            }
