@@ -9,7 +9,7 @@ no agent commissions, no paid inclusion and no paid removal.
 ## What is here
 
 - **Australia** — Commonwealth Register of Institutions and Courses for Overseas Students (CRICOS) (Australian Government Department of Education). 57 editions held since 2021-10-31; 42521 changes recorded. Data: https://studiesmultiverse.com/standing/au-cricos/changes.json
-- **Canada** — Designated learning institutions list (Immigration, Refugees and Citizenship Canada (IRCC)). 33 editions held since 2018-02-01; 642 changes recorded. Data: https://studiesmultiverse.com/standing/ca-dli/changes.json
+- **Canada** — Designated learning institutions list (Immigration, Refugees and Citizenship Canada (IRCC)). 51 editions held since 2018-02-01; 823 changes recorded. Data: https://studiesmultiverse.com/standing/ca-dli/changes.json
 
 ## How to cite
 
