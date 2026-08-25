@@ -207,3 +207,68 @@ def test_compliance_flags_are_quoted_verbatim():
     m = [c for c in d.changes if c.kind == "modified"][0]
     assert "“Subject To Action Plan”" in m.statement
     diffmod.assert_editorial_safety(d.changes)
+
+
+# ---------------------------------------------------------------------------
+# Structural vs movement failures — the cascade that cost 46 of 57 editions
+# on the first Australian backfill.
+# ---------------------------------------------------------------------------
+
+
+def _courses(n, start=0):
+    return [
+        {
+            "CRICOS Provider Code": f"{i // 20:05d}A",
+            "CRICOS Course Code": f"{i:06d}C",
+            "Course Name": f"Course {i}",
+            "_key": f"{i // 20:05d}A|{i:06d}C",
+        }
+        for i in range(start, start + n)
+    ]
+
+
+def _csnap(rows):
+    return sanity.Snapshot(source="au-cricos-courses", rows=rows, key_field="_key")
+
+
+def test_october_2022_course_drop_now_publishes():
+    """
+    The real case. Sep->Oct 2022 removed 1,561 courses of 26,935 (5.8%) while
+    providers moved normally and the file parsed cleanly. The old 5% ceiling
+    refused it, which broke every later comparison.
+    """
+    t = sanity.thresholds_for("au-cricos-courses")
+    old = _courses(26935)
+    new = _courses(26935 - 1561, start=1561) + _courses(294, start=90000)
+    v = sanity.evaluate(_csnap(new), _csnap(old), t)
+    assert v.ok, f"a genuine 5.8% course cleanup was refused: {v.failures}"
+
+
+def test_implausible_course_removal_is_still_refused():
+    t = sanity.thresholds_for("au-cricos-courses")
+    v = sanity.evaluate(_csnap(_courses(20500)), _csnap(_courses(26935)), t)
+    assert not v.ok
+    assert any(f.check == "max_removed_fraction" for f in v.failures)
+
+
+def test_movement_failure_is_not_structural():
+    """Movement failures keep the edition in the archive so the chain holds."""
+    t = sanity.thresholds_for("au-cricos-courses")
+    v = sanity.evaluate(_csnap(_courses(20500)), _csnap(_courses(26935)), t)
+    assert v.movement_only is True
+    assert v.structural is False
+
+
+def test_unreadable_edition_is_structural():
+    """A file we could not read must never enter the archive."""
+    t = sanity.thresholds_for("au-cricos-courses")
+    v = sanity.evaluate(_csnap(_courses(50)), _csnap(_courses(26935)), t)
+    assert v.structural is True
+    assert v.movement_only is False
+
+
+def test_layout_change_is_structural_not_movement():
+    t = sanity.thresholds_for("au-cricos-courses")
+    bad = [{"Provider": "x", "Course": "y", "_key": f"k{i}"} for i in range(26000)]
+    v = sanity.evaluate(_csnap(bad), _csnap(_courses(26935)), t)
+    assert v.structural is True
