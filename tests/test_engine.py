@@ -272,3 +272,126 @@ def test_layout_change_is_structural_not_movement():
     bad = [{"Provider": "x", "Course": "y", "_key": f"k{i}"} for i in range(26000)]
     v = sanity.evaluate(_csnap(bad), _csnap(_courses(26935)), t)
     assert v.structural is True
+
+
+# ---------------------------------------------------------------------------
+# United Kingdom — register of licensed student sponsors
+#
+# Calibrated against the 25 August 2026 edition, read from the published CSV.
+# ---------------------------------------------------------------------------
+
+from engine.sources import uk_sponsors as uk
+
+UK_HEADER = "Sponsor Name,Town/City,Additional Locations,Sponsor Type,Status,Route,Immigration Compliance"
+
+
+def uk_csv(*rows: str) -> str:
+    return "\n".join((UK_HEADER,) + rows) + "\n"
+
+
+def test_uk_parses_the_published_column_shape():
+    raw = uk_csv(
+        "AAP Education Limited,London,,Higher Education Institution (HEI),Student Sponsor,Student,",
+        "Abbey College Cambridge,Cambridge,,Independent school,Student Sponsor,Child Student,",
+    )
+    rows = uk.parse(raw)
+    assert len(rows) == 2
+    assert rows[0]["Sponsor Name"] == "AAP Education Limited"
+    assert rows[0]["Sponsor Type"] == "Higher Education Institution (HEI)"
+    assert rows[1]["Route"] == "Child Student"
+
+
+def test_uk_byte_order_mark_does_not_break_the_header():
+    """GOV.UK ships a BOM; left in place it renames the first column."""
+    rows = uk.parse(("﻿" + uk_csv("X College,Leeds,,Independent school,Student Sponsor,Student,")).encode("utf-8"))
+    assert len(rows) == 1
+    assert rows[0]["Sponsor Name"] == "X College"
+
+
+def test_uk_key_separates_routes_and_towns():
+    """
+    Measured on the real edition: name+town collides 283 times because a sponsor
+    holds both routes, and name+route collides where a sponsor has two towns.
+    Only name+town+route was unique across 1,000 rows.
+    """
+    rows = uk.parse(
+        uk_csv(
+            "Abbey College Cambridge,Cambridge,,Independent school,Student Sponsor,Student,",
+            "Abbey College Cambridge,Cambridge,,Independent school,Student Sponsor,Child Student,",
+            "RGS Surrey Hills,Guildford,,Independent school,Student Sponsor,Child Student,",
+            "RGS Surrey Hills,Cranleigh,,Independent school,Student Sponsor,Child Student,",
+        )
+    )
+    assert len({r["key"] for r in rows}) == 4
+
+
+def test_uk_losing_one_route_is_a_removal_not_a_modification():
+    """A school keeping Student but losing Child Student must be visible."""
+    old = uk.parse(
+        uk_csv(
+            "Abbey College Cambridge,Cambridge,,Independent school,Student Sponsor,Student,",
+            "Abbey College Cambridge,Cambridge,,Independent school,Student Sponsor,Child Student,",
+        )
+    )
+    new = uk.parse(uk_csv("Abbey College Cambridge,Cambridge,,Independent school,Student Sponsor,Student,"))
+    d = diffmod.diff_editions(
+        register="register of licensed student sponsors", country="United Kingdom",
+        old_rows=old, new_rows=new, key_field=uk.KEY_FIELD, name_field=uk.NAME_FIELD,
+        old_edition="2026-08-24", new_edition="2026-08-25", persistent_id=False,
+    )
+    assert d.counts["removed"] == 1
+    assert d.counts["added"] == 0
+
+
+def test_uk_status_downgrade_is_recorded_verbatim():
+    """
+    Track Record -> Probationary is a real demotion that leaves the sponsor on
+    the register. Presence-checking cannot see it; we must, and we must quote
+    the words the Home Office used rather than call it a downgrade.
+    """
+    old = uk.parse(uk_csv("Y College,Bath,,Private provider,Student Sponsor - Track Record,Student,"))
+    new = uk.parse(uk_csv("Y College,Bath,,Private provider,Probationary Sponsor,Student,"))
+    d = diffmod.diff_editions(
+        register="register of licensed student sponsors", country="United Kingdom",
+        old_rows=old, new_rows=new, key_field=uk.KEY_FIELD, name_field=uk.NAME_FIELD,
+        old_edition="2026-08-24", new_edition="2026-08-25",
+        watch_fields=uk.WATCH_FIELDS, persistent_id=False,
+    )
+    assert d.counts["modified"] == 1
+    statement = d.changes[0].statement
+    assert "Probationary Sponsor" in statement and "Student Sponsor - Track Record" in statement
+    diffmod.assert_editorial_safety(d.changes)
+
+
+def test_uk_compliance_action_appearing_is_recorded():
+    """7 of the first 1,000 rows read "Subject To Action Plan". It is the point."""
+    old = uk.parse(uk_csv("Z School,York,,Independent school,Student Sponsor,Student,"))
+    new = uk.parse(uk_csv("Z School,York,,Independent school,Student Sponsor,Student,Subject To Action Plan"))
+    d = diffmod.diff_editions(
+        register="register of licensed student sponsors", country="United Kingdom",
+        old_rows=old, new_rows=new, key_field=uk.KEY_FIELD, name_field=uk.NAME_FIELD,
+        old_edition="2026-08-24", new_edition="2026-08-25",
+        watch_fields=uk.WATCH_FIELDS, persistent_id=False,
+    )
+    assert d.counts["modified"] == 1
+    assert "Subject To Action Plan" in d.changes[0].statement
+    diffmod.assert_editorial_safety(d.changes)
+
+
+def test_uk_renamed_column_is_refused_by_the_gate():
+    """
+    The threshold list said "Organisation Name" until the file was read. If the
+    Home Office renames a column, the gate must refuse rather than publish a
+    register that silently lost a field.
+    """
+    rows = [{"Sponsor Name": f"S {i}", "Status": "Student Sponsor", "key": f"s{i}"} for i in range(1200)]
+    s = sanity.Snapshot(source="uk-sponsors", rows=rows, key_field="key")
+    v = sanity.evaluate(s, None, sanity.thresholds_for("uk-sponsors"))
+    assert not v.ok
+    assert any(f.check == "require_columns" for f in v.failures)
+
+
+def test_uk_edition_date_comes_from_the_publishers_filename():
+    url = "https://assets.publishing.service.gov.uk/media/abc/SP_-_Student_and_Child_Student_Web_Register_-_2026-08-25.csv"
+    assert uk._date_from_filename(url) == "2026-08-25"
+    assert uk.source_date({"edition_date": None, "public_updated_at": "2026-08-25T11:13:40+01:00"}) == "2026-08-25"
