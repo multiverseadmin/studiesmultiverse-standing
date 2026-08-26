@@ -34,6 +34,7 @@ from engine.snapshot import Archive, SOURCES, meta_for
 
 PUBLIC = pathlib.Path(__file__).resolve().parent.parent / "public"
 SITE = "https://studiesmultiverse.com"
+ARCHIVE = "https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/main/public/"
 OUR_LICENCE = "CC BY 4.0"
 OUR_LICENCE_URL = "https://creativecommons.org/licenses/by/4.0/"
 
@@ -322,10 +323,10 @@ def publish_index() -> None:
                 "latest_edition": dates[-1],
                 "changes_recorded": len(a.read_changes()),
                 "endpoints": {
-                    "register": f"{SITE}/standing/{sid}/register.json",
-                    "changes": f"{SITE}/standing/{sid}/changes.json",
-                    "archive": f"{SITE}/standing/{sid}/archive.json",
-                    "feed": f"{SITE}/standing/{sid}/changes.xml",
+                    "register": f"{ARCHIVE}{sid}/register.json",
+                    "changes": f"{ARCHIVE}{sid}/changes.json",
+                    "archive": f"{ARCHIVE}{sid}/archive.json",
+                    "feed": f"{ARCHIVE}{sid}/changes.xml",
                 },
             }
         )
