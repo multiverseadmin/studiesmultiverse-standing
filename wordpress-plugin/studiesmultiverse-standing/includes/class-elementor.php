@@ -154,8 +154,8 @@ final class Elementor {
 				return '';
 			}
 			$cells = [
-				[ number_format_i18n( (int) $c['editions_held'] ), 'editions archived' ],
-				[ number_format_i18n( (int) $c['changes_recorded'] ), 'changes recorded' ],
+				[ number_format_i18n( (int) $c['editions_held'] ), 1 === (int) $c['editions_held'] ? 'edition archived' : 'editions archived' ],
+				[ number_format_i18n( (int) $c['changes_recorded'] ), 1 === (int) $c['changes_recorded'] ? 'change recorded' : 'changes recorded' ],
 				[ esc_html( $c['recording_since'] ), 'record begins' ],
 			];
 		} else {
