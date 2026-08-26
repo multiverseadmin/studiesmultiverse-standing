@@ -169,7 +169,8 @@ def main() -> int:
         # Cached after the first success: a batched backfill runs this script
         # once per batch, and re-scanning eight years of the archive index each
         # time is slow, fragile and discourteous.
-        cache = f"data/{SOURCE}/captures.json"
+        # Dated: a listing that never expires is a ceiling, not a cache.
+        cache = f"data/{SOURCE}/captures-{_dt.date.today().isoformat()}.json"
         try:
             stamps = ca.list_captures(cache_path=cache)
         except RuntimeError as exc:
