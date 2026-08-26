@@ -1,10 +1,10 @@
 {
  "source_id": "ca-dli",
- "edition_date": "2021-09-23",
- "source_date": "2021-09-22",
- "fetched_at": "2026-08-26T00:28:58+00:00",
- "row_count": 1576,
- "content_sha256": "5140700781db72321d00fe67db36f8e29f3b7f40782e9eb7dc714ee3463970a8",
+ "edition_date": "2021-11-01",
+ "source_date": "2021-10-07",
+ "fetched_at": "2026-08-26T01:00:17+00:00",
+ "row_count": 1578,
+ "content_sha256": "9d7dd580c602f9c526827b59c9fa4e96be5af8624d147233e280b4b425648c1b",
  "raw_sha256": null,
  "provenance": {
   "source_id": "ca-dli",
@@ -20,9 +20,9 @@
   "notes": "Verified 25 Aug 2026: canada.ca permits non-commercial reproduction with attribution but requires written permission for commercial redistribution. Permission request pending."
  },
  "extra": {
-  "parsed_rows": 1576,
-  "unique_keys": 1558
+  "parsed_rows": 1578,
+  "unique_keys": 1560
  },
- "editions_held": 96,
+ "editions_held": 103,
  "earliest_edition": "2018-02-01"
 }
