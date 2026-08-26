@@ -58,8 +58,21 @@ jobs:
           git add data public
           git commit -q -m "UK student sponsor register $(date -u +%Y-%m-%d)" \
                         -m "$(tail -n 15 run.log)"
-          git pull --rebase -q origin main || true
-          git push -q
+          # Retry the push: several ingests run daily and any two can race for
+          # main. A lost race must not throw away a completed ingest.
+          pushed=0
+          for attempt in 1 2 3 4 5; do
+            if git pull --rebase -q origin main && git push -q; then
+              pushed=1; break
+            fi
+            echo "push attempt $attempt lost a race; retrying"
+            git rebase --abort 2>/dev/null || true
+            sleep $(( attempt * 5 ))
+          done
+          if [ "$pushed" -ne 1 ]; then
+            echo "FATAL: the snapshot is committed locally but could not be pushed"
+            exit 1
+          fi
 
       - name: Raise alert on failure
         if: failure()

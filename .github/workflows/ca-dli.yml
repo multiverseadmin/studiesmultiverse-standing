@@ -49,18 +49,47 @@ jobs:
           git config user.name  "studiesmultiverse-bot"
           git config user.email "bot@studiesmultiverse.com"
 
+          # A push can lose a race, and losing one must not cost two hours.
+          #
+          # This run died at 45 minutes with 28 editions already safely
+          # committed. The python ingest had just printed "9 ingested" — the
+          # failure was underneath, in git: something else pushed to main
+          # between our commit and our push, the rebase was swallowed by
+          # `|| true`, the push was rejected, and because that was the last
+          # command in the function the whole step exited non-zero.
+          #
+          # The other writer that day was a human pushing unrelated files, but
+          # it does not matter who: there are four ingest workflows now and two
+          # of them run daily, so the race is permanent. Retry it, and let a
+          # commit that cannot be pushed ride along with the next batch — it is
+          # already committed locally and nothing is lost by waiting.
+          #
+          # A persistent failure must still be loud, so the flag is checked once
+          # at the end rather than forgiven silently.
+          PUSH_FAILED=0
+
           save() {
             python scripts/publish.py --source ca-dli || true
-            if [ -n "$(git status --porcelain data public)" ]; then
-              git add data public
-              git commit -q -m "DLI list snapshot $(date -u +%Y-%m-%dT%H:%M) ($1)" \
-                            -m "$(tail -n 15 run.log)"
-              git pull --rebase -q origin main || true
-              git push -q
-              echo "  committed: $1"
-            else
+            if [ -z "$(git status --porcelain data public)" ]; then
               echo "  nothing new to commit ($1)"
+              return 0
             fi
+            git add data public
+            git commit -q -m "DLI list snapshot $(date -u +%Y-%m-%dT%H:%M) ($1)" \
+                          -m "$(tail -n 15 run.log)"
+            for attempt in 1 2 3 4 5; do
+              if git pull --rebase -q origin main && git push -q; then
+                echo "  committed: $1"
+                PUSH_FAILED=0
+                return 0
+              fi
+              echo "  push attempt $attempt lost a race; retrying"
+              git rebase --abort 2>/dev/null || true
+              sleep $(( attempt * 5 ))
+            done
+            echo "  could not push after 5 attempts — the commit is local and the next save will carry it"
+            PUSH_FAILED=1
+            return 0
           }
 
           if [ "${{ inputs.backfill }}" != "true" ]; then
@@ -112,6 +141,18 @@ jobs:
               break
             fi
           done
+
+          # One last attempt, then say so plainly. Work that never reached the
+          # remote is work nobody can see, and reporting success for it is how a
+          # broken pipeline stays broken.
+          if [ "$PUSH_FAILED" -eq 1 ]; then
+            echo "retrying the outstanding push before finishing"
+            save "final"
+          fi
+          if [ "$PUSH_FAILED" -eq 1 ]; then
+            echo "FATAL: ingested editions are committed locally but could not be pushed"
+            exit 1
+          fi
 
       - name: Raise alert on failure
         if: failure()
