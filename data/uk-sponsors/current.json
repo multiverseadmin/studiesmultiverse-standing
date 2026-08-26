@@ -1,0 +1,29 @@
+{
+ "source_id": "uk-sponsors",
+ "edition_date": "2026-08-25",
+ "source_date": "2026-08-25",
+ "fetched_at": "2026-08-26T03:03:13+00:00",
+ "row_count": 1306,
+ "content_sha256": "5b66b72703e5c75de778fd8406558acaa47079399a77fa4de6275114b859ccca",
+ "raw_sha256": "fccd717e210902b28975c924230298073da709efa1a29cb8f330d65be41b759e",
+ "provenance": {
+  "source_id": "uk-sponsors",
+  "country": "United Kingdom",
+  "register_name": "Register of licensed student sponsors",
+  "publisher": "UK Home Office",
+  "source_url": "https://www.gov.uk/government/publications/register-of-licensed-sponsors-students",
+  "licence": "Open Government Licence v3.0",
+  "licence_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+  "attribution": "Contains public sector information licensed under the Open Government Licence v3.0.",
+  "publication_layer": "mirror",
+  "language": "en",
+  "notes": ""
+ },
+ "extra": {
+  "attachment_url": "https://assets.publishing.service.gov.uk/media/6a8d682f01bbff0bf8f97901/SP_-_Student_and_Child_Student_Web_Register_-_2026-08-25.csv",
+  "public_updated_at": "2026-08-25T11:13:40+01:00",
+  "raw_sha256_note": "the CSV exactly as the Home Office published it"
+ },
+ "editions_held": 1,
+ "earliest_edition": "2026-08-25"
+}
