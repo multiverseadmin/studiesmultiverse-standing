@@ -9,7 +9,7 @@ no agent commissions, no paid inclusion and no paid removal.
 ## What is here
 
 - **Australia** — Commonwealth Register of Institutions and Courses for Overseas Students (CRICOS) (Australian Government Department of Education). 57 editions held since 2021-10-31; 42521 changes recorded. Data: https://studiesmultiverse.com/standing/au-cricos/changes.json
-- **Canada** — Designated learning institutions list (Immigration, Refugees and Citizenship Canada (IRCC)). 172 editions held since 2018-02-01; 1246 changes recorded. Data: https://studiesmultiverse.com/standing/ca-dli/changes.json
+- **Canada** — Designated learning institutions list (Immigration, Refugees and Citizenship Canada (IRCC)). 181 editions held since 2018-02-01; 1288 changes recorded. Data: https://studiesmultiverse.com/standing/ca-dli/changes.json
 - **Japan** — 認定日本語教育機関 — accredited Japanese-language education institutions (文部科学省 (Ministry of Education, Culture, Sports, Science and Technology)). 1 editions held since 2026-08-25; 0 changes recorded. Data: https://studiesmultiverse.com/standing/jp-mext/changes.json
 
 ## How to cite
