@@ -1,0 +1,105 @@
+name: WordPress plugin — lint and render
+
+# The plugin had no automated check of any kind until it entered this
+# repository. It ships by hand, to a host whose file editor silently discards
+# saves, and it decides what a reader is told about a named institution. That is
+# the wrong thing to be testing by eye.
+#
+# This will not catch a wrong statement — the editorial rules are enforced in
+# engine/diff.py, on the data side, before anything reaches here. What it does
+# catch is the class of failure that actually happened: a syntax error shipped
+# to a live site, and a render that quietly stopped producing a page.
+
+on:
+  push:
+    paths:
+      - 'wordpress-plugin/**'
+      - '.github/workflows/plugin-checks.yml'
+  pull_request:
+    paths:
+      - 'wordpress-plugin/**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.2'
+          extensions: mbstring, dom, libxml
+          coverage: none
+
+      - name: Lint every PHP file
+        run: |
+          set -o pipefail
+          fail=0
+          while IFS= read -r f; do
+            if ! php -l "$f" > /dev/null 2>&1; then
+              echo "SYNTAX ERROR: $f"
+              php -l "$f" || true
+              fail=1
+            fi
+          done < <(find wordpress-plugin -name '*.php' -type f)
+          [ "$fail" -eq 0 ] || exit 1
+          echo "all PHP files parse"
+
+      - name: Check the version stamp moves together
+        run: |
+          # The header version and the constant drive the self-repair that
+          # flushes rewrite rules and rebuilds the search index. If they
+          # disagree, an upgrade silently does not take effect — which is how
+          # the feeds and the sitemap stayed dead.
+          f=wordpress-plugin/studiesmultiverse-standing/studiesmultiverse-standing.php
+          header=$(grep -oP '^\s*\*\s*Version:\s*\K[0-9]+\.[0-9]+\.[0-9]+' "$f" | head -1)
+          const=$(grep -oP "SM_STANDING_VERSION',\s*'\K[0-9]+\.[0-9]+\.[0-9]+" "$f" | head -1)
+          echo "header=$header constant=$const"
+          if [ -z "$header" ] || [ -z "$const" ]; then
+            echo "could not read one of the two version strings"; exit 1
+          fi
+          if [ "$header" != "$const" ]; then
+            echo "MISMATCH: the plugin header and SM_STANDING_VERSION disagree."
+            echo "Bump both, or the version-stamped repair will not run on upgrade."
+            exit 1
+          fi
+
+      - name: Render pages with WordPress stubbed out
+        run: |
+          set -o pipefail
+          cd wordpress-plugin
+          fail=0
+          for view in home changes methodology; do
+            out=$(php harness.php "$view" 2>&1) || { echo "RENDER FAILED: $view"; echo "$out"; fail=1; continue; }
+            echo "$out"
+            # A page that renders to almost nothing is a failure that returns 0.
+            bytes=$(printf '%s' "$out" | grep -oP 'bytes=\K[0-9]+' || echo 0)
+            if [ "${bytes:-0}" -lt 3000 ]; then
+              echo "SUSPICIOUSLY SMALL RENDER for $view: $bytes bytes"; fail=1
+            fi
+            # These documents are self-contained on purpose.
+            ext=$(printf '%s' "$out" | grep -oP 'externalReq=\K[0-9]+' || echo 0)
+            if [ "${ext:-0}" -ne 0 ]; then
+              echo "$view pulls $ext external resources; standing pages must be self-contained"; fail=1
+            fi
+          done
+          [ "$fail" -eq 0 ] || exit 1
+
+      - name: Refuse the forbidden vocabulary
+        run: |
+          # The same words the engine's editorial guard rejects. A statement is
+          # built on the data side, but this plugin also rebuilds prose from the
+          # entity index, so the rule has to hold here too.
+          if grep -rniE '"[^"]*\b(revoked|banned|shut down|struck off)\b' \
+               --include='*.php' wordpress-plugin/studiesmultiverse-standing/includes \
+             | grep -viE 'never uses|forbidden|guard|refuse|must not|editorial'; then
+            echo "A forbidden verb appears in a rendered string."
+            exit 1
+          fi
+          echo "no forbidden verbs in rendered strings"
