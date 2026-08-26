@@ -1,0 +1,103 @@
+name: United Kingdom — licensed student sponsors
+
+# Daily. The Home Office republishes this register most working days and gives
+# no notice when a sponsor's status changes or a compliance action appears.
+#
+# A day on which nothing was republished costs one conditional request and
+# records no edition: the ingest keys editions on the date in the publisher's
+# own filename, so re-reading the same file cannot invent a second edition of it.
+
+on:
+  schedule:
+    - cron: "17 6 * * *"      # 06:17 UTC daily, after GOV.UK's morning refresh
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: uk-sponsors
+  cancel-in-progress: false
+
+jobs:
+  ingest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Ingest
+        run: |
+          set -o pipefail
+          python scripts/uk_ingest.py --latest 2>&1 | tee run.log
+
+      - name: Publish JSON endpoints
+        if: success()
+        run: python scripts/publish.py --source uk-sponsors
+
+      - name: Commit snapshot
+        if: success()
+        run: |
+          if [ -z "$(git status --porcelain data public)" ]; then
+            echo "No change — the register has not been republished since the last run."
+            exit 0
+          fi
+          git config user.name  "studiesmultiverse-bot"
+          git config user.email "bot@studiesmultiverse.com"
+          git add data public
+          git commit -q -m "UK student sponsor register $(date -u +%Y-%m-%d)" \
+                        -m "$(tail -n 15 run.log)"
+          git pull --rebase -q origin main || true
+          git push -q
+
+      - name: Raise alert on failure
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            let log = '';
+            try { log = fs.readFileSync('run.log', 'utf8').slice(-6000); } catch (e) {}
+            const body = [
+              'The UK student sponsor ingest failed. **Nothing was published — the previous snapshot still stands.**',
+              '',
+              'Three failures are worth telling apart here.',
+              '',
+              '1. "no CSV attachment on the publication" — GOV.UK changed the attachment format.',
+              '   The register has shipped as CSV for years, but ODS and XLSX are both plausible.',
+              '2. A `require_columns` refusal — the Home Office renamed a column. Read the CSV by',
+              '   hand and update the header map; do NOT relax the column list to make this pass.',
+              '   The list already said "Organisation Name" once, from a desk survey, when the file',
+              '   has always said "Sponsor Name".',
+              '3. A movement refusal — a genuinely large day. The UK has been tightening student',
+              '   sponsorship, so a big drop is not automatically wrong, and not automatically right.',
+              '   Open the published CSV and confirm before touching a threshold.',
+              '',
+              '```', log || '(no log captured)', '```',
+              '',
+              `[Run](${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId})`,
+            ].join('\n');
+            const open = (await github.rest.issues.listForRepo({
+              owner: context.repo.owner, repo: context.repo.repo,
+              state: 'open', labels: 'ingest-failure',
+            })).data.find(i => i.title.startsWith('UK sponsor ingest'));
+            if (open) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner, repo: context.repo.repo, issue_number: open.number, body });
+            } else {
+              await github.rest.issues.create({
+                owner: context.repo.owner, repo: context.repo.repo,
+                title: `UK sponsor ingest failed — ${new Date().toISOString().slice(0,10)}`,
+                body, labels: ['ingest-failure', 'united-kingdom'] });
+            }
