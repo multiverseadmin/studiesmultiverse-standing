@@ -413,12 +413,25 @@ THRESHOLDS: dict[str, Thresholds] = {
         require_columns=("CRICOS Provider Code", "CRICOS Course Code", "Course Name"),
     ),
     # Measured: 1,317 -> 1,309 rows over 14 days, 26 recorded changes.
+    #
+    # require_columns said "Organisation Name" until the file was actually read.
+    # The CSV calls it "Sponsor Name", so every UK edition would have been
+    # refused on a missing column - the gate working correctly against a
+    # threshold that was wrong. Taking a column list from a desk survey rather
+    # than from the file is the same mistake as guessing a URL.
+    #
+    # min_rows lowered from 1000 to 800. The floor exists to catch a truncated
+    # download, not a real contraction, and the UK has been tightening student
+    # sponsorship hard. The exact row count is not yet measured - the file is
+    # not reachable from the environment this was written in, and the preview
+    # caps at 1,000 rows, reaching only "T" alphabetically - so this floor is
+    # deliberately generous until a real run records the true count.
     "uk-sponsors": Thresholds(
-        min_rows=1000,
+        min_rows=800,
         max_removed_fraction=0.04,
         max_added_fraction=0.08,
         max_churn_fraction=0.10,
-        require_columns=("Organisation Name", "Status"),
+        require_columns=("Sponsor Name", "Status", "Route"),
         # GOV.UK republishes near-daily, often byte-identical.
         allow_identical_content=True,
     ),
