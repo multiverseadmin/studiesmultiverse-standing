@@ -3,7 +3,7 @@
  * Plugin Name:       Studies Multiverse — Standing Register
  * Plugin URI:        https://studiesmultiverse.com/standing/
  * Description:       The Standing Register: the worldwide record of which institutions are officially permitted to enrol international students. Renders the register, country hubs, the change record, search and feeds from static JSON built by GitHub Actions. Also owns the site's structured-data identity, replacing the competing snippets that were emitting duplicate Organization and WebSite nodes.
- * Version:           1.27.1
+ * Version:           1.27.2
  * Requires at least: 6.4
  * Requires PHP:      8.0
  * Author:            A.I.T. Multiverse Consulting Ltd
@@ -50,7 +50,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'SM_STANDING_VERSION', '1.27.1' );
+define( 'SM_STANDING_VERSION', '1.27.2' );
 define( 'SM_STANDING_FILE', __FILE__ );
 define( 'SM_STANDING_DIR', plugin_dir_path( __FILE__ ) );
 define( 'SM_STANDING_URL', plugin_dir_url( __FILE__ ) );
