@@ -55,10 +55,30 @@ final class Api {
 
 	/** Open data means open access. */
 	public function cors( $served, $result, $request, $server ) {
-		if ( str_starts_with( ltrim( (string) $request->get_route(), '/' ), self::NS ) ) {
+		$route = ltrim( (string) $request->get_route(), '/' );
+		if ( str_starts_with( $route, self::NS ) ) {
 			header( 'Access-Control-Allow-Origin: *' );
 			header( 'Access-Control-Allow-Methods: GET, OPTIONS' );
-			header( 'Cache-Control: public, max-age=900, stale-while-revalidate=86400' );
+
+			// The offer-letter check is not bulk open data and must not be
+			// cached like it.
+			//
+			// Two reasons, and the second is the one that matters. A shared
+			// cache would be storing a URL carrying somebody's provider,
+			// course or DLI number off their own offer letter, which is not
+			// ours to leave lying in an intermediary. And
+			// stale-while-revalidate=86400 permits an answer up to a day old:
+			// the response names the edition it read, so it would not be
+			// false, but a register check that quietly answers from yesterday
+			// is the wrong instinct for the one question this site exists to
+			// answer. It is a single hand-typed request, so there is no load
+			// worth trading for either.
+			if ( str_starts_with( $route, self::NS . '/check' ) ) {
+				header( 'Cache-Control: no-store, private' );
+			} else {
+				header( 'Cache-Control: public, max-age=900, stale-while-revalidate=86400' );
+			}
+
 			header( 'X-Licence: CC-BY-4.0' );
 		}
 		return $served;
