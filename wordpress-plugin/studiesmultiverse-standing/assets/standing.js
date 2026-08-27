@@ -138,7 +138,27 @@
   var forms = document.querySelectorAll('form.sm-verify');
   if (!forms.length) { return; }
 
+  // The search box has its own esc() inside its own closure; this file keeps
+  // the two widgets in separate scopes on purpose, so this one needs its own.
+  function esc(s) {
+    return String(s).replace(/[&<>"']/g, function (c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+    });
+  }
+
   function render(out, payload) {
+    // A register we hold only as a change record cannot confirm a code, and
+    // the API says so in `reason`. This ignored it and fell through to
+    // "Enter at least one code above" - told to someone who had just entered
+    // one. Saying nothing is the one thing a check like this must never do.
+    if (payload && payload.checkable === false) {
+      var why = '<p class="small">' + esc(payload.reason || 'We cannot confirm codes against this register.') + '</p>';
+      if (payload.official_source) {
+        why += '<p class="small"><a href="' + esc(payload.official_source) + '" rel="noopener">Check with the publisher</a>.</p>';
+      }
+      out.innerHTML = why;
+      return;
+    }
     var checks = (payload && payload.checks) || {};
     var names = Object.keys(checks);
     if (!names.length) {
