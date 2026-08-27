@@ -1,8 +1,8 @@
-/* Studies Multiverse — Standing Register search.
+/* Studies Multiverse: Standing Register search.
  *
  * The search index is fetched lazily, once, the first time someone actually
  * interacts with the box. Nobody pays for it on page load, and the server does
- * no query work at all — which is why this stays fast whether the record holds
+ * no query work at all, which is why this stays fast whether the record holds
  * four thousand institutions or forty thousand.
  *
  * No dependencies. No tracking. Progressive enhancement: without JavaScript the
@@ -36,7 +36,7 @@
   // entirely. Two things went wrong at once: a Japanese institution's name
   // normalised to '' and scored 0, so it could never be found; and a Japanese
   // *query* also normalised to '', which indexOf('') treats as matching at
-  // position 0 — every entry scoring 80. The register was both unsearchable and
+  // position 0, every entry scoring 80. The register was both unsearchable and
   // confidently wrong, in the same line of code.
   var PUNCT = /[ -⁯⸀-⹿'!"#$%&()*+,\-./:;<=>?@[\]^_`{|}~]+/g;
 
@@ -75,7 +75,7 @@
     if (!q) { out.innerHTML = ''; return; }
     if (!results.length) {
       out.innerHTML = '<p class="small">Nothing on the registers we hold matches that. That does not mean ' +
-        'the institution is not approved — it may be in a country whose register we do not yet cover, or ' +
+        'the institution is not approved. It may be in a country whose register we do not yet cover, or ' +
         'listed under a different legal name. <a href="/standing/countries/">See which countries we cover</a>.</p>';
       return;
     }
@@ -122,4 +122,69 @@
 
   // Deep link: /standing/?q=...
   if (input.value.trim()) search();
+})();
+
+/* The offer-letter code check.
+ *
+ * Separate from the name search on purpose. Name search answers "does this
+ * institution exist on the register", which a forged letter passes: the
+ * institution is usually real. This answers "do the codes printed on the
+ * letter belong together", which is the part that does not survive checking.
+ *
+ * All of the judgement lives on the server, in the check endpoint. This only
+ * puts the fields on the page and prints back what it is told, verbatim. It
+ * decides nothing, and it never says an offer is fake. */
+(function () {
+  var forms = document.querySelectorAll('form.sm-verify');
+  if (!forms.length) { return; }
+
+  function render(out, payload) {
+    var checks = (payload && payload.checks) || {};
+    var names = Object.keys(checks);
+    if (!names.length) {
+      out.innerHTML = '<p class="small">Enter at least one code above.</p>';
+      return;
+    }
+    var html = '<ul class="sm-verify-list">';
+    for (var i = 0; i < names.length; i++) {
+      var c = checks[names[i]] || {};
+      // A check reports either found or match. Absent means not applicable.
+      var settled = (c.found === true) || (c.match === true);
+      var failed = (c.found === false) || (c.match === false);
+      var mark = settled ? 'confirmed' : (failed ? 'not confirmed' : '');
+      html += '<li><b>' + (mark || '') + '</b><small>' + (c.says || '') + '</small></li>';
+    }
+    html += '</ul>';
+    out.innerHTML = html;
+  }
+
+  for (var f = 0; f < forms.length; f++) {
+    (function (form) {
+      var out = form.querySelector('.sm-verify-out');
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var params = new URLSearchParams();
+        params.set('country', form.getAttribute('data-country') || '');
+        var inputs = form.querySelectorAll('input[name]');
+        var any = false;
+        for (var i = 0; i < inputs.length; i++) {
+          var v = (inputs[i].value || '').trim();
+          if (v) { params.set(inputs[i].name, v); any = true; }
+        }
+        if (!any) {
+          out.innerHTML = '<p class="small">Enter at least one code above.</p>';
+          return;
+        }
+        out.innerHTML = '<p class="small">Checking the register.</p>';
+        fetch('/wp-json/standing/v1/check?' + params.toString(), { credentials: 'omit' })
+          .then(function (r) { return r.json(); })
+          .then(function (j) { render(out, j); })
+          .catch(function () {
+            // Never guess on failure. Say the check did not run.
+            out.innerHTML = '<p class="small">The check could not run just now. '
+              + 'That is a fault at our end and says nothing about the institution.</p>';
+          });
+      });
+    })(forms[f]);
+  }
 })();

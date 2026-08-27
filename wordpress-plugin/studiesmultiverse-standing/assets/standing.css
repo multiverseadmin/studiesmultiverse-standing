@@ -1,4 +1,4 @@
-/* Studies Multiverse — Standing Register
+/* Studies Multiverse: Standing Register
    Inlined critical CSS. No external requests, no web fonts, no framework.
    System fonts render instantly and cost nothing; on a phone in a hostel on
    bad wifi that is the difference between a usable answer and a blank page. */
@@ -72,7 +72,7 @@ a{color:var(--accent);text-underline-offset:2px}
 a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:2px}
 code{font-family:var(--mono);font-size:.86em;background:var(--surface-2);padding:1px 5px;border-radius:2px}
 
-/* search — the front door */
+/* search: the front door */
 .searchbox{margin:26px 0 8px;max-width:640px}
 .searchbox label{display:block;font-size:.8rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
 .searchbox input{
@@ -167,3 +167,21 @@ footer.site a{color:var(--muted)}
   .ch time{margin-left:0;width:100%}
 }
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+/* Watchlist: the columns a register publishes and nobody renders.
+   Deliberately plain: a list of quotations, not a scoreboard. */
+.sm-watchlist{list-style:none;margin:18px 0;padding:0;display:grid;gap:8px}
+.sm-watchlist li{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:12px 14px}
+.sm-watchlist b{display:block;font-size:1rem;letter-spacing:-.01em}
+.sm-watchlist small{display:block;font-size:.8rem;color:var(--muted);margin-top:5px;line-height:1.45}
+.sm-caveat{font-size:.82rem;color:var(--muted);line-height:1.5;max-width:70ch;margin-top:14px}
+
+/* Offer-letter code check. Same plain treatment as the watchlist: a list of
+   statements from the register, not a verdict with a colour. */
+.sm-verify label{display:block;font-size:.8rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:12px 0 6px}
+.sm-verify input{width:100%;max-width:420px;padding:11px 13px;border:1px solid var(--line);border-radius:var(--radius);background:var(--surface);color:var(--ink);font-family:var(--mono);font-size:.95rem}
+.sm-verify button{margin-top:14px;padding:11px 18px;border:0;border-radius:var(--radius);background:var(--accent);color:#fff;font-weight:600;cursor:pointer}
+.sm-verify-list{list-style:none;margin:18px 0 0;padding:0;display:grid;gap:8px}
+.sm-verify-list li{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:12px 14px}
+.sm-verify-list b{display:block;font-size:.76rem;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
+.sm-verify-list small{display:block;font-size:.88rem;line-height:1.5;margin-top:5px}
