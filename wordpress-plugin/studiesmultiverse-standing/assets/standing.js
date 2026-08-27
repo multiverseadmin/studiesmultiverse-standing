@@ -153,8 +153,10 @@
     // one. Saying nothing is the one thing a check like this must never do.
     if (payload && payload.checkable === false) {
       var why = '<p class="small">' + esc(payload.reason || 'We cannot confirm codes against this register.') + '</p>';
+      // The reason already ends "Check directly with the publisher", so the
+      // link names where it goes rather than repeating the instruction.
       if (payload.official_source) {
-        why += '<p class="small"><a href="' + esc(payload.official_source) + '" rel="noopener">Check with the publisher</a>.</p>';
+        why += '<p class="small"><a href="' + esc(payload.official_source) + '" rel="noopener">Open the official register</a>.</p>';
       }
       out.innerHTML = why;
       return;
@@ -196,7 +198,10 @@
           return;
         }
         out.innerHTML = '<p class="small">Checking the register.</p>';
-        fetch('/wp-json/standing/v1/check?' + params.toString(), { credentials: 'omit' })
+        // no-store, not just no cache header: this browser may already hold a
+        // response from before the answer changed, and re-showing it would
+        // date the reply without saying so.
+        fetch('/wp-json/standing/v1/check?' + params.toString(), { credentials: 'omit', cache: 'no-store' })
           .then(function (r) { return r.json(); })
           .then(function (j) { render(out, j); })
           .catch(function () {
