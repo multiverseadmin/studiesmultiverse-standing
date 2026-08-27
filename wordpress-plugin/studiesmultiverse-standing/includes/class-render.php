@@ -44,8 +44,16 @@ final class Render {
 		echo '<meta charset="utf-8">' . "\n";
 		echo '<meta name="viewport" content="width=device-width, initial-scale=1">' . "\n";
 		printf( "<title>%s | Studies Multiverse</title>\n", esc_html( $title ) );
-		printf( '<meta name="description" content="%s">' . "\n", esc_attr( wp_trim_words( $desc, 30 ) ) );
-		printf( '<link rel="canonical" href="%s">' . "\n", esc_url( $this->current_url() ) );
+		printf( '<meta name="description" content="%s">' . "\n", esc_attr( $this->meta_description( $desc ) ) );
+		// A country page answers to two addresses: the country name the sitemap
+		// uses, and the source id the API uses. Both resolved, both returned 200
+		// and both self-canonicalised, so every country was two indexable copies
+		// of one page competing with itself. The renderer may be told which
+		// address is the real one; when it is not, self-reference is correct.
+		printf(
+			'<link rel="canonical" href="%s">' . "\n",
+			esc_url( ! empty( $ctx['canonical'] ) ? (string) $ctx['canonical'] : $this->current_url() )
+		);
 		if ( ! $index ) {
 			echo '<meta name="robots" content="noindex,follow">' . "\n";
 		}
@@ -162,7 +170,7 @@ final class Render {
 		}
 		echo '</div>';
 		printf(
-			'<p class="more"><a href="%s">Which countries publish a list at all — and which don\'t →</a></p>',
+			'<p class="more"><a href="%s">Which countries publish a list at all, and which do not →</a></p>',
 			esc_url( home_url( '/standing/countries/' ) )
 		);
 		echo '</section>';
@@ -281,14 +289,70 @@ final class Render {
 		);
 	}
 
+	/**
+	 * How many left recently, and when.
+	 *
+	 * The list underneath is correct and unreadable as evidence: three hundred
+	 * entries, newest first, with no sense of scale. Anyone who wants to cite
+	 * this - a journalist, a forum, a student comparing two offers - needs a
+	 * number attached to a window, and the page had none. Counting what the
+	 * page is already showing costs nothing and makes it quotable.
+	 *
+	 * Counted on the edition an entry stopped appearing on, which is the only
+	 * date we can stand behind: it is when we OBSERVED the absence, not when
+	 * the publisher decided anything. The wording says so, because the gap
+	 * between those two things is exactly what a careless reader would get
+	 * wrong.
+	 */
+	private function recent_departures( array $changes ): void {
+		$today   = new \DateTimeImmutable( 'today' );
+		$windows = [ 30 => 0, 90 => 0, 365 => 0 ];
+
+		foreach ( $changes as $ch ) {
+			$on = (string) ( $ch['new_edition'] ?? '' );
+			if ( ! preg_match( '/^\d{4}-\d{2}-\d{2}$/', $on ) ) {
+				continue;
+			}
+			$days = (int) $today->diff( new \DateTimeImmutable( $on ) )->days;
+			foreach ( array_keys( $windows ) as $w ) {
+				if ( $days <= $w ) {
+					++$windows[ $w ];
+				}
+			}
+		}
+
+		if ( ! $windows[365] ) {
+			return;
+		}
+
+		echo '<div class="sm-embed sm-embed-stats"><div class="stats">';
+		foreach ( [ 30 => 'in the last 30 days', 90 => 'in the last 90 days', 365 => 'in the last year' ] as $w => $label ) {
+			printf(
+				'<div><b>%s</b><small>%s</small></div>',
+				esc_html( number_format_i18n( $windows[ $w ] ) ),
+				esc_html( $label )
+			);
+		}
+		echo '</div></div>';
+		printf(
+			'<p class="sm-caveat">%s</p>',
+			esc_html(
+				'Counted on the edition each entry stopped appearing on, which is the date we observed '
+				. 'the absence and not a date any publisher announced. Counts cover the registers we hold '
+				. 'and the period we have been recording each one, so they are a floor rather than a total.'
+			)
+		);
+	}
+
 	private function view_changes( ?string $kind = null ): void {
 		$changes = Data::instance()->recent_changes( 300, $kind );
 
 		if ( 'removed' === $kind ) {
 			echo '<h1>Institutions no longer listed</h1>';
 			echo '<p class="lede">Entries that appeared on one edition of an official register and did not '
-				. 'appear on the next. This is the artefact nobody else keeps — the sources overwrite, so '
+				. 'appear on the next. This is the artefact nobody else keeps. The sources overwrite, so '
 				. 'once a row is gone there is normally no public trace that it was ever there.</p>';
+			$this->recent_departures( $changes );
 			$this->disappearance_warning();
 		} else {
 			echo '<h1>What changed on the official registers</h1>';
@@ -300,7 +364,7 @@ final class Render {
 
 	private function view_watchlist(): void {
 		echo '<h1>Institutions carrying a published condition</h1>';
-		echo '<p class="lede">Most registers publish a binary: listed, or not listed. A few publish more — '
+		echo '<p class="lede">Most registers publish a binary: listed, or not listed. A few publish more: '
 			. 'probation, conditions, an action plan, a graded rating. Where they do, we quote it exactly '
 			. 'as it appears, because that wording is the earliest warning a student can get.</p>';
 
@@ -326,7 +390,7 @@ final class Render {
 			printf( '<h2>%s</h2>', esc_html( $c['country'] ) );
 			echo '<div class="tablewrap"><table><thead><tr><th>Institution</th><th>Field</th><th>What the register says</th></tr></thead><tbody>';
 			foreach ( array_slice( $rows, 0, 200 ) as [ $r, $k, $v ] ) {
-				$name = $r['Institution Name'] ?? $r['Organisation Name'] ?? $r['sponsor'] ?? $r['name'] ?? '—';
+				$name = $r['Institution Name'] ?? $r['Organisation Name'] ?? $r['sponsor'] ?? $r['name'] ?? 'not stated';
 				printf( '<tr><td>%s</td><td>%s</td><td>“%s”</td></tr>', esc_html( $name ), esc_html( $k ), esc_html( $v ) );
 			}
 			echo '</tbody></table></div>';
@@ -338,12 +402,12 @@ final class Render {
 	}
 
 	private function view_countries(): void {
-		echo '<h1>Which countries publish a list of approved institutions — and which do not</h1>';
+		echo '<h1>Which countries publish a list of approved institutions, and which do not</h1>';
 		echo '<p class="lede">Not every destination maintains a public register. Where one does not exist, '
-			. 'no monitor anywhere can tell you whether an institution is in good standing — and you deserve '
+			. 'no monitor anywhere can tell you whether an institution is in good standing, and you deserve '
 			. 'to know that before you choose, rather than after.</p>';
 		echo '<p>This page is generated from our own source survey. Where we say a country publishes nothing '
-			. 'usable, we mean we checked the official source and recorded why it failed — not that we could '
+			. 'usable, we mean we checked the official source and recorded why it failed, not that we could '
 			. 'not find it.</p>';
 
 		$data = Data::instance();
@@ -388,7 +452,7 @@ final class Render {
 				printf(
 					'<tr><td>%s</td><td>%s</td><td class="num">%s</td><td class="hash">%s</td></tr>',
 					esc_html( $e['edition_date'] ),
-					esc_html( (string) ( $e['source_date'] ?? '—' ) ),
+					esc_html( (string) ( $e['source_date'] ?? 'not stated' ) ),
 					esc_html( number_format_i18n( (int) $e['row_count'] ) ),
 					esc_html( substr( (string) $e['content_sha256'], 0, 16 ) )
 				);
@@ -412,7 +476,7 @@ final class Render {
 			. 'not moved, we refuse to publish and raise an alert instead. A timeout looks exactly like a mass '
 			. 'removal, and we would rather be a day late than wrong.</li>'
 			. '<li><strong>Compare on the register\'s own identifier.</strong> Where a register publishes a '
-			. 'persistent code, a name change with an unchanged code is a rename — provably, not by guesswork. '
+			. 'persistent code, a name change with an unchanged code is a rename, provably rather than by guesswork. '
 			. 'Where a register has no identifier, we say the ambiguity out loud rather than resolving it.</li>'
 			. '<li><strong>Quote, never paraphrase.</strong> Compliance fields are reproduced in the '
 			. 'register\'s own words.</li></ol>';
@@ -432,7 +496,7 @@ final class Render {
 			. '<p>We earn nothing from where you apply. No institution referral fees, no agent commissions, '
 			. 'no paid inclusion, no paid removal, no paid "verified" badge. There is no arrangement under '
 			. 'which an institution can influence what its record says. If there ever were, this register '
-			. 'would be worthless — and so would the business built on it.</p>';
+			. 'would be worthless, and so would the business built on it.</p>';
 	}
 
 	private function view_corrections(): void {
@@ -473,7 +537,7 @@ final class Render {
 
 		echo '<h1>The open data behind this site</h1>';
 		echo '<p class="lede">The change record, the archive index and the licences. Free to use, with '
-			. 'attribution. This layer stays free permanently — it is what earns the citations.</p>';
+			. 'attribution. This layer stays free permanently. It is what earns the citations.</p>';
 
 		foreach ( $data->countries() as $c ) {
 			printf( '<h2>%s</h2><ul class="links">', esc_html( $c['country'] ) );
@@ -483,17 +547,17 @@ final class Render {
 				}
 			}
 			printf(
-				'<li>Source: %s — %s</li><li>Source licence: %s</li></ul>',
+				'<li>Source: %s, %s</li><li>Source licence: %s</li></ul>',
 				esc_html( $c['publisher'] ),
 				esc_html( $c['register'] ),
-				esc_html( $c['licence'] ?? '—' )
+				esc_html( $c['licence'] ?? 'not stated' )
 			);
 		}
 
 		printf(
 			'<h2>Citing this record</h2><p>Our own outputs are published under <a href="%s">CC BY 4.0</a>. '
 			. 'Each change entry carries the edition dates it was derived from and the SHA-256 of the archived '
-			. 'source edition — cite the edition date, not the date you read the page.</p>',
+			. 'source edition. Cite the edition date, not the date you read the page.</p>',
 			esc_url( 'https://creativecommons.org/licenses/by/4.0/' )
 		);
 
@@ -579,8 +643,8 @@ final class Render {
 				. 'or cancelled, provider-default obligations under the ESOS Act are triggered, and you are '
 				. 'normally entitled to a placement in a comparable course or a refund.',
 			'Canada'         => 'A study permit is tied to a designated learning institution. If yours loses '
-				. 'designation, the permit becomes invalid and — the part people miss — eligibility for a '
-				. 'post-graduation work permit can be lost entirely.',
+				. 'designation, the permit becomes invalid. The part people miss is that eligibility for a '
+				. 'post-graduation work permit can be lost entirely too.',
 			'Netherlands'    => 'Only a recognised sponsor can bring in a non-EU student. If your institution '
 				. 'stops being recognised, its ability to sponsor new residence permits ends.',
 			'Poland'         => 'A negative assessment from the accreditation committee can halt admissions to '
@@ -637,6 +701,37 @@ final class Render {
 		);
 		echo '</p></footer>';
 		$this->script();
+	}
+
+	/**
+	 * A description that ends where a sentence ends.
+	 *
+	 * This trimmed to thirty words and appended an ellipsis, which cut the
+	 * register's own description mid-phrase: "what it means if you hold an..."
+	 * A search result showing a sentence that stops mid-word reads as a page
+	 * that was not finished, and it is the first thing most people ever see of
+	 * this site.
+	 *
+	 * Prefer the whole thing when it fits. When it does not, fall back to the
+	 * last complete sentence, and only cut at a word boundary if even the first
+	 * sentence is too long.
+	 */
+	private function meta_description( string $desc, int $limit = 155 ): string {
+		$desc = trim( preg_replace( '/\s+/u', ' ', $desc ) ?? $desc );
+		if ( '' === $desc || mb_strlen( $desc ) <= $limit ) {
+			return $desc;
+		}
+
+		$cut = mb_substr( $desc, 0, $limit );
+		foreach ( [ '. ', '? ', '! ' ] as $stop ) {
+			$at = mb_strrpos( $cut, $stop );
+			if ( false !== $at && $at > $limit / 2 ) {
+				return mb_substr( $cut, 0, $at + 1 );
+			}
+		}
+
+		$space = mb_strrpos( $cut, ' ' );
+		return ( false === $space ? $cut : mb_substr( $cut, 0, $space ) ) . '.';
 	}
 
 	private function current_url(): string {

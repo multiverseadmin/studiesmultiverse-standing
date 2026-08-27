@@ -142,7 +142,7 @@ final class Api {
 			[
 				'licence'     => 'CC BY 4.0',
 				'licence_url' => 'https://creativecommons.org/licenses/by/4.0/',
-				'attribution' => 'Studies Multiverse Standing Register — studiesmultiverse.com',
+				'attribution' => 'Studies Multiverse Standing Register, studiesmultiverse.com',
 				'caveat'      => 'A row appearing or disappearing between editions is not evidence of wrongdoing. '
 					. 'Registers publish a status, not a cause. An entry can leave a register through withdrawal, '
 					. 'merger, rename, voluntary surrender, corporate restructure, lapse at renewal, or a correction '
@@ -180,7 +180,7 @@ final class Api {
 		return rest_ensure_response( $this->envelope( [ 'countries' => Data::instance()->countries() ] ) );
 	}
 
-	public function changes( \WP_REST_Request $r ): \WP_REST_Response {
+	public function changes( \WP_REST_Request $r ): \WP_REST_Response|\WP_Error {
 		$data    = Data::instance();
 		$country = (string) $r->get_param( 'country' );
 		$kind    = (string) $r->get_param( 'kind' );
@@ -219,7 +219,7 @@ final class Api {
 		);
 	}
 
-	public function institutions( \WP_REST_Request $r ): \WP_REST_Response {
+	public function institutions( \WP_REST_Request $r ): \WP_REST_Response|\WP_Error {
 		$q     = trim( (string) $r->get_param( 'q' ) );
 		$scope = sanitize_title( (string) $r->get_param( 'country' ) );
 		$limit = (int) $r->get_param( 'limit' );
@@ -232,7 +232,7 @@ final class Api {
 		return rest_ensure_response( $this->envelope( [ 'query' => $q, 'count' => count( $results ), 'results' => $results ] ) );
 	}
 
-	public function institution( \WP_REST_Request $r ): \WP_REST_Response {
+	public function institution( \WP_REST_Request $r ): \WP_REST_Response|\WP_Error {
 		$data    = Data::instance();
 		$slug    = sanitize_title( (string) $r->get_param( 'country' ) );
 		$key     = (string) $r->get_param( 'key' );
@@ -282,7 +282,7 @@ final class Api {
 	/**
 	 * The offer-letter check.
 	 */
-	public function check( \WP_REST_Request $r ): \WP_REST_Response {
+	public function check( \WP_REST_Request $r ): \WP_REST_Response|\WP_Error {
 		$data    = Data::instance();
 		$slug    = sanitize_title( (string) $r->get_param( 'country' ) );
 		$country = $data->country( $slug );
@@ -291,7 +291,7 @@ final class Api {
 			return rest_ensure_response(
 				new \WP_Error(
 					'unknown_country',
-					'We hold no record for that country. That does not mean an institution there is unapproved — '
+					'We hold no record for that country. That does not mean an institution there is unapproved. '
 					. 'it means we cannot check it. See /standing/countries/.',
 					[ 'status' => 404 ]
 				)
@@ -374,8 +374,9 @@ final class Api {
 						? 'The course code is registered to the provider code given.'
 						: sprintf(
 							'The course code %s is registered on this edition to provider code %s, not to %s. '
-							. 'That mismatch has innocent explanations — a teaching partnership, a transcription error, '
-							. 'an out-of-date letter — but it is worth asking the institution about before you pay anything.',
+							. 'That mismatch usually has an innocent explanation: a teaching partnership, a '
+							. 'transcription error, an out-of-date letter. It is still worth asking the institution '
+							. 'about it before you pay anything.',
 							$course_code,
 							$hit['CRICOS Provider Code'] ?? '?',
 							$provider_code
@@ -456,7 +457,7 @@ final class Api {
 		);
 	}
 
-	public function archive( \WP_REST_Request $r ): \WP_REST_Response {
+	public function archive( \WP_REST_Request $r ): \WP_REST_Response|\WP_Error {
 		$data = Data::instance();
 		$slug = sanitize_title( (string) $r->get_param( 'country' ) );
 

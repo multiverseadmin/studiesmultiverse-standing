@@ -373,7 +373,7 @@ final class Data {
 		// This is the same instinct as the sanity gate, one layer down.
 		$decoded = json_decode( $body, true );
 		if ( ! is_array( $decoded ) ) {
-			$report['failed'][ $file ] = 'response was not valid JSON — keeping previous file';
+			$report['failed'][ $file ] = 'response was not valid JSON, so the previous file was kept';
 			return false;
 		}
 

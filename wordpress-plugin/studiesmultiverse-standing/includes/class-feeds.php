@@ -114,7 +114,7 @@ final class Feeds {
 
 		echo '<?xml version="1.0" encoding="UTF-8"?>' . "\n";
 		echo '<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel>';
-		printf( '<title>%s</title>', esc_html( "Standing Register — {$scope}: recorded changes" ) );
+		printf( '<title>%s</title>', esc_html( "{$scope} on the Standing Register: recorded changes" ) );
 		printf( '<link>%s</link>', esc_url( home_url( '/standing/changes/' ) ) );
 		printf(
 			'<description>%s</description>',
@@ -194,29 +194,70 @@ final class Feeds {
 			$urls[] = home_url( "/standing/{$s}/" );
 		}
 
-		$seen = [];
+		// List every institution we can answer for, not only the ones something
+		// has happened to.
+		//
+		// This walked the change record alone. Australia and Canada have years
+		// of it, so they filled the sitemap; the United Kingdom and Japan had
+		// none yet and contributed nothing at all - 1,306 licensed sponsors and
+		// 96 accredited institutions with a working, indexable page each and no
+		// way for a crawler to find any of them. A school that has sat quietly
+		// on the register since we started recording is the commonest case and
+		// the plainest answer to "is this school approved", and it was the one
+		// case the sitemap could not describe.
+		//
+		// Change-record sources publish no rows, so they still contribute only
+		// what their change history names. That is the licence position rather
+		// than an omission.
+		$seen  = [];
+		$stamp = [];
 		foreach ( $data->countries() as $c ) {
-			$slug   = $data->slug( $c['country'] );
-			$urls[] = home_url( "/standing/{$slug}/" );
+			$slug    = $data->slug( $c['country'] );
+			$edition = (string) ( $c['latest_edition'] ?? '' );
+			$urls[]  = home_url( "/standing/{$slug}/" );
+			$stamp[ home_url( "/standing/{$slug}/" ) ] = $edition;
 
-			foreach ( $data->changes( $c['source_id'] ) as $ch ) {
-				$key = sanitize_title( (string) ( $ch['key'] ?? $ch['name'] ?? '' ) );
-				if ( ! $key ) {
-					continue;
+			$add = static function ( string $key ) use ( &$seen, &$urls, &$stamp, $slug, $edition, $data ): void {
+				$key = $data->entity_slug( $key );
+				if ( '' === $key ) {
+					return;
 				}
 				$id = "{$slug}/{$key}";
 				if ( isset( $seen[ $id ] ) ) {
-					continue;
+					return;
 				}
 				$seen[ $id ] = true;
-				$urls[]      = home_url( "/standing/{$id}/" );
+				$url         = home_url( "/standing/{$id}/" );
+				$urls[]      = $url;
+				$stamp[ $url ] = $edition;
+			};
+
+			foreach ( $data->changes( $c['source_id'] ) as $ch ) {
+				$add( (string) ( $ch['key'] ?? $ch['name'] ?? '' ) );
+			}
+
+			if ( 'mirror' === ( $c['publication_layer'] ?? '' ) ) {
+				$register = $data->register( $c['source_id'] );
+				foreach ( ( $register['rows'] ?? [] ) as $row ) {
+					$key = $data->row_key( $row ) ?? $data->row_name( $row );
+					if ( $key ) {
+						$add( (string) $key );
+					}
+				}
 			}
 		}
 
 		echo '<?xml version="1.0" encoding="UTF-8"?>' . "\n";
 		echo '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">';
 		foreach ( $urls as $u ) {
-			printf( '<url><loc>%s</loc></url>', esc_url( $u ) );
+			// A dated register is exactly the case lastmod exists for: it tells
+			// a crawler which edition a page reflects instead of making it guess.
+			$last = $stamp[ $u ] ?? '';
+			if ( preg_match( '/^\d{4}-\d{2}-\d{2}$/', $last ) ) {
+				printf( '<url><loc>%s</loc><lastmod>%s</lastmod></url>', esc_url( $u ), esc_html( $last ) );
+			} else {
+				printf( '<url><loc>%s</loc></url>', esc_url( $u ) );
+			}
 		}
 		echo '</urlset>';
 	}
@@ -227,7 +268,7 @@ final class Feeds {
 		$index = $data->index();
 
 		$out = [
-			'# Studies Multiverse — The Standing Register',
+			'# Studies Multiverse: The Standing Register',
 			'',
 			'> The worldwide record of which institutions are officially permitted to enrol international',
 			'> students, and which have quietly left those registers.',
@@ -240,19 +281,46 @@ final class Feeds {
 		];
 
 		foreach ( $data->countries() as $c ) {
-			$slug  = $data->slug( $c['country'] );
-			$out[] = sprintf(
-				'- **%s** — %s (%s). %d editions held since %s; %d changes recorded. Page: %s Data: %s',
+			$slug     = $data->slug( $c['country'] );
+			$editions = (int) $c['editions_held'];
+			$changes  = (int) $c['changes_recorded'];
+			$out[]    = sprintf(
+				'- **%s**: %s (%s). %d %s held since %s; %d %s recorded. Page: %s Data: %s',
 				$c['country'],
 				$c['register'],
 				$c['publisher'],
-				(int) $c['editions_held'],
+				$editions,
+				1 === $editions ? 'edition' : 'editions',
 				$c['recording_since'],
-				(int) $c['changes_recorded'],
+				$changes,
+				1 === $changes ? 'change' : 'changes',
 				home_url( "/standing/{$slug}/" ),
 				$c['endpoints']['changes'] ?? ''
 			);
 		}
+
+		// Tell a machine how to ask us a question, not just where to read a page.
+		//
+		// This file exists so an AI system can learn what this site is. It listed
+		// the countries and every guide and calculator, and never once mentioned
+		// that there is a documented REST API with an OpenAPI spec behind it —
+		// the one thing here built specifically for machines to consume. A
+		// crawler had no way to discover it short of guessing the route.
+		$out[] = '';
+		$out[] = '## Machine-readable access';
+		$out[] = '';
+		$out[] = 'Free to use with attribution (CC BY 4.0). No key and no sign-up.';
+		$out[] = '';
+		$out[] = '- Service description: ' . rest_url( 'standing/v1/' );
+		$out[] = '- OpenAPI 3.1 description: ' . rest_url( 'standing/v1/openapi.json' );
+		$out[] = '- What we hold, per country: ' . rest_url( 'standing/v1/countries' );
+		$out[] = '- The change record, filterable: ' . rest_url( 'standing/v1/changes' );
+		$out[] = '- Institutions, searchable by name: ' . rest_url( 'standing/v1/institutions' );
+		$out[] = '- Check one institution: ' . rest_url( 'standing/v1/check' );
+		$out[] = '- Every edition, dated and hashed: ' . rest_url( 'standing/v1/archive' );
+		$out[] = '';
+		$out[] = 'The check reports what the register said on the editions we hold, with the';
+		$out[] = 'publisher and the edition date attached. It never reports that an offer is fake.';
 
 		// The rest of the site, so this file can replace the one a separate
 		// plugin currently writes.

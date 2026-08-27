@@ -147,7 +147,7 @@ final class Identity {
 
 	private function org_description(): string {
 		return 'Studies Multiverse keeps the worldwide record of which institutions are officially '
-			. 'permitted to enrol international students — what the official registers say, what they '
+			. 'permitted to enrol international students: what the official registers say, what they '
 			. 'used to say, and what it means for the student. It earns nothing from where you apply: '
 			. 'no institution referral fees, no agent commissions, no paid inclusion and no paid removal.';
 	}
@@ -410,7 +410,7 @@ final class Identity {
 				[
 					'@type'       => 'Dataset',
 					'@id'         => $node_id,
-					'name'        => sprintf( '%s — %s: standing and recorded changes', $c['country'], $c['register'] ),
+					'name'        => sprintf( '%s, %s: standing and recorded changes', $c['country'], $c['register'] ),
 					'description' => sprintf(
 						'A dated record of the %s, published by %s. Holds %d editions from %s to %s, with %d recorded changes. '
 						. 'A row appearing or disappearing between editions is not evidence of wrongdoing: registers publish a status, not a cause.',

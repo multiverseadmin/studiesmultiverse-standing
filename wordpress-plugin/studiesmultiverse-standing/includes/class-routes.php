@@ -157,8 +157,8 @@ final class Routes {
 			return $this->context = [
 				'view'    => 'home',
 				'title'   => 'Is your school still approved to take international students?',
-				'desc'    => 'Type your school. We will tell you where it stands on the official register of its '
-					. 'country, what that register said before, and what it means if you hold an offer.',
+				'desc'    => 'Type your school. We tell you where it stands on the official register of its '
+					. 'country, what it said before, and what that means if you hold an offer.',
 				'crumbs'  => $crumbs,
 				'index'   => true,
 			];
@@ -169,11 +169,11 @@ final class Routes {
 				$titles = [
 					'changes'          => [ 'What changed on the official registers', 'Every recorded change across every register we hold, newest first.' ],
 					'no-longer-listed' => [ 'Institutions no longer listed', 'Entries that appeared on one edition of an official register and not on the next. A disappearance is not evidence of wrongdoing.' ],
-					'watchlist'        => [ 'Institutions carrying a published condition', 'Where a register publishes something beyond listed or not listed — probation, conditions, an action plan — we quote it exactly as it appears.' ],
+					'watchlist'        => [ 'Institutions carrying a published condition', 'Where a register publishes something beyond listed or not listed, such as probation, conditions or an action plan, we quote it exactly as it appears.' ],
 					'methodology'      => [ 'How we read each register, and what we refuse to say', 'The sources, the retrieval schedule, the checks that stop us publishing a false removal, and the sentences we will not write.' ],
 					'corrections'      => [ 'Corrections and right of reply', 'If your institution appears here and the record is wrong, this is how to have it corrected. We respond to every request.' ],
 					'archive'          => [ 'Every edition we hold', 'Each retrieved edition, dated and hashed, so any claim on this site can be checked against the source it came from.' ],
-					'countries'        => [ 'Which countries publish a list of approved institutions — and which do not', 'Not every destination maintains a public register. Where one does not exist, no monitor can tell you anything, and you deserve to know that.' ],
+					'countries'        => [ 'Which countries publish a list of approved institutions, and which do not', 'Not every destination maintains a public register. Where one does not exist, no monitor can tell you anything, and you deserve to know that.' ],
 					'data'             => [ 'The open data behind this site', 'The change record, the archive index and the licences. Free to use, with attribution.' ],
 				];
 				[ $title, $desc ] = $titles[ $a ] ?? [ ucfirst( $a ), '' ];
@@ -190,18 +190,25 @@ final class Routes {
 
 			$country = $data->country( $a );
 			if ( $country ) {
-				$crumbs[] = [ 'label' => $country['country'], 'url' => home_url( "/standing/{$a}/" ) ];
+				// The sitemap lists the country-name form, so that is the one
+				// address of record. Reaching the page by source id is
+				// legitimate and stays reachable; it just stops competing.
+				$primary  = home_url( '/standing/' . $data->slug( $country['country'] ) . '/' );
+				$crumbs[] = [ 'label' => $country['country'], 'url' => $primary ];
 				return $this->context = [
+					'canonical' => $primary,
 					'view'    => 'country',
 					'country' => $country,
 					'title'   => sprintf( 'Is your school approved to take international students in %s?', $country['country'] ),
 					'desc'    => sprintf(
-						'The %s, published by %s. We hold %d editions since %s and have recorded %d changes.',
+						'The %s, published by %s. We hold %d %s since %s and have recorded %d %s.',
 						$country['register'],
 						$country['publisher'],
 						(int) $country['editions_held'],
+						1 === (int) $country['editions_held'] ? 'edition' : 'editions',
 						$country['recording_since'],
-						(int) $country['changes_recorded']
+						(int) $country['changes_recorded'],
+						1 === (int) $country['changes_recorded'] ? 'change' : 'changes'
 					),
 					'crumbs'  => $crumbs,
 					'index'   => true,
@@ -229,7 +236,7 @@ final class Routes {
 			'view'    => 'entity',
 			'country' => $country,
 			'record'  => $record,
-			'title'   => sprintf( '%s — standing on the %s', $record['name'], $country['register'] ),
+			'title'   => sprintf( '%s: standing on the %s', $record['name'], $country['register'] ),
 			'desc'    => sprintf(
 				'What the official %s register records about %s, and what it recorded before.',
 				$country['country'],
@@ -336,7 +343,7 @@ final class Routes {
 		}
 		$extra = [
 			'',
-			'# The Standing Register — open data, free to crawl and cite.',
+			'# The Standing Register: open data, free to crawl and cite.',
 			'Sitemap: ' . home_url( '/standing-sitemap.xml' ),
 			'',
 			'# Machine-readable summary for AI systems:',
