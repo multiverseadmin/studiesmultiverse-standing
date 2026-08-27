@@ -17,7 +17,7 @@ permissions:
   issues: write
 
 concurrency:
-  group: uk-sponsors
+  group: uk-sponsors-r2
   cancel-in-progress: false
 
 jobs:
