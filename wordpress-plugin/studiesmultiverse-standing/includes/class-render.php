@@ -215,11 +215,28 @@ final class Render {
 
 		$this->search_box( $slug );
 
+		// The offer-letter check, where the register publishes codes to check
+		// against. It shipped in 1.27.0 as a shortcode and was placed on no
+		// page at all, so nobody could reach it. A name can be typed a dozen
+		// ways and an anxious reader often has only the codes off the letter
+		// in front of them, which is the case this answers. The shortcode
+		// returns nothing for a register that publishes no codes, so calling
+		// it for every country is safe rather than conditional here.
+		echo do_shortcode( '[sm_standing_verify country="' . esc_attr( $slug ) . '"]' );
+
 		if ( 'change-record' === ( $c['publication_layer'] ?? '' ) ) {
+			// "published by them" must point at them. It pointed at our own
+			// register.json, which for a change-record source is deliberately
+			// empty, so the one link offering a reader the real register sent
+			// them to an empty file of ours instead.
+			$official = $c['source_url'] ?? ( $c['endpoints']['register'] ?? '' );
 			echo '<aside class="note"><strong>We do not republish this register.</strong> '
 				. esc_html( $c['publisher'] ) . ' reserves republication rights, so this page publishes only '
-				. 'dated change events with citations back to the official source. The register itself is '
-				. '<a href="' . esc_url( $c['endpoints']['register'] ?? '#' ) . '">published by them</a>.</aside>';
+				. 'dated change events with citations back to the official source.'
+				. ( $official
+					? ' The register itself is <a href="' . esc_url( $official ) . '" rel="noopener">published by them</a>.'
+					: '' )
+				. '</aside>';
 		}
 
 		echo '<h2>What changed</h2>';

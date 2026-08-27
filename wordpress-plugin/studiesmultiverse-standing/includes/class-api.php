@@ -318,7 +318,7 @@ final class Api {
 							. 'and cannot validate individual codes against it. Check directly with the publisher.',
 							$country['publisher']
 						),
-						'official_source' => $country['endpoints']['register'] ?? null,
+						'official_source' => $country['source_url'] ?? ( $country['endpoints']['register'] ?? null ),
 					]
 				)
 			);
@@ -451,7 +451,7 @@ final class Api {
 						. 'It is not a judgement about your offer, your institution or your agent, and a code we cannot '
 						. 'find is not proof of fraud. If something here does not match your paperwork, ask the '
 						. 'institution directly and check the official register yourself.',
-					'official_source' => $country['endpoints']['register'] ?? null,
+					'official_source' => $country['source_url'] ?? ( $country['endpoints']['register'] ?? null ),
 				]
 			)
 		);
