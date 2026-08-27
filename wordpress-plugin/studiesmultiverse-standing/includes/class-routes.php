@@ -305,12 +305,9 @@ final class Routes {
 			}
 		}
 
-		$flags = [];
-		foreach ( [ 'compliance', 'Immigration Compliance', 'status', 'Status' ] as $k ) {
-			if ( ! empty( $row[ $k ] ) ) {
-				$flags[ $k ] = (string) $row[ $k ];
-			}
-		}
+		// Shared with the sitemap, which must advertise exactly the pages this
+		// decides to index. See Data::FLAG_FIELDS.
+		$flags = $data->row_flags( is_array( $row ) ? $row : [] );
 
 		return [
 			'key'     => $key,

@@ -607,6 +607,35 @@ final class Data {
 		return $out;
 	}
 
+	/**
+	 * The fields that give an institution page a story worth indexing.
+	 *
+	 * Deliberately narrower than STANDING_FIELDS. A provider code, an address
+	 * or an institution type describes a row; a published status or compliance
+	 * entry says something happened. Only the second earns a place in search
+	 * results, because the first produces one near-identical page per register
+	 * row and nothing a reader could not get from the country page.
+	 *
+	 * This lives here because two places ask the question and they must not
+	 * disagree: the router decides whether an entity page is indexable, and
+	 * the sitemap decides whether to advertise it. They drifted once. The
+	 * sitemap listed all 96 Japanese institutions and 1,545 Australian ones
+	 * while every one of those pages rendered noindex, which asks a crawler to
+	 * fetch pages we have already told it to ignore.
+	 */
+	public const FLAG_FIELDS = [ 'compliance', 'Immigration Compliance', 'status', 'Status' ];
+
+	/** The published-condition fields present on one row, in order. */
+	public function row_flags( array $row ): array {
+		$out = [];
+		foreach ( self::FLAG_FIELDS as $f ) {
+			if ( isset( $row[ $f ] ) && '' !== trim( (string) $row[ $f ] ) ) {
+				$out[ $f ] = (string) $row[ $f ];
+			}
+		}
+		return $out;
+	}
+
 	public function row_name( array $row ): ?string {
 		return $this->first_of( $row, self::NAME_FIELDS );
 	}

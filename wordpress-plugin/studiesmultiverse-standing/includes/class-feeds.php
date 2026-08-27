@@ -194,17 +194,22 @@ final class Feeds {
 			$urls[] = home_url( "/standing/{$s}/" );
 		}
 
-		// List every institution we can answer for, not only the ones something
-		// has happened to.
+		// List the institutions whose pages we are willing to have indexed.
 		//
-		// This walked the change record alone. Australia and Canada have years
-		// of it, so they filled the sitemap; the United Kingdom and Japan had
-		// none yet and contributed nothing at all - 1,306 licensed sponsors and
-		// 96 accredited institutions with a working, indexable page each and no
-		// way for a crawler to find any of them. A school that has sat quietly
-		// on the register since we started recording is the commonest case and
-		// the plainest answer to "is this school approved", and it was the one
-		// case the sitemap could not describe.
+		// This walked the change record alone, so the United Kingdom, whose
+		// every row carries a published Status, contributed nothing at all:
+		// 1,305 licensed sponsors with a real, indexable page each and no way
+		// for a crawler to find any of them.
+		//
+		// Adding every mirror row fixed that and overshot. Australia publishes
+		// a provider code and an address but no status column, and Japan
+		// publishes neither, so those pages carry no story and the router
+		// renders them noindex. Listing them here asked crawlers to fetch
+		// 1,641 pages we had already told them to ignore. A sitemap is a claim
+		// that a page is worth indexing, and it has to be true.
+		//
+		// So the test is the router's own: Data::row_flags(). The two must
+		// agree, and now they cannot disagree.
 		//
 		// Change-record sources publish no rows, so they still contribute only
 		// what their change history names. That is the licence position rather
@@ -239,6 +244,9 @@ final class Feeds {
 			if ( 'mirror' === ( $c['publication_layer'] ?? '' ) ) {
 				$register = $data->register( $c['source_id'] );
 				foreach ( ( $register['rows'] ?? [] ) as $row ) {
+					if ( ! is_array( $row ) || ! $data->row_flags( $row ) ) {
+						continue;
+					}
 					$key = $data->row_key( $row ) ?? $data->row_name( $row );
 					if ( $key ) {
 						$add( (string) $key );
