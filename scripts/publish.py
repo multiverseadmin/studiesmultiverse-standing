@@ -316,6 +316,17 @@ def publish_index() -> None:
                 "country": meta.country,
                 "register": meta.register_name,
                 "publisher": meta.publisher,
+                # Where the publisher itself puts the register.
+                #
+                # Every per-file payload already carries this under source.url,
+                # but the country index did not, so the site had no publisher
+                # link to offer and fell back to "endpoints", which are ours.
+                # A Canadian reader clicking "published by them", or asking the
+                # offer-letter check to confirm a DLI number, was sent to our
+                # own register.json - deliberately empty for a change-record
+                # source. Pointing someone at an empty file of ours instead of
+                # IRCC's page is the opposite of what this site is for.
+                "source_url": meta.source_url,
                 "publication_layer": meta.publication_layer,
                 "licence": meta.licence,
                 "editions_held": len(dates),
