@@ -1,8 +1,8 @@
 {
  "source_id": "jp-mext",
- "edition_date": "2026-08-25",
+ "edition_date": "2026-08-31",
  "source_date": "2026-04-30",
- "fetched_at": "2026-08-25T22:33:20+00:00",
+ "fetched_at": "2026-08-31T06:29:01+00:00",
  "row_count": 96,
  "content_sha256": "175362c3353e9dce6dde38fbe891253daa91dc318d56a6c0b642bbfcebc1d06d",
  "raw_sha256": null,
@@ -23,6 +23,6 @@
   "api_total": 96,
   "newest_certification": "2026-04-30"
  },
- "editions_held": 1,
+ "editions_held": 2,
  "earliest_edition": "2026-08-25"
 }
