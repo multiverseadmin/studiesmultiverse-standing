@@ -11,7 +11,7 @@ no agent commissions, no paid inclusion and no paid removal.
 - **Australia** — Commonwealth Register of Institutions and Courses for Overseas Students (CRICOS) (Australian Government Department of Education). 58 editions held since 2021-10-31; 43057 changes recorded. Data: https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/main/public/au-cricos/changes.json
 - **Canada** — Designated learning institutions list (Immigration, Refugees and Citizenship Canada (IRCC)). 366 editions held since 2018-02-01; 1901 changes recorded. Data: https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/main/public/ca-dli/changes.json
 - **Japan** — 認定日本語教育機関 — accredited Japanese-language education institutions (文部科学省 (Ministry of Education, Culture, Sports, Science and Technology)). 2 editions held since 2026-08-25; 0 changes recorded. Data: https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/main/public/jp-mext/changes.json
-- **United Kingdom** — Register of licensed student sponsors (UK Home Office). 6 editions held since 2026-08-25; 9 changes recorded. Data: https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/main/public/uk-sponsors/changes.json
+- **United Kingdom** — Register of licensed student sponsors (UK Home Office). 7 editions held since 2026-08-25; 10 changes recorded. Data: https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/main/public/uk-sponsors/changes.json
 
 ## How to cite
 
