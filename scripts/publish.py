@@ -14,6 +14,19 @@ someone forgets:
         published — what the source said on which date, cited and linked. No
         row dump, ever. `emit_rows` physically cannot run for these sources.
 
+    publication_layer == "statistics"
+        We do not have COMMERCIAL republication rights, and this site carries
+        advertising. So not even the change events are published in named form:
+        the record is collapsed to dated counts before anything is written. No
+        institution name, no register key, no per-row statement leaves this
+        file for such a source — which also keeps those names out of the site's
+        search index, its RSS and its API, because all three read what is
+        written here.
+
+        A count is our own measurement of the register, not a reproduction of
+        it. It is also the only part of the record nobody else holds, so this
+        is a narrower licence position and a stronger product at the same time.
+
 Everything published here is static. WordPress renders it; WordPress does not
 parse, diff, or query it. No server load, no cron, no database growth, and a
 CDN can cache the lot.
@@ -72,6 +85,81 @@ def _write(path: pathlib.Path, payload: dict) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(payload, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     print(f"  wrote {path.relative_to(PUBLIC.parent)}  ({path.stat().st_size // 1024} KB)")
+
+
+_AGGREGATE_LABEL = {
+    "removed": "no longer listed",
+    "added": "newly listed",
+    "renamed": "recorded under a new name",
+    "modified": "recorded with a changed field",
+    "course_withdrawn_provider_still_listed": "recorded with a course withdrawn while the provider stayed listed",
+}
+
+
+def _aggregate(changes: list[dict]) -> list[dict]:
+    """
+    Collapse a change record to dated counts, dropping every identifier.
+
+    This is what `publication_layer == "statistics"` means in practice. The
+    publisher reserves commercial republication rights and this site carries
+    advertising, so nothing that identifies a row survives: name, previous
+    name, register key and the per-row statement are all dropped before the
+    file is written.
+
+    What remains is how many rows changed, in which direction, between which
+    two dated editions. That is a measurement of the register rather than a
+    copy of it, and it is the part no one else holds - the official register
+    publishes only today, so only an archive can count what left it.
+    """
+    buckets: dict[tuple, dict] = {}
+    passthrough: list[dict] = []
+    for ch in changes:
+        level = str(ch.get("level") or "institution")
+        if level != "institution":
+            # Register-level notes - "this edition is held but was not
+            # interpreted" - name no institution and carry no row from the
+            # source. They are our own account of the archive's limits, and
+            # dropping them would quietly remove the honesty they exist for.
+            passthrough.append(ch)
+            continue
+        key = (ch.get("new_edition"), ch.get("old_edition"), str(ch.get("kind") or ""))
+        bucket = buckets.setdefault(
+            key,
+            {
+                "kind": key[2],
+                "old_edition": key[1],
+                "new_edition": key[0],
+                "count": 0,
+                "level": "aggregate",
+                "name": None,
+                "previous_name": None,
+                "key": None,
+                "fields": {},
+                "caveat": ch.get("caveat"),
+            },
+        )
+        bucket["count"] += 1
+
+    out = []
+    for bucket in buckets.values():
+        n = bucket["count"]
+        label = _AGGREGATE_LABEL.get(bucket["kind"], "recorded as changed")
+        noun = "institution was" if n == 1 else "institutions were"
+        bucket["summary"] = f"{n} {label}"
+        bucket["statement"] = (
+            f"{n} {noun} {label} on the edition published {bucket['new_edition']}, "
+            f"compared with the edition published {bucket['old_edition']}."
+        )
+        bucket["withheld"] = (
+            "Institution names are not published for this register. The publisher reserves "
+            "commercial republication rights, so this site publishes dated counts only. "
+            "The official register names them."
+        )
+        out.append(bucket)
+
+    out.extend(passthrough)
+    out.sort(key=lambda b: (str(b.get("new_edition") or ""), str(b.get("kind") or "")), reverse=True)
+    return out
 
 
 def publish_source(source_id: str) -> None:
@@ -177,6 +265,16 @@ def publish_source(source_id: str) -> None:
     # thousands of entries. Hoisting it into a per-kind lookup is what makes
     # entities.json roughly a twentieth the size of the full file.
     changes = archive.read_changes()
+    change_count = len(changes)
+
+    # Statistics sources are collapsed here, once, before any file is written.
+    # Doing it at the single point where the record enters the public directory
+    # is what makes the licence rule hold for changes.json, changes-full.json,
+    # entities.json, the RSS feed and - because WordPress only ever reads these
+    # files - the site's search index and API as well.
+    if meta.publication_layer == "statistics":
+        changes = _aggregate(changes)
+
     RECENT = 3_000
     recent = changes[:RECENT]
 
@@ -186,14 +284,15 @@ def publish_source(source_id: str) -> None:
             meta,
             recording_since=dates[0],
             latest_edition=dates[-1],
-            count=len(changes),
+            count=change_count,
+            aggregated_rows=(len(changes) if meta.publication_layer == "statistics" else None),
             published_count=len(recent),
             truncated=(
                 None
                 if len(recent) == len(changes)
                 else (
                     f"This file carries the {len(recent)} most recent entries. The complete record of "
-                    f"{len(changes)} is published at changes-full.json and in the repository's "
+                    f"{change_count} is published at changes-full.json and in the repository's "
                     f"changes.jsonl — nothing is discarded."
                 )
             ),
@@ -205,7 +304,7 @@ def publish_source(source_id: str) -> None:
     _write(
         PUBLIC / source_id / "changes-full.json",
         _envelope(meta, recording_since=dates[0], latest_edition=dates[-1],
-                  count=len(changes), changes=changes),
+                  count=change_count, changes=changes),
     )
 
     # Compact per-institution history.
@@ -235,7 +334,16 @@ def publish_source(source_id: str) -> None:
             recording_since=dates[0],
             latest_edition=dates[-1],
             entity_count=len(entities),
-            change_count=len(changes),
+            change_count=change_count,
+            withheld=(
+                None
+                if meta.publication_layer != "statistics"
+                else (
+                    "Per-institution histories are not published for this register. The publisher "
+                    "reserves commercial republication rights, so this site publishes dated counts "
+                    f"only. The official register is at {meta.source_url}."
+                )
+            ),
             schema=["kind", "old_edition", "new_edition", "name", "previous_name"],
             caveats=caveats,
             entities=entities,
@@ -291,10 +399,13 @@ def _write_rss(source_id: str, meta, changes: list[dict]) -> None:
             "modified": "Record changed",
             "course_withdrawn_provider_still_listed": "Course withdrawn, provider still listed",
         }.get(c.get("kind", ""), "Change")
-        ET.SubElement(it, "title").text = f"{kind}: {c.get('name', '')}"
+        name = c.get("name")
+        ET.SubElement(it, "title").text = (
+            f"{kind}: {name}" if name else str(c.get("summary") or c.get("statement") or kind)
+        )
         ET.SubElement(it, "description").text = f"{c.get('statement','')} {c.get('caveat','')}".strip()
         guid = ET.SubElement(it, "guid", isPermaLink="false")
-        guid.text = f"{source_id}:{c.get('new_edition')}:{c.get('kind')}:{c.get('key')}"
+        guid.text = f"{source_id}:{c.get('new_edition')}:{c.get('kind')}:{c.get('key') or 'aggregate'}"
 
     path = PUBLIC / source_id / "changes.xml"
     path.parent.mkdir(parents=True, exist_ok=True)
