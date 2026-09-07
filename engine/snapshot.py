@@ -55,8 +55,14 @@ class SourceMeta:
     licence: str
     licence_url: str
     attribution: str
-    # "mirror" = we republish rows verbatim (open licence confirmed)
+    # "mirror"        = we republish rows verbatim (open licence confirmed)
     # "change-record" = we publish only dated change events and cite the source
+    # "statistics"    = we publish dated counts only. No name, no key, no
+    #                   per-row statement. For sources whose publisher permits
+    #                   non-commercial reproduction but reserves commercial
+    #                   rights: this site carries advertising, so the named
+    #                   change record cannot be published even though the
+    #                   underlying facts can be counted.
     publication_layer: str = "mirror"
     language: str = "en"
     notes: str = ""
@@ -275,9 +281,14 @@ SOURCES: dict[str, SourceMeta] = {
         licence="Crown copyright — commercial redistribution requires prior written permission",
         licence_url="https://www.canada.ca/en/transparency/terms.html",
         attribution="Source: Immigration, Refugees and Citizenship Canada.",
-        publication_layer="change-record",
-        notes="Verified 25 Aug 2026: canada.ca permits non-commercial reproduction with attribution "
-        "but requires written permission for commercial redistribution. Permission request pending.",
+        publication_layer="statistics",
+        notes="Verified 25 Aug 2026 and re-read 7 Sep 2026: canada.ca permits non-commercial "
+        "reproduction with attribution but requires written permission for commercial "
+        "redistribution. This site carries advertising, which makes our use commercial, so the "
+        "named change record was withdrawn on 7 Sep 2026 and the source moved from change-record "
+        "to statistics: dated counts only, no institution name and no register key anywhere in "
+        "public/. Permission request pending; on a written grant this returns to change-record, "
+        "and only then.",
     ),
 }
 
