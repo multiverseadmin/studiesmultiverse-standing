@@ -8,10 +8,11 @@
    "edition_path": "data/jp-mext/editions/2026-08-25.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966079,
      "file": "2026-08-25.content.ots",
      "stamped_at": "2026-09-08T12:44:11+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:18:28+00:00"
     }
    },
    "raw_sha256": null,
@@ -19,14 +20,14 @@
    "source_date": "2026-04-30",
    "wayback": {
     "commit": {
-     "error": "<urlopen error _ssl.c:993: The handshake operation timed out>",
+     "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-08T16:53:16+00:00"
+     "requested_at": "2026-09-08T17:22:36+00:00"
     },
     "edition": {
-     "ok": false,
-     "requested_at": "2026-09-08T16:52:25+00:00",
-     "status": 523
+     "ok": true,
+     "requested_at": "2026-09-08T17:21:45+00:00",
+     "wayback": "https://web.archive.org/web/2/https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/8b5a11f7f0f1cf2630c3f17adfb04ea986a380e2/data/jp-mext/editions/2026-08-25.json.gz"
     }
    }
   },
@@ -36,10 +37,11 @@
    "edition_path": "data/jp-mext/editions/2026-08-31.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966079,
      "file": "2026-08-31.content.ots",
      "stamped_at": "2026-09-08T12:44:11+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:18:28+00:00"
     }
    },
    "raw_sha256": null,
@@ -52,9 +54,9 @@
      "requested_at": "2026-09-08T16:53:59+00:00"
     },
     "edition": {
-     "error": "<urlopen error [Errno 111] Connection refused>",
+     "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-08T16:53:38+00:00"
+     "requested_at": "2026-09-08T17:23:27+00:00"
     }
    }
   },
@@ -64,10 +66,11 @@
    "edition_path": "data/jp-mext/editions/2026-09-07.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966079,
      "file": "2026-09-07.content.ots",
      "stamped_at": "2026-09-08T12:44:11+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:18:28+00:00"
     }
    },
    "raw_sha256": null,
@@ -88,5 +91,5 @@
   }
  },
  "source": "jp-mext",
- "updated_at": "2026-09-08T16:52:13+00:00"
+ "updated_at": "2026-09-08T17:21:32+00:00"
 }

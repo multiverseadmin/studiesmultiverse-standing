@@ -6,10 +6,11 @@
    "edition_path": "data/ca-dli/editions/2018-02-01.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2018-02-01.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -17,14 +18,14 @@
    "source_date": "2018-01-23",
    "wayback": {
     "commit": {
-     "error": "The read operation timed out",
+     "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-08T16:45:15+00:00"
+     "requested_at": "2026-09-08T17:20:50+00:00"
     },
     "edition": {
-     "error": "The read operation timed out",
+     "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-08T16:44:24+00:00"
+     "requested_at": "2026-09-08T17:19:59+00:00"
     }
    }
   },
@@ -34,10 +35,11 @@
    "edition_path": "data/ca-dli/editions/2018-02-22.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2018-02-22.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -45,9 +47,9 @@
    "source_date": "2018-02-21",
    "wayback": {
     "commit": {
-     "error": "<urlopen error [Errno 111] Connection refused>",
-     "ok": false,
-     "requested_at": "2026-09-08T16:45:36+00:00"
+     "ok": true,
+     "requested_at": "2026-09-08T17:21:32+00:00",
+     "wayback": "https://web.archive.org/web/2/https://github.com/multiverseadmin/studiesmultiverse-standing/commit/b505a2d2641fc6dacafcce68c768e335badac163"
     },
     "edition": {
      "ok": true,
@@ -62,10 +64,11 @@
    "edition_path": "data/ca-dli/editions/2018-02-26.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2018-02-26.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -90,10 +93,11 @@
    "edition_path": "data/ca-dli/editions/2018-02-28.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2018-02-28.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -118,10 +122,11 @@
    "edition_path": "data/ca-dli/editions/2018-03-10.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2018-03-10.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -146,10 +151,11 @@
    "edition_path": "data/ca-dli/editions/2018-03-19.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2018-03-19.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -174,10 +180,11 @@
    "edition_path": "data/ca-dli/editions/2018-03-30.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2018-03-30.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -202,10 +209,11 @@
    "edition_path": "data/ca-dli/editions/2018-05-15.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2018-05-15.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -230,10 +238,11 @@
    "edition_path": "data/ca-dli/editions/2018-07-13.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2018-07-13.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -253,10 +262,11 @@
    "edition_path": "data/ca-dli/editions/2018-07-28.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2018-07-28.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -269,10 +279,11 @@
    "edition_path": "data/ca-dli/editions/2018-10-01.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2018-10-01.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -285,10 +296,11 @@
    "edition_path": "data/ca-dli/editions/2018-10-18.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2018-10-18.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -301,10 +313,11 @@
    "edition_path": "data/ca-dli/editions/2018-10-26.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2018-10-26.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -317,10 +330,11 @@
    "edition_path": "data/ca-dli/editions/2018-10-27.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2018-10-27.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -333,10 +347,11 @@
    "edition_path": "data/ca-dli/editions/2018-11-01.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2018-11-01.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -349,10 +364,11 @@
    "edition_path": "data/ca-dli/editions/2018-11-15.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2018-11-15.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -365,10 +381,11 @@
    "edition_path": "data/ca-dli/editions/2018-12-05.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2018-12-05.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -381,10 +398,11 @@
    "edition_path": "data/ca-dli/editions/2018-12-13.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2018-12-13.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -397,10 +415,11 @@
    "edition_path": "data/ca-dli/editions/2018-12-30.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2018-12-30.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -413,10 +432,11 @@
    "edition_path": "data/ca-dli/editions/2019-01-09.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2019-01-09.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -429,10 +449,11 @@
    "edition_path": "data/ca-dli/editions/2019-01-22.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2019-01-22.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -445,10 +466,11 @@
    "edition_path": "data/ca-dli/editions/2019-03-26.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2019-03-26.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -461,10 +483,11 @@
    "edition_path": "data/ca-dli/editions/2019-03-31.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2019-03-31.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -477,10 +500,11 @@
    "edition_path": "data/ca-dli/editions/2019-04-18.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2019-04-18.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -493,10 +517,11 @@
    "edition_path": "data/ca-dli/editions/2019-05-02.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2019-05-02.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -509,10 +534,11 @@
    "edition_path": "data/ca-dli/editions/2019-05-18.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2019-05-18.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -525,10 +551,11 @@
    "edition_path": "data/ca-dli/editions/2019-07-02.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2019-07-02.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -541,10 +568,11 @@
    "edition_path": "data/ca-dli/editions/2019-07-18.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2019-07-18.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -557,10 +585,11 @@
    "edition_path": "data/ca-dli/editions/2019-07-23.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2019-07-23.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -573,10 +602,11 @@
    "edition_path": "data/ca-dli/editions/2019-07-26.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2019-07-26.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -589,10 +619,11 @@
    "edition_path": "data/ca-dli/editions/2019-08-22.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2019-08-22.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -605,10 +636,11 @@
    "edition_path": "data/ca-dli/editions/2019-08-25.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2019-08-25.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -621,10 +653,11 @@
    "edition_path": "data/ca-dli/editions/2019-09-03.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2019-09-03.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -637,10 +670,11 @@
    "edition_path": "data/ca-dli/editions/2019-09-11.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2019-09-11.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -653,10 +687,11 @@
    "edition_path": "data/ca-dli/editions/2019-09-21.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2019-09-21.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -669,10 +704,11 @@
    "edition_path": "data/ca-dli/editions/2019-09-23.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2019-09-23.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -685,10 +721,11 @@
    "edition_path": "data/ca-dli/editions/2019-11-22.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2019-11-22.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -701,10 +738,11 @@
    "edition_path": "data/ca-dli/editions/2019-11-24.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2019-11-24.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -717,10 +755,11 @@
    "edition_path": "data/ca-dli/editions/2020-02-06.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2020-02-06.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -733,10 +772,11 @@
    "edition_path": "data/ca-dli/editions/2020-03-19.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2020-03-19.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -749,10 +789,11 @@
    "edition_path": "data/ca-dli/editions/2020-04-14.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2020-04-14.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -765,10 +806,11 @@
    "edition_path": "data/ca-dli/editions/2020-04-19.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2020-04-19.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -781,10 +823,11 @@
    "edition_path": "data/ca-dli/editions/2020-05-12.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2020-05-12.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -797,10 +840,11 @@
    "edition_path": "data/ca-dli/editions/2020-05-14.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2020-05-14.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -813,10 +857,11 @@
    "edition_path": "data/ca-dli/editions/2020-06-07.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2020-06-07.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -829,10 +874,11 @@
    "edition_path": "data/ca-dli/editions/2020-06-10.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2020-06-10.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -845,10 +891,11 @@
    "edition_path": "data/ca-dli/editions/2020-06-16.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2020-06-16.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -861,10 +908,11 @@
    "edition_path": "data/ca-dli/editions/2020-06-19.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2020-06-19.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -877,10 +925,11 @@
    "edition_path": "data/ca-dli/editions/2020-07-19.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2020-07-19.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -893,10 +942,11 @@
    "edition_path": "data/ca-dli/editions/2020-08-03.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2020-08-03.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -909,10 +959,11 @@
    "edition_path": "data/ca-dli/editions/2020-08-04.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2020-08-04.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -925,10 +976,11 @@
    "edition_path": "data/ca-dli/editions/2020-08-17.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2020-08-17.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -941,10 +993,11 @@
    "edition_path": "data/ca-dli/editions/2020-09-03.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2020-09-03.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -957,10 +1010,11 @@
    "edition_path": "data/ca-dli/editions/2020-09-18.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2020-09-18.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -973,10 +1027,11 @@
    "edition_path": "data/ca-dli/editions/2020-09-22.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2020-09-22.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -989,10 +1044,11 @@
    "edition_path": "data/ca-dli/editions/2020-09-24.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2020-09-24.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -1005,10 +1061,11 @@
    "edition_path": "data/ca-dli/editions/2020-09-27.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2020-09-27.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -1021,10 +1078,11 @@
    "edition_path": "data/ca-dli/editions/2020-10-01.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2020-10-01.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -1037,10 +1095,11 @@
    "edition_path": "data/ca-dli/editions/2020-10-02.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2020-10-02.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -1053,10 +1112,11 @@
    "edition_path": "data/ca-dli/editions/2020-10-05.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2020-10-05.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -1069,10 +1129,11 @@
    "edition_path": "data/ca-dli/editions/2020-10-19.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2020-10-19.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -1085,10 +1146,11 @@
    "edition_path": "data/ca-dli/editions/2020-10-26.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2020-10-26.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -1101,10 +1163,11 @@
    "edition_path": "data/ca-dli/editions/2020-10-29.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2020-10-29.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -1117,10 +1180,11 @@
    "edition_path": "data/ca-dli/editions/2020-10-31.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2020-10-31.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -1133,10 +1197,11 @@
    "edition_path": "data/ca-dli/editions/2020-11-01.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2020-11-01.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -1149,10 +1214,11 @@
    "edition_path": "data/ca-dli/editions/2020-11-03.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2020-11-03.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -1165,10 +1231,11 @@
    "edition_path": "data/ca-dli/editions/2020-11-18.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2020-11-18.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -1181,10 +1248,11 @@
    "edition_path": "data/ca-dli/editions/2020-11-19.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2020-11-19.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -1197,10 +1265,11 @@
    "edition_path": "data/ca-dli/editions/2020-11-26.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2020-11-26.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -1213,10 +1282,11 @@
    "edition_path": "data/ca-dli/editions/2020-12-03.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2020-12-03.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -1229,10 +1299,11 @@
    "edition_path": "data/ca-dli/editions/2020-12-06.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2020-12-06.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -1245,10 +1316,11 @@
    "edition_path": "data/ca-dli/editions/2020-12-10.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2020-12-10.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -1261,10 +1333,11 @@
    "edition_path": "data/ca-dli/editions/2020-12-19.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2020-12-19.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -1277,10 +1350,11 @@
    "edition_path": "data/ca-dli/editions/2021-01-08.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2021-01-08.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -1293,10 +1367,11 @@
    "edition_path": "data/ca-dli/editions/2021-01-13.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2021-01-13.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -1309,10 +1384,11 @@
    "edition_path": "data/ca-dli/editions/2021-01-17.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2021-01-17.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -1325,10 +1401,11 @@
    "edition_path": "data/ca-dli/editions/2021-01-19.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2021-01-19.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -1341,10 +1418,11 @@
    "edition_path": "data/ca-dli/editions/2021-01-23.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2021-01-23.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -1357,10 +1435,11 @@
    "edition_path": "data/ca-dli/editions/2021-01-27.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2021-01-27.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -1373,10 +1452,11 @@
    "edition_path": "data/ca-dli/editions/2021-02-10.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2021-02-10.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -1389,10 +1469,11 @@
    "edition_path": "data/ca-dli/editions/2021-02-11.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2021-02-11.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -1405,10 +1486,11 @@
    "edition_path": "data/ca-dli/editions/2021-03-03.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2021-03-03.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -1421,10 +1503,11 @@
    "edition_path": "data/ca-dli/editions/2021-04-06.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2021-04-06.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -1437,10 +1520,11 @@
    "edition_path": "data/ca-dli/editions/2021-04-14.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2021-04-14.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -1453,10 +1537,11 @@
    "edition_path": "data/ca-dli/editions/2021-04-15.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2021-04-15.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -1469,10 +1554,11 @@
    "edition_path": "data/ca-dli/editions/2021-04-21.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2021-04-21.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -1485,10 +1571,11 @@
    "edition_path": "data/ca-dli/editions/2021-05-17.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2021-05-17.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -1501,10 +1588,11 @@
    "edition_path": "data/ca-dli/editions/2021-05-18.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2021-05-18.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -1517,10 +1605,11 @@
    "edition_path": "data/ca-dli/editions/2021-06-01.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2021-06-01.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -1533,10 +1622,11 @@
    "edition_path": "data/ca-dli/editions/2021-06-21.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2021-06-21.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -1549,10 +1639,11 @@
    "edition_path": "data/ca-dli/editions/2021-07-16.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2021-07-16.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -1565,10 +1656,11 @@
    "edition_path": "data/ca-dli/editions/2021-07-30.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2021-07-30.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -1581,10 +1673,11 @@
    "edition_path": "data/ca-dli/editions/2021-08-05.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2021-08-05.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -1597,10 +1690,11 @@
    "edition_path": "data/ca-dli/editions/2021-08-13.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2021-08-13.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -1613,10 +1707,11 @@
    "edition_path": "data/ca-dli/editions/2021-08-19.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2021-08-19.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -1629,10 +1724,11 @@
    "edition_path": "data/ca-dli/editions/2021-08-24.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2021-08-24.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -1645,10 +1741,11 @@
    "edition_path": "data/ca-dli/editions/2021-08-28.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2021-08-28.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -1661,10 +1758,11 @@
    "edition_path": "data/ca-dli/editions/2021-08-29.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2021-08-29.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -1677,10 +1775,11 @@
    "edition_path": "data/ca-dli/editions/2021-09-21.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2021-09-21.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -1693,10 +1792,11 @@
    "edition_path": "data/ca-dli/editions/2021-09-23.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2021-09-23.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -1709,10 +1809,11 @@
    "edition_path": "data/ca-dli/editions/2021-10-18.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2021-10-18.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -1725,10 +1826,11 @@
    "edition_path": "data/ca-dli/editions/2021-10-19.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2021-10-19.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -1741,10 +1843,11 @@
    "edition_path": "data/ca-dli/editions/2021-10-20.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2021-10-20.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -1757,10 +1860,11 @@
    "edition_path": "data/ca-dli/editions/2021-10-23.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2021-10-23.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -1773,10 +1877,11 @@
    "edition_path": "data/ca-dli/editions/2021-10-27.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2021-10-27.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -1789,10 +1894,11 @@
    "edition_path": "data/ca-dli/editions/2021-11-01.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2021-11-01.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -1805,10 +1911,11 @@
    "edition_path": "data/ca-dli/editions/2021-11-04.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2021-11-04.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -1821,10 +1928,11 @@
    "edition_path": "data/ca-dli/editions/2021-11-17.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966075,
      "file": "2021-11-17.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -1837,10 +1945,11 @@
    "edition_path": "data/ca-dli/editions/2021-11-19.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2021-11-19.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -1853,10 +1962,11 @@
    "edition_path": "data/ca-dli/editions/2021-11-28.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2021-11-28.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -1869,10 +1979,11 @@
    "edition_path": "data/ca-dli/editions/2021-11-30.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2021-11-30.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -1885,10 +1996,11 @@
    "edition_path": "data/ca-dli/editions/2021-12-08.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2021-12-08.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -1901,10 +2013,11 @@
    "edition_path": "data/ca-dli/editions/2021-12-20.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2021-12-20.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -1917,10 +2030,11 @@
    "edition_path": "data/ca-dli/editions/2021-12-24.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2021-12-24.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -1933,10 +2047,11 @@
    "edition_path": "data/ca-dli/editions/2022-01-03.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2022-01-03.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -1949,10 +2064,11 @@
    "edition_path": "data/ca-dli/editions/2022-01-15.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2022-01-15.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -1965,10 +2081,11 @@
    "edition_path": "data/ca-dli/editions/2022-01-16.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2022-01-16.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -1981,10 +2098,11 @@
    "edition_path": "data/ca-dli/editions/2022-01-19.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2022-01-19.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -1997,10 +2115,11 @@
    "edition_path": "data/ca-dli/editions/2022-01-21.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2022-01-21.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -2013,10 +2132,11 @@
    "edition_path": "data/ca-dli/editions/2022-01-25.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2022-01-25.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -2029,10 +2149,11 @@
    "edition_path": "data/ca-dli/editions/2022-01-26.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2022-01-26.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -2045,10 +2166,11 @@
    "edition_path": "data/ca-dli/editions/2022-01-28.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2022-01-28.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -2061,10 +2183,11 @@
    "edition_path": "data/ca-dli/editions/2022-01-31.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2022-01-31.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -2077,10 +2200,11 @@
    "edition_path": "data/ca-dli/editions/2022-02-05.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2022-02-05.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -2093,10 +2217,11 @@
    "edition_path": "data/ca-dli/editions/2022-02-07.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2022-02-07.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -2109,10 +2234,11 @@
    "edition_path": "data/ca-dli/editions/2022-02-21.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2022-02-21.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -2125,10 +2251,11 @@
    "edition_path": "data/ca-dli/editions/2022-02-28.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2022-02-28.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -2141,10 +2268,11 @@
    "edition_path": "data/ca-dli/editions/2022-03-02.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2022-03-02.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -2157,10 +2285,11 @@
    "edition_path": "data/ca-dli/editions/2022-03-03.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2022-03-03.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -2173,10 +2302,11 @@
    "edition_path": "data/ca-dli/editions/2022-03-08.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2022-03-08.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -2189,10 +2319,11 @@
    "edition_path": "data/ca-dli/editions/2022-03-09.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2022-03-09.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -2205,10 +2336,11 @@
    "edition_path": "data/ca-dli/editions/2022-03-20.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2022-03-20.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -2221,10 +2353,11 @@
    "edition_path": "data/ca-dli/editions/2022-03-22.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2022-03-22.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -2237,10 +2370,11 @@
    "edition_path": "data/ca-dli/editions/2022-03-23.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2022-03-23.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -2253,10 +2387,11 @@
    "edition_path": "data/ca-dli/editions/2022-03-31.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2022-03-31.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -2269,10 +2404,11 @@
    "edition_path": "data/ca-dli/editions/2022-04-04.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2022-04-04.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -2285,10 +2421,11 @@
    "edition_path": "data/ca-dli/editions/2022-04-11.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2022-04-11.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -2301,10 +2438,11 @@
    "edition_path": "data/ca-dli/editions/2022-04-20.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2022-04-20.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -2317,10 +2455,11 @@
    "edition_path": "data/ca-dli/editions/2022-04-29.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2022-04-29.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -2333,10 +2472,11 @@
    "edition_path": "data/ca-dli/editions/2022-04-30.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2022-04-30.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -2349,10 +2489,11 @@
    "edition_path": "data/ca-dli/editions/2022-05-02.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2022-05-02.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -2365,10 +2506,11 @@
    "edition_path": "data/ca-dli/editions/2022-05-15.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2022-05-15.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -2381,10 +2523,11 @@
    "edition_path": "data/ca-dli/editions/2022-05-16.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2022-05-16.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -2397,10 +2540,11 @@
    "edition_path": "data/ca-dli/editions/2022-05-26.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2022-05-26.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -2413,10 +2557,11 @@
    "edition_path": "data/ca-dli/editions/2022-05-28.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2022-05-28.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -2429,10 +2574,11 @@
    "edition_path": "data/ca-dli/editions/2022-05-31.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2022-05-31.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -2445,10 +2591,11 @@
    "edition_path": "data/ca-dli/editions/2022-06-01.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2022-06-01.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -2461,10 +2608,11 @@
    "edition_path": "data/ca-dli/editions/2022-06-02.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2022-06-02.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -2477,10 +2625,11 @@
    "edition_path": "data/ca-dli/editions/2022-06-03.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2022-06-03.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -2493,10 +2642,11 @@
    "edition_path": "data/ca-dli/editions/2022-06-13.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2022-06-13.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -2509,10 +2659,11 @@
    "edition_path": "data/ca-dli/editions/2022-06-26.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2022-06-26.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -2525,10 +2676,11 @@
    "edition_path": "data/ca-dli/editions/2022-06-29.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2022-06-29.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -2541,10 +2693,11 @@
    "edition_path": "data/ca-dli/editions/2022-07-03.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2022-07-03.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -2557,10 +2710,11 @@
    "edition_path": "data/ca-dli/editions/2022-07-10.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2022-07-10.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -2573,10 +2727,11 @@
    "edition_path": "data/ca-dli/editions/2022-07-14.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2022-07-14.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -2589,10 +2744,11 @@
    "edition_path": "data/ca-dli/editions/2022-07-27.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2022-07-27.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -2605,10 +2761,11 @@
    "edition_path": "data/ca-dli/editions/2022-08-03.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2022-08-03.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -2621,10 +2778,11 @@
    "edition_path": "data/ca-dli/editions/2022-08-08.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2022-08-08.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -2637,10 +2795,11 @@
    "edition_path": "data/ca-dli/editions/2022-08-09.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2022-08-09.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -2653,10 +2812,11 @@
    "edition_path": "data/ca-dli/editions/2022-08-12.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2022-08-12.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -2669,10 +2829,11 @@
    "edition_path": "data/ca-dli/editions/2022-08-15.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2022-08-15.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -2685,10 +2846,11 @@
    "edition_path": "data/ca-dli/editions/2022-08-18.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2022-08-18.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -2701,10 +2863,11 @@
    "edition_path": "data/ca-dli/editions/2022-09-23.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2022-09-23.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -2717,10 +2880,11 @@
    "edition_path": "data/ca-dli/editions/2022-09-25.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2022-09-25.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -2733,10 +2897,11 @@
    "edition_path": "data/ca-dli/editions/2022-10-04.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2022-10-04.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -2749,10 +2914,11 @@
    "edition_path": "data/ca-dli/editions/2022-10-05.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2022-10-05.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -2765,10 +2931,11 @@
    "edition_path": "data/ca-dli/editions/2022-10-06.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2022-10-06.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -2781,10 +2948,11 @@
    "edition_path": "data/ca-dli/editions/2022-10-09.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2022-10-09.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -2797,10 +2965,11 @@
    "edition_path": "data/ca-dli/editions/2022-10-13.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2022-10-13.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -2813,10 +2982,11 @@
    "edition_path": "data/ca-dli/editions/2022-10-27.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2022-10-27.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -2829,10 +2999,11 @@
    "edition_path": "data/ca-dli/editions/2022-11-27.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2022-11-27.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -2845,10 +3016,11 @@
    "edition_path": "data/ca-dli/editions/2022-11-29.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2022-11-29.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -2861,10 +3033,11 @@
    "edition_path": "data/ca-dli/editions/2022-12-02.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2022-12-02.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -2877,10 +3050,11 @@
    "edition_path": "data/ca-dli/editions/2022-12-11.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2022-12-11.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -2893,10 +3067,11 @@
    "edition_path": "data/ca-dli/editions/2022-12-21.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2022-12-21.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -2909,10 +3084,11 @@
    "edition_path": "data/ca-dli/editions/2022-12-22.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2022-12-22.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -2925,10 +3101,11 @@
    "edition_path": "data/ca-dli/editions/2022-12-27.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2022-12-27.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -2941,10 +3118,11 @@
    "edition_path": "data/ca-dli/editions/2022-12-28.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2022-12-28.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -2957,10 +3135,11 @@
    "edition_path": "data/ca-dli/editions/2022-12-29.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2022-12-29.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -2973,10 +3152,11 @@
    "edition_path": "data/ca-dli/editions/2023-01-26.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2023-01-26.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -2989,10 +3169,11 @@
    "edition_path": "data/ca-dli/editions/2023-01-27.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2023-01-27.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -3005,10 +3186,11 @@
    "edition_path": "data/ca-dli/editions/2023-02-02.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2023-02-02.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -3021,10 +3203,11 @@
    "edition_path": "data/ca-dli/editions/2023-03-22.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2023-03-22.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -3037,10 +3220,11 @@
    "edition_path": "data/ca-dli/editions/2023-03-25.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2023-03-25.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -3053,10 +3237,11 @@
    "edition_path": "data/ca-dli/editions/2023-03-26.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2023-03-26.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -3069,10 +3254,11 @@
    "edition_path": "data/ca-dli/editions/2023-03-27.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2023-03-27.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -3085,10 +3271,11 @@
    "edition_path": "data/ca-dli/editions/2023-03-28.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2023-03-28.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -3101,10 +3288,11 @@
    "edition_path": "data/ca-dli/editions/2023-03-31.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2023-03-31.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -3117,10 +3305,11 @@
    "edition_path": "data/ca-dli/editions/2023-04-02.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2023-04-02.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -3133,10 +3322,11 @@
    "edition_path": "data/ca-dli/editions/2023-04-06.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2023-04-06.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -3149,10 +3339,11 @@
    "edition_path": "data/ca-dli/editions/2023-04-13.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2023-04-13.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -3165,10 +3356,11 @@
    "edition_path": "data/ca-dli/editions/2023-04-16.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2023-04-16.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -3181,10 +3373,11 @@
    "edition_path": "data/ca-dli/editions/2023-04-24.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2023-04-24.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -3197,10 +3390,11 @@
    "edition_path": "data/ca-dli/editions/2023-05-05.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2023-05-05.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -3213,10 +3407,11 @@
    "edition_path": "data/ca-dli/editions/2023-05-14.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2023-05-14.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -3229,10 +3424,11 @@
    "edition_path": "data/ca-dli/editions/2023-05-23.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2023-05-23.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -3245,10 +3441,11 @@
    "edition_path": "data/ca-dli/editions/2023-06-05.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2023-06-05.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -3261,10 +3458,11 @@
    "edition_path": "data/ca-dli/editions/2023-06-06.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2023-06-06.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -3277,10 +3475,11 @@
    "edition_path": "data/ca-dli/editions/2023-06-11.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2023-06-11.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -3293,10 +3492,11 @@
    "edition_path": "data/ca-dli/editions/2023-06-29.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2023-06-29.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -3309,10 +3509,11 @@
    "edition_path": "data/ca-dli/editions/2023-07-23.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2023-07-23.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -3325,10 +3526,11 @@
    "edition_path": "data/ca-dli/editions/2023-07-27.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2023-07-27.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -3341,10 +3543,11 @@
    "edition_path": "data/ca-dli/editions/2023-08-06.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2023-08-06.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -3357,10 +3560,11 @@
    "edition_path": "data/ca-dli/editions/2023-08-22.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2023-08-22.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -3373,10 +3577,11 @@
    "edition_path": "data/ca-dli/editions/2023-08-23.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2023-08-23.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -3389,10 +3594,11 @@
    "edition_path": "data/ca-dli/editions/2023-08-25.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2023-08-25.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -3405,10 +3611,11 @@
    "edition_path": "data/ca-dli/editions/2023-08-31.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2023-08-31.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -3421,10 +3628,11 @@
    "edition_path": "data/ca-dli/editions/2023-09-20.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2023-09-20.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -3437,10 +3645,11 @@
    "edition_path": "data/ca-dli/editions/2023-10-02.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2023-10-02.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -3453,10 +3662,11 @@
    "edition_path": "data/ca-dli/editions/2023-11-06.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2023-11-06.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -3469,10 +3679,11 @@
    "edition_path": "data/ca-dli/editions/2023-11-07.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2023-11-07.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -3485,10 +3696,11 @@
    "edition_path": "data/ca-dli/editions/2023-12-09.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2023-12-09.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -3501,10 +3713,11 @@
    "edition_path": "data/ca-dli/editions/2023-12-14.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2023-12-14.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -3517,10 +3730,11 @@
    "edition_path": "data/ca-dli/editions/2023-12-15.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2023-12-15.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -3533,10 +3747,11 @@
    "edition_path": "data/ca-dli/editions/2023-12-17.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2023-12-17.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -3549,10 +3764,11 @@
    "edition_path": "data/ca-dli/editions/2023-12-20.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2023-12-20.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -3565,10 +3781,11 @@
    "edition_path": "data/ca-dli/editions/2023-12-21.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2023-12-21.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -3581,10 +3798,11 @@
    "edition_path": "data/ca-dli/editions/2023-12-22.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2023-12-22.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -3597,10 +3815,11 @@
    "edition_path": "data/ca-dli/editions/2023-12-30.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2023-12-30.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -3613,10 +3832,11 @@
    "edition_path": "data/ca-dli/editions/2024-01-14.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2024-01-14.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -3629,10 +3849,11 @@
    "edition_path": "data/ca-dli/editions/2024-01-15.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2024-01-15.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -3645,10 +3866,11 @@
    "edition_path": "data/ca-dli/editions/2024-01-19.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2024-01-19.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -3661,10 +3883,11 @@
    "edition_path": "data/ca-dli/editions/2024-01-23.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2024-01-23.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -3677,10 +3900,11 @@
    "edition_path": "data/ca-dli/editions/2024-01-26.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2024-01-26.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -3693,10 +3917,11 @@
    "edition_path": "data/ca-dli/editions/2024-01-27.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2024-01-27.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -3709,10 +3934,11 @@
    "edition_path": "data/ca-dli/editions/2024-01-28.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2024-01-28.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -3725,10 +3951,11 @@
    "edition_path": "data/ca-dli/editions/2024-01-29.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2024-01-29.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -3741,10 +3968,11 @@
    "edition_path": "data/ca-dli/editions/2024-01-30.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2024-01-30.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -3757,10 +3985,11 @@
    "edition_path": "data/ca-dli/editions/2024-02-04.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2024-02-04.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -3773,10 +4002,11 @@
    "edition_path": "data/ca-dli/editions/2024-02-05.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2024-02-05.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -3789,10 +4019,11 @@
    "edition_path": "data/ca-dli/editions/2024-02-11.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2024-02-11.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -3805,10 +4036,11 @@
    "edition_path": "data/ca-dli/editions/2024-02-27.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2024-02-27.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -3821,10 +4053,11 @@
    "edition_path": "data/ca-dli/editions/2024-02-28.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2024-02-28.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -3837,10 +4070,11 @@
    "edition_path": "data/ca-dli/editions/2024-02-29.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2024-02-29.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -3853,10 +4087,11 @@
    "edition_path": "data/ca-dli/editions/2024-03-01.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2024-03-01.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -3869,10 +4104,11 @@
    "edition_path": "data/ca-dli/editions/2024-03-02.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2024-03-02.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -3885,10 +4121,11 @@
    "edition_path": "data/ca-dli/editions/2024-03-04.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2024-03-04.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -3901,10 +4138,11 @@
    "edition_path": "data/ca-dli/editions/2024-03-05.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2024-03-05.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -3917,10 +4155,11 @@
    "edition_path": "data/ca-dli/editions/2024-03-31.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2024-03-31.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -3933,10 +4172,11 @@
    "edition_path": "data/ca-dli/editions/2024-04-16.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2024-04-16.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -3949,10 +4189,11 @@
    "edition_path": "data/ca-dli/editions/2024-04-18.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2024-04-18.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -3965,10 +4206,11 @@
    "edition_path": "data/ca-dli/editions/2024-04-25.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2024-04-25.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -3981,10 +4223,11 @@
    "edition_path": "data/ca-dli/editions/2024-05-10.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2024-05-10.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -3997,10 +4240,11 @@
    "edition_path": "data/ca-dli/editions/2024-05-18.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2024-05-18.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -4013,10 +4257,11 @@
    "edition_path": "data/ca-dli/editions/2024-05-23.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2024-05-23.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -4029,10 +4274,11 @@
    "edition_path": "data/ca-dli/editions/2024-05-26.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2024-05-26.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -4045,10 +4291,11 @@
    "edition_path": "data/ca-dli/editions/2024-05-28.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2024-05-28.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -4061,10 +4308,11 @@
    "edition_path": "data/ca-dli/editions/2024-05-30.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2024-05-30.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -4077,10 +4325,11 @@
    "edition_path": "data/ca-dli/editions/2024-06-25.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2024-06-25.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -4093,10 +4342,11 @@
    "edition_path": "data/ca-dli/editions/2024-07-16.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2024-07-16.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -4109,10 +4359,11 @@
    "edition_path": "data/ca-dli/editions/2024-07-17.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2024-07-17.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -4125,10 +4376,11 @@
    "edition_path": "data/ca-dli/editions/2024-07-19.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2024-07-19.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -4141,10 +4393,11 @@
    "edition_path": "data/ca-dli/editions/2024-07-20.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2024-07-20.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -4157,10 +4410,11 @@
    "edition_path": "data/ca-dli/editions/2024-07-23.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2024-07-23.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -4173,10 +4427,11 @@
    "edition_path": "data/ca-dli/editions/2024-07-25.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2024-07-25.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -4189,10 +4444,11 @@
    "edition_path": "data/ca-dli/editions/2024-07-30.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2024-07-30.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -4205,10 +4461,11 @@
    "edition_path": "data/ca-dli/editions/2024-08-15.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2024-08-15.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -4221,10 +4478,11 @@
    "edition_path": "data/ca-dli/editions/2024-08-23.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2024-08-23.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -4237,10 +4495,11 @@
    "edition_path": "data/ca-dli/editions/2024-08-27.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2024-08-27.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -4253,10 +4512,11 @@
    "edition_path": "data/ca-dli/editions/2024-09-05.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2024-09-05.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -4269,10 +4529,11 @@
    "edition_path": "data/ca-dli/editions/2024-09-11.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2024-09-11.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -4285,10 +4546,11 @@
    "edition_path": "data/ca-dli/editions/2024-09-17.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2024-09-17.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -4301,10 +4563,11 @@
    "edition_path": "data/ca-dli/editions/2024-09-19.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2024-09-19.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -4317,10 +4580,11 @@
    "edition_path": "data/ca-dli/editions/2024-10-09.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2024-10-09.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -4333,10 +4597,11 @@
    "edition_path": "data/ca-dli/editions/2024-10-15.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2024-10-15.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -4349,10 +4614,11 @@
    "edition_path": "data/ca-dli/editions/2024-10-16.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2024-10-16.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -4365,10 +4631,11 @@
    "edition_path": "data/ca-dli/editions/2024-10-24.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2024-10-24.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -4381,10 +4648,11 @@
    "edition_path": "data/ca-dli/editions/2024-11-02.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2024-11-02.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -4397,10 +4665,11 @@
    "edition_path": "data/ca-dli/editions/2024-11-10.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2024-11-10.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -4413,10 +4682,11 @@
    "edition_path": "data/ca-dli/editions/2024-11-12.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2024-11-12.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -4429,10 +4699,11 @@
    "edition_path": "data/ca-dli/editions/2024-11-28.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2024-11-28.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -4445,10 +4716,11 @@
    "edition_path": "data/ca-dli/editions/2024-12-08.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2024-12-08.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -4461,10 +4733,11 @@
    "edition_path": "data/ca-dli/editions/2024-12-11.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2024-12-11.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -4477,10 +4750,11 @@
    "edition_path": "data/ca-dli/editions/2024-12-12.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2024-12-12.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -4493,10 +4767,11 @@
    "edition_path": "data/ca-dli/editions/2024-12-17.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2024-12-17.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -4509,10 +4784,11 @@
    "edition_path": "data/ca-dli/editions/2024-12-19.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2024-12-19.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -4525,10 +4801,11 @@
    "edition_path": "data/ca-dli/editions/2024-12-21.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2024-12-21.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -4541,10 +4818,11 @@
    "edition_path": "data/ca-dli/editions/2024-12-26.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2024-12-26.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -4557,10 +4835,11 @@
    "edition_path": "data/ca-dli/editions/2025-01-07.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2025-01-07.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -4573,10 +4852,11 @@
    "edition_path": "data/ca-dli/editions/2025-01-09.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2025-01-09.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -4589,10 +4869,11 @@
    "edition_path": "data/ca-dli/editions/2025-01-14.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2025-01-14.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -4605,10 +4886,11 @@
    "edition_path": "data/ca-dli/editions/2025-01-18.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2025-01-18.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -4621,10 +4903,11 @@
    "edition_path": "data/ca-dli/editions/2025-01-19.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2025-01-19.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -4637,10 +4920,11 @@
    "edition_path": "data/ca-dli/editions/2025-01-21.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2025-01-21.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -4653,10 +4937,11 @@
    "edition_path": "data/ca-dli/editions/2025-01-24.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2025-01-24.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -4669,10 +4954,11 @@
    "edition_path": "data/ca-dli/editions/2025-01-26.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2025-01-26.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -4685,10 +4971,11 @@
    "edition_path": "data/ca-dli/editions/2025-01-30.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2025-01-30.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -4701,10 +4988,11 @@
    "edition_path": "data/ca-dli/editions/2025-01-31.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2025-01-31.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -4717,10 +5005,11 @@
    "edition_path": "data/ca-dli/editions/2025-02-28.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2025-02-28.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -4733,10 +5022,11 @@
    "edition_path": "data/ca-dli/editions/2025-03-14.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2025-03-14.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -4749,10 +5039,11 @@
    "edition_path": "data/ca-dli/editions/2025-03-15.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2025-03-15.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -4765,10 +5056,11 @@
    "edition_path": "data/ca-dli/editions/2025-03-20.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2025-03-20.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -4781,10 +5073,11 @@
    "edition_path": "data/ca-dli/editions/2025-03-29.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2025-03-29.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -4797,10 +5090,11 @@
    "edition_path": "data/ca-dli/editions/2025-03-30.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2025-03-30.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -4813,10 +5107,11 @@
    "edition_path": "data/ca-dli/editions/2025-04-02.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2025-04-02.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -4829,10 +5124,11 @@
    "edition_path": "data/ca-dli/editions/2025-04-03.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2025-04-03.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -4845,10 +5141,11 @@
    "edition_path": "data/ca-dli/editions/2025-04-04.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2025-04-04.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -4861,10 +5158,11 @@
    "edition_path": "data/ca-dli/editions/2025-04-05.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2025-04-05.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -4877,10 +5175,11 @@
    "edition_path": "data/ca-dli/editions/2025-04-06.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2025-04-06.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -4893,10 +5192,11 @@
    "edition_path": "data/ca-dli/editions/2025-04-07.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2025-04-07.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -4909,10 +5209,11 @@
    "edition_path": "data/ca-dli/editions/2025-04-08.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2025-04-08.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -4925,10 +5226,11 @@
    "edition_path": "data/ca-dli/editions/2025-04-10.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2025-04-10.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -4941,10 +5243,11 @@
    "edition_path": "data/ca-dli/editions/2025-04-11.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2025-04-11.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -4957,10 +5260,11 @@
    "edition_path": "data/ca-dli/editions/2025-04-14.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2025-04-14.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -4973,10 +5277,11 @@
    "edition_path": "data/ca-dli/editions/2025-04-15.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2025-04-15.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -4989,10 +5294,11 @@
    "edition_path": "data/ca-dli/editions/2025-04-16.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2025-04-16.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -5005,10 +5311,11 @@
    "edition_path": "data/ca-dli/editions/2025-04-18.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2025-04-18.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -5021,10 +5328,11 @@
    "edition_path": "data/ca-dli/editions/2025-04-20.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2025-04-20.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -5037,10 +5345,11 @@
    "edition_path": "data/ca-dli/editions/2025-04-21.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2025-04-21.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -5053,10 +5362,11 @@
    "edition_path": "data/ca-dli/editions/2025-04-25.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2025-04-25.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -5069,10 +5379,11 @@
    "edition_path": "data/ca-dli/editions/2025-04-26.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2025-04-26.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -5085,10 +5396,11 @@
    "edition_path": "data/ca-dli/editions/2025-04-29.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2025-04-29.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -5101,10 +5413,11 @@
    "edition_path": "data/ca-dli/editions/2025-05-05.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2025-05-05.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -5117,10 +5430,11 @@
    "edition_path": "data/ca-dli/editions/2025-05-07.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2025-05-07.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -5133,10 +5447,11 @@
    "edition_path": "data/ca-dli/editions/2025-05-16.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2025-05-16.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -5149,10 +5464,11 @@
    "edition_path": "data/ca-dli/editions/2025-06-04.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2025-06-04.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -5165,10 +5481,11 @@
    "edition_path": "data/ca-dli/editions/2025-06-05.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2025-06-05.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -5181,10 +5498,11 @@
    "edition_path": "data/ca-dli/editions/2025-06-10.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2025-06-10.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -5197,10 +5515,11 @@
    "edition_path": "data/ca-dli/editions/2025-06-15.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2025-06-15.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -5213,10 +5532,11 @@
    "edition_path": "data/ca-dli/editions/2025-06-17.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2025-06-17.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -5229,10 +5549,11 @@
    "edition_path": "data/ca-dli/editions/2025-06-23.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2025-06-23.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -5245,10 +5566,11 @@
    "edition_path": "data/ca-dli/editions/2025-07-03.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2025-07-03.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -5261,10 +5583,11 @@
    "edition_path": "data/ca-dli/editions/2025-07-04.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2025-07-04.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -5277,10 +5600,11 @@
    "edition_path": "data/ca-dli/editions/2025-07-16.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2025-07-16.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -5293,10 +5617,11 @@
    "edition_path": "data/ca-dli/editions/2025-07-19.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2025-07-19.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -5309,10 +5634,11 @@
    "edition_path": "data/ca-dli/editions/2025-07-22.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966076,
      "file": "2025-07-22.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -5325,10 +5651,11 @@
    "edition_path": "data/ca-dli/editions/2025-07-28.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966079,
      "file": "2025-07-28.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -5341,10 +5668,11 @@
    "edition_path": "data/ca-dli/editions/2025-08-03.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966079,
      "file": "2025-08-03.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -5357,10 +5685,11 @@
    "edition_path": "data/ca-dli/editions/2025-08-05.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966079,
      "file": "2025-08-05.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -5373,10 +5702,11 @@
    "edition_path": "data/ca-dli/editions/2025-08-18.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966079,
      "file": "2025-08-18.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -5389,10 +5719,11 @@
    "edition_path": "data/ca-dli/editions/2025-08-19.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966079,
      "file": "2025-08-19.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -5405,10 +5736,11 @@
    "edition_path": "data/ca-dli/editions/2025-09-02.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966079,
      "file": "2025-09-02.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -5421,10 +5753,11 @@
    "edition_path": "data/ca-dli/editions/2025-09-07.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966079,
      "file": "2025-09-07.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -5437,10 +5770,11 @@
    "edition_path": "data/ca-dli/editions/2025-09-11.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966079,
      "file": "2025-09-11.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -5453,10 +5787,11 @@
    "edition_path": "data/ca-dli/editions/2025-10-05.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966079,
      "file": "2025-10-05.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -5469,10 +5804,11 @@
    "edition_path": "data/ca-dli/editions/2025-10-13.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966079,
      "file": "2025-10-13.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -5485,10 +5821,11 @@
    "edition_path": "data/ca-dli/editions/2025-10-27.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966079,
      "file": "2025-10-27.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -5501,10 +5838,11 @@
    "edition_path": "data/ca-dli/editions/2025-11-03.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966079,
      "file": "2025-11-03.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -5517,10 +5855,11 @@
    "edition_path": "data/ca-dli/editions/2025-11-05.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966079,
      "file": "2025-11-05.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -5533,10 +5872,11 @@
    "edition_path": "data/ca-dli/editions/2025-11-07.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966079,
      "file": "2025-11-07.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -5549,10 +5889,11 @@
    "edition_path": "data/ca-dli/editions/2025-11-12.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966079,
      "file": "2025-11-12.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -5565,10 +5906,11 @@
    "edition_path": "data/ca-dli/editions/2025-12-16.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966079,
      "file": "2025-12-16.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -5581,10 +5923,11 @@
    "edition_path": "data/ca-dli/editions/2025-12-17.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966079,
      "file": "2025-12-17.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -5597,10 +5940,11 @@
    "edition_path": "data/ca-dli/editions/2025-12-21.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966079,
      "file": "2025-12-21.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -5613,10 +5957,11 @@
    "edition_path": "data/ca-dli/editions/2026-01-06.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966079,
      "file": "2026-01-06.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -5629,10 +5974,11 @@
    "edition_path": "data/ca-dli/editions/2026-01-13.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966079,
      "file": "2026-01-13.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -5645,10 +5991,11 @@
    "edition_path": "data/ca-dli/editions/2026-01-14.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966079,
      "file": "2026-01-14.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -5661,10 +6008,11 @@
    "edition_path": "data/ca-dli/editions/2026-01-19.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966079,
      "file": "2026-01-19.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -5677,10 +6025,11 @@
    "edition_path": "data/ca-dli/editions/2026-01-25.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966079,
      "file": "2026-01-25.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -5693,10 +6042,11 @@
    "edition_path": "data/ca-dli/editions/2026-01-29.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966079,
      "file": "2026-01-29.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -5709,10 +6059,11 @@
    "edition_path": "data/ca-dli/editions/2026-03-05.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966079,
      "file": "2026-03-05.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -5725,10 +6076,11 @@
    "edition_path": "data/ca-dli/editions/2026-03-27.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966079,
      "file": "2026-03-27.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -5741,10 +6093,11 @@
    "edition_path": "data/ca-dli/editions/2026-03-31.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966079,
      "file": "2026-03-31.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -5757,10 +6110,11 @@
    "edition_path": "data/ca-dli/editions/2026-04-20.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966079,
      "file": "2026-04-20.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -5773,10 +6127,11 @@
    "edition_path": "data/ca-dli/editions/2026-05-11.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966079,
      "file": "2026-05-11.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -5789,10 +6144,11 @@
    "edition_path": "data/ca-dli/editions/2026-05-13.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966079,
      "file": "2026-05-13.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -5805,10 +6161,11 @@
    "edition_path": "data/ca-dli/editions/2026-05-17.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966079,
      "file": "2026-05-17.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -5821,10 +6178,11 @@
    "edition_path": "data/ca-dli/editions/2026-05-19.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966079,
      "file": "2026-05-19.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -5837,10 +6195,11 @@
    "edition_path": "data/ca-dli/editions/2026-05-28.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966079,
      "file": "2026-05-28.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -5853,10 +6212,11 @@
    "edition_path": "data/ca-dli/editions/2026-06-30.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966079,
      "file": "2026-06-30.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -5869,10 +6229,11 @@
    "edition_path": "data/ca-dli/editions/2026-07-06.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966079,
      "file": "2026-07-06.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -5885,10 +6246,11 @@
    "edition_path": "data/ca-dli/editions/2026-07-14.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966079,
      "file": "2026-07-14.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -5901,10 +6263,11 @@
    "edition_path": "data/ca-dli/editions/2026-07-31.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966079,
      "file": "2026-07-31.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -5917,10 +6280,11 @@
    "edition_path": "data/ca-dli/editions/2026-08-17.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966079,
      "file": "2026-08-17.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -5933,10 +6297,11 @@
    "edition_path": "data/ca-dli/editions/2026-08-28.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966079,
      "file": "2026-08-28.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -5949,10 +6314,11 @@
    "edition_path": "data/ca-dli/editions/2026-09-01.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966079,
      "file": "2026-09-01.content.ots",
      "stamped_at": "2026-09-08T12:35:53+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-08T17:12:18+00:00"
     }
    },
    "raw_sha256": null,
@@ -5961,5 +6327,5 @@
   }
  },
  "source": "ca-dli",
- "updated_at": "2026-09-08T16:43:30+00:00"
+ "updated_at": "2026-09-08T17:19:08+00:00"
 }

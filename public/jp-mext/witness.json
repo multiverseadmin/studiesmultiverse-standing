@@ -1,7 +1,7 @@
 {
  "publisher": "A.I.T. Multiverse Consulting Ltd, Nicosia, Cyprus",
  "site": "https://studiesmultiverse.com",
- "generated_at": "2026-09-08T16:52:13+00:00",
+ "generated_at": "2026-09-08T17:21:32+00:00",
  "our_licence": "CC BY 4.0",
  "our_licence_url": "https://creativecommons.org/licenses/by/4.0/",
  "source": {
@@ -20,8 +20,8 @@
  "summary": {
   "editions": 3,
   "editions_stamped": 3,
-  "editions_with_bitcoin_attestation": 0,
-  "editions_archived_at_internet_archive": 0
+  "editions_with_bitcoin_attestation": 3,
+  "editions_archived_at_internet_archive": 1
  },
  "editions": [
   {
@@ -37,12 +37,14 @@
     "content": {
      "digest": "175362c3353e9dce6dde38fbe891253daa91dc318d56a6c0b642bbfcebc1d06d",
      "proof_url": "https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/main/data/jp-mext/witness/2026-08-25.content.ots",
-     "status": "pending",
-     "bitcoin_block_height": null,
+     "status": "bitcoin",
+     "bitcoin_block_height": 966079,
      "stamped_at": "2026-09-08T12:44:11+00:00"
     }
    },
-   "wayback": {}
+   "wayback": {
+    "edition": "https://web.archive.org/web/2/https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/8b5a11f7f0f1cf2630c3f17adfb04ea986a380e2/data/jp-mext/editions/2026-08-25.json.gz"
+   }
   },
   {
    "edition_date": "2026-08-31",
@@ -57,8 +59,8 @@
     "content": {
      "digest": "175362c3353e9dce6dde38fbe891253daa91dc318d56a6c0b642bbfcebc1d06d",
      "proof_url": "https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/main/data/jp-mext/witness/2026-08-31.content.ots",
-     "status": "pending",
-     "bitcoin_block_height": null,
+     "status": "bitcoin",
+     "bitcoin_block_height": 966079,
      "stamped_at": "2026-09-08T12:44:11+00:00"
     }
    },
@@ -77,8 +79,8 @@
     "content": {
      "digest": "175362c3353e9dce6dde38fbe891253daa91dc318d56a6c0b642bbfcebc1d06d",
      "proof_url": "https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/main/data/jp-mext/witness/2026-09-07.content.ots",
-     "status": "pending",
-     "bitcoin_block_height": null,
+     "status": "bitcoin",
+     "bitcoin_block_height": 966079,
      "stamped_at": "2026-09-08T12:44:11+00:00"
     }
    },

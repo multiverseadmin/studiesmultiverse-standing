@@ -1,7 +1,7 @@
 {
  "publisher": "A.I.T. Multiverse Consulting Ltd, Nicosia, Cyprus",
  "site": "https://studiesmultiverse.com",
- "generated_at": "2026-09-08T16:55:16+00:00",
+ "generated_at": "2026-09-08T17:23:27+00:00",
  "our_licence": "CC BY 4.0",
  "our_licence_url": "https://creativecommons.org/licenses/by/4.0/",
  "source": {
@@ -20,7 +20,7 @@
  "summary": {
   "editions": 9,
   "editions_stamped": 9,
-  "editions_with_bitcoin_attestation": 0,
+  "editions_with_bitcoin_attestation": 9,
   "editions_archived_at_internet_archive": 1
  },
  "editions": [
@@ -37,19 +37,21 @@
     "content": {
      "digest": "5b66b72703e5c75de778fd8406558acaa47079399a77fa4de6275114b859ccca",
      "proof_url": "https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/main/data/uk-sponsors/witness/2026-08-25.content.ots",
-     "status": "pending",
-     "bitcoin_block_height": null,
+     "status": "bitcoin",
+     "bitcoin_block_height": 966079,
      "stamped_at": "2026-09-08T12:44:16+00:00"
     },
     "raw": {
      "digest": "fccd717e210902b28975c924230298073da709efa1a29cb8f330d65be41b759e",
      "proof_url": "https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/main/data/uk-sponsors/witness/2026-08-25.raw.ots",
-     "status": "pending",
-     "bitcoin_block_height": null,
+     "status": "bitcoin",
+     "bitcoin_block_height": 966079,
      "stamped_at": "2026-09-08T12:44:16+00:00"
     }
    },
-   "wayback": {}
+   "wayback": {
+    "commit": "https://web.archive.org/web/2/https://github.com/multiverseadmin/studiesmultiverse-standing/commit/945741afe5c72de25df453b2c6621b0f755b76a8"
+   }
   },
   {
    "edition_date": "2026-08-26",
@@ -64,15 +66,15 @@
     "content": {
      "digest": "fcd28e19a538e1b7267855ddac2c62cf62efcc8b061c558c4995a2c963c6a89f",
      "proof_url": "https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/main/data/uk-sponsors/witness/2026-08-26.content.ots",
-     "status": "pending",
-     "bitcoin_block_height": null,
+     "status": "bitcoin",
+     "bitcoin_block_height": 966079,
      "stamped_at": "2026-09-08T12:44:16+00:00"
     },
     "raw": {
      "digest": "23eafc2f985815e618cbc814676329e2818c6d38964a896c66fcf2e71ba6848c",
      "proof_url": "https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/main/data/uk-sponsors/witness/2026-08-26.raw.ots",
-     "status": "pending",
-     "bitcoin_block_height": null,
+     "status": "bitcoin",
+     "bitcoin_block_height": 966079,
      "stamped_at": "2026-09-08T12:44:16+00:00"
     }
    },
@@ -91,15 +93,15 @@
     "content": {
      "digest": "db22659f6cea513d5cdd931b1f29a6660a1874eea578add785641e197b0ecb6f",
      "proof_url": "https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/main/data/uk-sponsors/witness/2026-08-27.content.ots",
-     "status": "pending",
-     "bitcoin_block_height": null,
+     "status": "bitcoin",
+     "bitcoin_block_height": 966079,
      "stamped_at": "2026-09-08T12:44:16+00:00"
     },
     "raw": {
      "digest": "cab3edd5b11e06120165c2d607def32d61718d547122bf394c9abfd475bef703",
      "proof_url": "https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/main/data/uk-sponsors/witness/2026-08-27.raw.ots",
-     "status": "pending",
-     "bitcoin_block_height": null,
+     "status": "bitcoin",
+     "bitcoin_block_height": 966079,
      "stamped_at": "2026-09-08T12:44:16+00:00"
     }
    },
@@ -118,15 +120,15 @@
     "content": {
      "digest": "bc8e4cd64c59b6256d80c996e94d20fe4203d87b8792e8f6dde7765d99779b7a",
      "proof_url": "https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/main/data/uk-sponsors/witness/2026-08-28.content.ots",
-     "status": "pending",
-     "bitcoin_block_height": null,
+     "status": "bitcoin",
+     "bitcoin_block_height": 966079,
      "stamped_at": "2026-09-08T12:44:16+00:00"
     },
     "raw": {
      "digest": "fd9407275971af882a3b9d466d8371ef0610acb707d1bfd7103d2523bbdfef12",
      "proof_url": "https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/main/data/uk-sponsors/witness/2026-08-28.raw.ots",
-     "status": "pending",
-     "bitcoin_block_height": null,
+     "status": "bitcoin",
+     "bitcoin_block_height": 966079,
      "stamped_at": "2026-09-08T12:44:16+00:00"
     }
    },
@@ -145,15 +147,15 @@
     "content": {
      "digest": "8022d3716e68271ead29194002f8bafb4cdffbc7e925d94de28a2c46b6ccf8fe",
      "proof_url": "https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/main/data/uk-sponsors/witness/2026-09-01.content.ots",
-     "status": "pending",
-     "bitcoin_block_height": null,
+     "status": "bitcoin",
+     "bitcoin_block_height": 966079,
      "stamped_at": "2026-09-08T12:44:16+00:00"
     },
     "raw": {
      "digest": "519ed58bb9c7ca68a800358ab9887744b09b3149f52b71261e82060f0cd46c56",
      "proof_url": "https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/main/data/uk-sponsors/witness/2026-09-01.raw.ots",
-     "status": "pending",
-     "bitcoin_block_height": null,
+     "status": "bitcoin",
+     "bitcoin_block_height": 966079,
      "stamped_at": "2026-09-08T12:44:16+00:00"
     }
    },
@@ -172,15 +174,15 @@
     "content": {
      "digest": "03c4c8e1891f185acad1fdb78f80a827334e495a8f27cd0846e63b50865d5d83",
      "proof_url": "https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/main/data/uk-sponsors/witness/2026-09-02.content.ots",
-     "status": "pending",
-     "bitcoin_block_height": null,
+     "status": "bitcoin",
+     "bitcoin_block_height": 966079,
      "stamped_at": "2026-09-08T12:44:16+00:00"
     },
     "raw": {
      "digest": "7864583cf464ff705bf483b987aec1450516ebbafe33785b591e17d81384f3b9",
      "proof_url": "https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/main/data/uk-sponsors/witness/2026-09-02.raw.ots",
-     "status": "pending",
-     "bitcoin_block_height": null,
+     "status": "bitcoin",
+     "bitcoin_block_height": 966079,
      "stamped_at": "2026-09-08T12:44:16+00:00"
     }
    },
@@ -201,15 +203,15 @@
     "content": {
      "digest": "edceb3abaae4f4faf495bf0a6c4b0f1c8501e920e03242163f871cae6d1b66c8",
      "proof_url": "https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/main/data/uk-sponsors/witness/2026-09-03.content.ots",
-     "status": "pending",
-     "bitcoin_block_height": null,
+     "status": "bitcoin",
+     "bitcoin_block_height": 966079,
      "stamped_at": "2026-09-08T12:44:16+00:00"
     },
     "raw": {
      "digest": "796155f4588cec0484fe7a53b2b1460315967187d364664f451b9ede53393bd1",
      "proof_url": "https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/main/data/uk-sponsors/witness/2026-09-03.raw.ots",
-     "status": "pending",
-     "bitcoin_block_height": null,
+     "status": "bitcoin",
+     "bitcoin_block_height": 966079,
      "stamped_at": "2026-09-08T12:44:16+00:00"
     }
    },
@@ -230,15 +232,15 @@
     "content": {
      "digest": "1933d2008ca64e9778c5c36add546dc48662062e1182bbe42c4cab0f3ba067dc",
      "proof_url": "https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/main/data/uk-sponsors/witness/2026-09-04.content.ots",
-     "status": "pending",
-     "bitcoin_block_height": null,
+     "status": "bitcoin",
+     "bitcoin_block_height": 966079,
      "stamped_at": "2026-09-08T12:44:16+00:00"
     },
     "raw": {
      "digest": "36aa09e3e46a26405b6313e1cb962140bd5ad1ba6f9644f2b103efd43e209b0f",
      "proof_url": "https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/main/data/uk-sponsors/witness/2026-09-04.raw.ots",
-     "status": "pending",
-     "bitcoin_block_height": null,
+     "status": "bitcoin",
+     "bitcoin_block_height": 966079,
      "stamped_at": "2026-09-08T12:44:16+00:00"
     }
    },
@@ -257,15 +259,15 @@
     "content": {
      "digest": "4f5ed35032cf419a73ec2de95e8f033359b1af14e449eb8f30489b84cc2cdfdd",
      "proof_url": "https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/main/data/uk-sponsors/witness/2026-09-07.content.ots",
-     "status": "pending",
-     "bitcoin_block_height": null,
+     "status": "bitcoin",
+     "bitcoin_block_height": 966079,
      "stamped_at": "2026-09-08T12:44:16+00:00"
     },
     "raw": {
      "digest": "ebce85f1c1863830f200bb5b4dd2d9fda87caf0f3ef717b01f9d7e43e3af184b",
      "proof_url": "https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/main/data/uk-sponsors/witness/2026-09-07.raw.ots",
-     "status": "pending",
-     "bitcoin_block_height": null,
+     "status": "bitcoin",
+     "bitcoin_block_height": 966079,
      "stamped_at": "2026-09-08T12:44:16+00:00"
     }
    },
