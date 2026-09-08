@@ -1,7 +1,7 @@
 {
  "publisher": "A.I.T. Multiverse Consulting Ltd, Nicosia, Cyprus",
  "site": "https://studiesmultiverse.com",
- "generated_at": "2026-09-08T12:50:51+00:00",
+ "generated_at": "2026-09-08T16:52:13+00:00",
  "our_licence": "CC BY 4.0",
  "our_licence_url": "https://creativecommons.org/licenses/by/4.0/",
  "source": {
@@ -16,7 +16,7 @@
  },
  "what_this_is": "Independent witnesses to the editions in archive.json: OpenTimestamps proofs that commit each edition's published digest to the Bitcoin block chain, and Internet Archive captures of the edition file at its immutable commit URL. Neither is under this publisher's control after the fact.",
  "how_to_verify": "Install the reference client (pip install opentimestamps-client). Take the content_sha256 shown for an edition on studiesmultiverse.com or in public/<source>/archive.json, download the matching .ots proof from the proof_url, and run: ots verify -d <content_sha256> <date>.content.ots. A proof with status 'bitcoin' verifies against the block chain without trusting this repository or its publisher; a 'pending' proof is held by the calendars named in the file and upgrades on its own. The Wayback Machine links are the Internet Archive's own copies of the edition file at its immutable commit URL and of the commit page.",
- "archive_index_wayback": null,
+ "archive_index_wayback": "https://web.archive.org/web/2/https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/main/public/jp-mext/archive.json",
  "summary": {
   "editions": 3,
   "editions_stamped": 3,
@@ -82,7 +82,9 @@
      "stamped_at": "2026-09-08T12:44:11+00:00"
     }
    },
-   "wayback": {}
+   "wayback": {
+    "commit": "https://web.archive.org/web/2/https://github.com/multiverseadmin/studiesmultiverse-standing/commit/12419d91eb4c004be8a58e300a14bb72c62a5c8d"
+   }
   }
  ]
 }

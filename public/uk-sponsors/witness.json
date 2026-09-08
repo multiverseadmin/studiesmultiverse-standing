@@ -1,7 +1,7 @@
 {
  "publisher": "A.I.T. Multiverse Consulting Ltd, Nicosia, Cyprus",
  "site": "https://studiesmultiverse.com",
- "generated_at": "2026-09-08T12:53:53+00:00",
+ "generated_at": "2026-09-08T16:55:16+00:00",
  "our_licence": "CC BY 4.0",
  "our_licence_url": "https://creativecommons.org/licenses/by/4.0/",
  "source": {
@@ -21,7 +21,7 @@
   "editions": 9,
   "editions_stamped": 9,
   "editions_with_bitcoin_attestation": 0,
-  "editions_archived_at_internet_archive": 0
+  "editions_archived_at_internet_archive": 1
  },
  "editions": [
   {
@@ -184,7 +184,9 @@
      "stamped_at": "2026-09-08T12:44:16+00:00"
     }
    },
-   "wayback": {}
+   "wayback": {
+    "commit": "https://web.archive.org/web/2/https://github.com/multiverseadmin/studiesmultiverse-standing/commit/be059e14eb8bdedb8e9e1c0cea8bb56c60ac1fa5"
+   }
   },
   {
    "edition_date": "2026-09-03",
@@ -211,7 +213,9 @@
      "stamped_at": "2026-09-08T12:44:16+00:00"
     }
    },
-   "wayback": {}
+   "wayback": {
+    "edition": "https://web.archive.org/web/2/https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/f0f3d8c56ff3ff1d9844bc1715fff80eb2bc398b/data/uk-sponsors/editions/2026-09-03.json.gz"
+   }
   },
   {
    "edition_date": "2026-09-04",

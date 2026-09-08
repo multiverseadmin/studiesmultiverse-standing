@@ -97,8 +97,8 @@
     },
     "edition": {
      "ok": false,
-     "requested_at": "2026-09-08T12:45:34+00:00",
-     "status": 523
+     "requested_at": "2026-09-08T16:37:54+00:00",
+     "status": 429
     }
    }
   },
@@ -130,9 +130,9 @@
      "wayback": "https://web.archive.org/web/2/https://github.com/multiverseadmin/studiesmultiverse-standing/commit/74cb1304fa70ee02af283e2e7c5abb35aa4b28e4"
     },
     "edition": {
-     "error": "The read operation timed out",
      "ok": false,
-     "requested_at": "2026-09-08T12:46:38+00:00"
+     "requested_at": "2026-09-08T16:38:01+00:00",
+     "status": 429
     }
    }
   },
@@ -190,7 +190,19 @@
    },
    "raw_sha256": "04141650429f96ebcffed36d2b4edd4e04bf83de6c4c0b5d1304689638679acf",
    "row_count": 1314,
-   "source_date": "2022-03-31"
+   "source_date": "2022-03-31",
+   "wayback": {
+    "commit": {
+     "error": "<urlopen error [Errno 111] Connection refused>",
+     "ok": false,
+     "requested_at": "2026-09-08T16:38:50+00:00"
+    },
+    "edition": {
+     "error": "<urlopen error [Errno 111] Connection refused>",
+     "ok": false,
+     "requested_at": "2026-09-08T16:38:28+00:00"
+    }
+   }
   },
   "2022-04-30": {
    "commit": "74cb1304fa70ee02af283e2e7c5abb35aa4b28e4",
@@ -212,7 +224,19 @@
    },
    "raw_sha256": "a5bea93e007fdc2b110fcf284eabf1e26d30df246e05783ba0beba57c84abce7",
    "row_count": 1323,
-   "source_date": "2022-04-30"
+   "source_date": "2022-04-30",
+   "wayback": {
+    "commit": {
+     "error": "<urlopen error [Errno 111] Connection refused>",
+     "ok": false,
+     "requested_at": "2026-09-08T16:39:33+00:00"
+    },
+    "edition": {
+     "error": "<urlopen error [Errno 111] Connection refused>",
+     "ok": false,
+     "requested_at": "2026-09-08T16:39:11+00:00"
+    }
+   }
   },
   "2022-06-01": {
    "commit": "74cb1304fa70ee02af283e2e7c5abb35aa4b28e4",
@@ -234,7 +258,19 @@
    },
    "raw_sha256": "5d96c42ea093c54c9bed74cb61bb973ea040191da487794c92de74a0382c6e07",
    "row_count": 1327,
-   "source_date": "2022-06-01"
+   "source_date": "2022-06-01",
+   "wayback": {
+    "commit": {
+     "error": "The read operation timed out",
+     "ok": false,
+     "requested_at": "2026-09-08T16:40:45+00:00"
+    },
+    "edition": {
+     "error": "<urlopen error [Errno 111] Connection refused>",
+     "ok": false,
+     "requested_at": "2026-09-08T16:39:54+00:00"
+    }
+   }
   },
   "2022-07-01": {
    "commit": "74cb1304fa70ee02af283e2e7c5abb35aa4b28e4",
@@ -256,7 +292,19 @@
    },
    "raw_sha256": "aa29b6c74d979e50a5d92ea927175a9c3b12661907b83d488079d77fee115a42",
    "row_count": 1338,
-   "source_date": "2022-07-01"
+   "source_date": "2022-07-01",
+   "wayback": {
+    "commit": {
+     "error": "The read operation timed out",
+     "ok": false,
+     "requested_at": "2026-09-08T16:41:43+00:00"
+    },
+    "edition": {
+     "ok": false,
+     "requested_at": "2026-09-08T16:40:52+00:00",
+     "status": 429
+    }
+   }
   },
   "2022-08-01": {
    "commit": "74cb1304fa70ee02af283e2e7c5abb35aa4b28e4",
@@ -278,7 +326,19 @@
    },
    "raw_sha256": "52c66314d9ba6c652146840cac58c82d4e4496c94b6c9f5a23c07fa6d01ada64",
    "row_count": 1357,
-   "source_date": "2022-08-01"
+   "source_date": "2022-08-01",
+   "wayback": {
+    "commit": {
+     "error": "<urlopen error [Errno 111] Connection refused>",
+     "ok": false,
+     "requested_at": "2026-09-08T16:42:26+00:00"
+    },
+    "edition": {
+     "error": "<urlopen error [Errno 111] Connection refused>",
+     "ok": false,
+     "requested_at": "2026-09-08T16:42:04+00:00"
+    }
+   }
   },
   "2022-09-01": {
    "commit": "74cb1304fa70ee02af283e2e7c5abb35aa4b28e4",
@@ -300,7 +360,19 @@
    },
    "raw_sha256": "06eb62a97a2dbc1aeadfd753a93136b4ceedc1c35863378dab7ce8a41f4597b0",
    "row_count": 1362,
-   "source_date": "2022-09-01"
+   "source_date": "2022-09-01",
+   "wayback": {
+    "commit": {
+     "error": "<urlopen error [Errno 111] Connection refused>",
+     "ok": false,
+     "requested_at": "2026-09-08T16:43:09+00:00"
+    },
+    "edition": {
+     "error": "<urlopen error [Errno 111] Connection refused>",
+     "ok": false,
+     "requested_at": "2026-09-08T16:42:47+00:00"
+    }
+   }
   },
   "2022-10-04": {
    "commit": "eb0d55eff268179046391c2391925c893059a71b",
@@ -322,7 +394,14 @@
    },
    "raw_sha256": "8f78cb508bbdbdf3f0ee3b8bf9e416ea95ca79bf756d442ba0df9cca7bd163f6",
    "row_count": 1373,
-   "source_date": "2022-10-04"
+   "source_date": "2022-10-04",
+   "wayback": {
+    "edition": {
+     "error": "<urlopen error [Errno 111] Connection refused>",
+     "ok": false,
+     "requested_at": "2026-09-08T16:43:30+00:00"
+    }
+   }
   },
   "2022-11-01": {
    "commit": "eb0d55eff268179046391c2391925c893059a71b",
@@ -1338,5 +1417,5 @@
   }
  },
  "source": "au-cricos",
- "updated_at": "2026-09-08T12:44:38+00:00"
+ "updated_at": "2026-09-08T16:37:54+00:00"
 }

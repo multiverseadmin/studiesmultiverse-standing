@@ -17,14 +17,14 @@
    "source_date": "2018-01-23",
    "wayback": {
     "commit": {
-     "error": "<urlopen error [Errno 111] Connection refused>",
+     "error": "The read operation timed out",
      "ok": false,
-     "requested_at": "2026-09-08T12:47:59+00:00"
+     "requested_at": "2026-09-08T16:45:15+00:00"
     },
     "edition": {
-     "error": "<urlopen error [Errno 111] Connection refused>",
+     "error": "The read operation timed out",
      "ok": false,
-     "requested_at": "2026-09-08T12:47:37+00:00"
+     "requested_at": "2026-09-08T16:44:24+00:00"
     }
    }
   },
@@ -47,7 +47,7 @@
     "commit": {
      "error": "<urlopen error [Errno 111] Connection refused>",
      "ok": false,
-     "requested_at": "2026-09-08T12:48:33+00:00"
+     "requested_at": "2026-09-08T16:45:36+00:00"
     },
     "edition": {
      "ok": true,
@@ -75,12 +75,12 @@
     "commit": {
      "error": "<urlopen error [Errno 111] Connection refused>",
      "ok": false,
-     "requested_at": "2026-09-08T12:49:16+00:00"
+     "requested_at": "2026-09-08T16:46:22+00:00"
     },
     "edition": {
      "error": "<urlopen error [Errno 111] Connection refused>",
      "ok": false,
-     "requested_at": "2026-09-08T12:48:55+00:00"
+     "requested_at": "2026-09-08T16:46:00+00:00"
     }
    }
   },
@@ -101,14 +101,14 @@
    "source_date": "2018-02-28",
    "wayback": {
     "commit": {
-     "error": "<urlopen error [Errno 111] Connection refused>",
+     "error": "<urlopen error _ssl.c:993: The handshake operation timed out>",
      "ok": false,
-     "requested_at": "2026-09-08T12:50:00+00:00"
+     "requested_at": "2026-09-08T16:47:38+00:00"
     },
     "edition": {
      "error": "<urlopen error [Errno 111] Connection refused>",
      "ok": false,
-     "requested_at": "2026-09-08T12:49:38+00:00"
+     "requested_at": "2026-09-08T16:46:43+00:00"
     }
    }
   },
@@ -131,7 +131,7 @@
     "commit": {
      "error": "<urlopen error [Errno 111] Connection refused>",
      "ok": false,
-     "requested_at": "2026-09-08T12:50:51+00:00"
+     "requested_at": "2026-09-08T16:48:00+00:00"
     },
     "edition": {
      "ok": true,
@@ -154,7 +154,19 @@
    },
    "raw_sha256": null,
    "row_count": 1434,
-   "source_date": "2018-03-01"
+   "source_date": "2018-03-01",
+   "wayback": {
+    "commit": {
+     "error": "The read operation timed out",
+     "ok": false,
+     "requested_at": "2026-09-08T16:49:42+00:00"
+    },
+    "edition": {
+     "error": "<urlopen error _ssl.c:993: The handshake operation timed out>",
+     "ok": false,
+     "requested_at": "2026-09-08T16:48:51+00:00"
+    }
+   }
   },
   "2018-03-30": {
    "commit": "b505a2d2641fc6dacafcce68c768e335badac163",
@@ -170,7 +182,19 @@
    },
    "raw_sha256": null,
    "row_count": 1431,
-   "source_date": "2018-03-28"
+   "source_date": "2018-03-28",
+   "wayback": {
+    "commit": {
+     "error": "<urlopen error [Errno 111] Connection refused>",
+     "ok": false,
+     "requested_at": "2026-09-08T16:51:00+00:00"
+    },
+    "edition": {
+     "ok": true,
+     "requested_at": "2026-09-08T16:50:31+00:00",
+     "wayback": "https://web.archive.org/web/2/https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/b505a2d2641fc6dacafcce68c768e335badac163/data/ca-dli/editions/2018-03-30.json.gz"
+    }
+   }
   },
   "2018-05-15": {
    "commit": "b505a2d2641fc6dacafcce68c768e335badac163",
@@ -186,7 +210,19 @@
    },
    "raw_sha256": null,
    "row_count": 1440,
-   "source_date": "2018-05-14"
+   "source_date": "2018-05-14",
+   "wayback": {
+    "commit": {
+     "error": "<urlopen error [Errno 111] Connection refused>",
+     "ok": false,
+     "requested_at": "2026-09-08T16:51:52+00:00"
+    },
+    "edition": {
+     "error": "<urlopen error [Errno 111] Connection refused>",
+     "ok": false,
+     "requested_at": "2026-09-08T16:51:30+00:00"
+    }
+   }
   },
   "2018-07-13": {
    "commit": "b505a2d2641fc6dacafcce68c768e335badac163",
@@ -202,7 +238,14 @@
    },
    "raw_sha256": null,
    "row_count": 1444,
-   "source_date": "2018-07-04"
+   "source_date": "2018-07-04",
+   "wayback": {
+    "edition": {
+     "error": "<urlopen error [Errno 111] Connection refused>",
+     "ok": false,
+     "requested_at": "2026-09-08T16:52:13+00:00"
+    }
+   }
   },
   "2018-07-28": {
    "commit": "b505a2d2641fc6dacafcce68c768e335badac163",
@@ -5918,5 +5961,5 @@
   }
  },
  "source": "ca-dli",
- "updated_at": "2026-09-08T12:47:15+00:00"
+ "updated_at": "2026-09-08T16:43:30+00:00"
 }

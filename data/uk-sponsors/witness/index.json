@@ -25,12 +25,12 @@
     "commit": {
      "error": "<urlopen error [Errno 111] Connection refused>",
      "ok": false,
-     "requested_at": "2026-09-08T12:54:36+00:00"
+     "requested_at": "2026-09-08T16:55:59+00:00"
     },
     "edition": {
      "error": "<urlopen error [Errno 111] Connection refused>",
      "ok": false,
-     "requested_at": "2026-09-08T12:54:14+00:00"
+     "requested_at": "2026-09-08T16:55:38+00:00"
     }
    }
   },
@@ -59,12 +59,12 @@
     "commit": {
      "error": "<urlopen error [Errno 111] Connection refused>",
      "ok": false,
-     "requested_at": "2026-09-08T12:55:49+00:00"
+     "requested_at": "2026-09-08T16:56:42+00:00"
     },
     "edition": {
-     "error": "The read operation timed out",
+     "error": "<urlopen error [Errno 111] Connection refused>",
      "ok": false,
-     "requested_at": "2026-09-08T12:55:27+00:00"
+     "requested_at": "2026-09-08T16:56:21+00:00"
     }
    }
   },
@@ -91,14 +91,14 @@
    "source_date": "2026-08-27",
    "wayback": {
     "commit": {
-     "error": "<urlopen error [Errno 111] Connection refused>",
+     "error": "The read operation timed out",
      "ok": false,
-     "requested_at": "2026-09-08T12:56:34+00:00"
+     "requested_at": "2026-09-08T16:58:35+00:00"
     },
     "edition": {
-     "error": "<urlopen error [Errno 111] Connection refused>",
+     "error": "<urlopen error _ssl.c:993: The handshake operation timed out>",
      "ok": false,
-     "requested_at": "2026-09-08T12:56:10+00:00"
+     "requested_at": "2026-09-08T16:57:44+00:00"
     }
    }
   },
@@ -127,12 +127,12 @@
     "commit": {
      "error": "<urlopen error [Errno 111] Connection refused>",
      "ok": false,
-     "requested_at": "2026-09-08T12:57:17+00:00"
+     "requested_at": "2026-09-08T16:59:27+00:00"
     },
     "edition": {
-     "error": "<urlopen error [Errno 111] Connection refused>",
      "ok": false,
-     "requested_at": "2026-09-08T12:56:56+00:00"
+     "requested_at": "2026-09-08T16:58:47+00:00",
+     "status": 523
     }
    }
   },
@@ -158,10 +158,15 @@
    "row_count": 1307,
    "source_date": "2026-09-01",
    "wayback": {
-    "edition": {
-     "error": "<urlopen error _ssl.c:993: The handshake operation timed out>",
+    "commit": {
+     "error": "<urlopen error [Errno 111] Connection refused>",
      "ok": false,
-     "requested_at": "2026-09-08T12:58:21+00:00"
+     "requested_at": "2026-09-08T17:00:09+00:00"
+    },
+    "edition": {
+     "error": "<urlopen error [Errno 111] Connection refused>",
+     "ok": false,
+     "requested_at": "2026-09-08T16:59:48+00:00"
     }
    }
   },
@@ -185,7 +190,19 @@
    },
    "raw_sha256": "7864583cf464ff705bf483b987aec1450516ebbafe33785b591e17d81384f3b9",
    "row_count": 1307,
-   "source_date": "2026-09-02"
+   "source_date": "2026-09-02",
+   "wayback": {
+    "commit": {
+     "ok": true,
+     "requested_at": "2026-09-08T17:01:02+00:00",
+     "wayback": "https://web.archive.org/web/2/https://github.com/multiverseadmin/studiesmultiverse-standing/commit/be059e14eb8bdedb8e9e1c0cea8bb56c60ac1fa5"
+    },
+    "edition": {
+     "error": "<urlopen error [Errno 111] Connection refused>",
+     "ok": false,
+     "requested_at": "2026-09-08T17:00:31+00:00"
+    }
+   }
   },
   "2026-09-03": {
    "commit": "f0f3d8c56ff3ff1d9844bc1715fff80eb2bc398b",
@@ -207,7 +224,19 @@
    },
    "raw_sha256": "796155f4588cec0484fe7a53b2b1460315967187d364664f451b9ede53393bd1",
    "row_count": 1307,
-   "source_date": "2026-09-03"
+   "source_date": "2026-09-03",
+   "wayback": {
+    "commit": {
+     "error": "<urlopen error [Errno 111] Connection refused>",
+     "ok": false,
+     "requested_at": "2026-09-08T17:01:36+00:00"
+    },
+    "edition": {
+     "ok": true,
+     "requested_at": "2026-09-08T17:01:14+00:00",
+     "wayback": "https://web.archive.org/web/2/https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/f0f3d8c56ff3ff1d9844bc1715fff80eb2bc398b/data/uk-sponsors/editions/2026-09-03.json.gz"
+    }
+   }
   },
   "2026-09-04": {
    "commit": "f486da7dcb0559f93730f132b19d98df667d3f59",
@@ -229,7 +258,14 @@
    },
    "raw_sha256": "36aa09e3e46a26405b6313e1cb962140bd5ad1ba6f9644f2b103efd43e209b0f",
    "row_count": 1307,
-   "source_date": "2026-09-04"
+   "source_date": "2026-09-04",
+   "wayback": {
+    "edition": {
+     "error": "<urlopen error [Errno 111] Connection refused>",
+     "ok": false,
+     "requested_at": "2026-09-08T17:01:57+00:00"
+    }
+   }
   },
   "2026-09-07": {
    "commit": "9384d2aed9d53052c2bac1fb0d86904f749273ae",
@@ -255,5 +291,5 @@
   }
  },
  "source": "uk-sponsors",
- "updated_at": "2026-09-08T12:53:53+00:00"
+ "updated_at": "2026-09-08T16:55:16+00:00"
 }
