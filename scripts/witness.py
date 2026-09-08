@@ -223,9 +223,15 @@ def upgrade(detached: DetachedTimestampFile, calendars: Calendars) -> bool:
         for att in list(stamp.attestations):
             if not isinstance(att, PendingAttestation):
                 continue
-            if att.uri not in calendars.urls:
+            uri = att.uri
+            # Ask the calendar the proof names, not the address we submitted
+            # to. They are not the same: a submission to a.pool.opentimestamps.org
+            # comes back naming alice.btc.calendar.opentimestamps.org. Filtering
+            # the URI against the submission list upgraded nothing, ever.
+            if not uri.startswith("https://"):
+                log.warning("proof names a calendar we will not fetch over: %s", uri)
                 continue
-            upgraded = calendars.fetch(att.uri, stamp.msg)
+            upgraded = calendars.fetch(uri, stamp.msg)
             if upgraded is None:
                 continue
             before = set(a for _m, a in stamp.all_attestations())
