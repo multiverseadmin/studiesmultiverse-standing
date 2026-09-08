@@ -122,6 +122,38 @@ surrendered one, a merger and a rename **all look identical: the row simply disa
 
 ---
 
+## Independent witnesses
+
+A git history proves that *we* recorded an edition on a date. That is still our word. Two
+parties that do not answer to us hold the same fact, so the record stands even if this repository
+disappears or its owner is not believed:
+
+| Witness | What it holds | Who controls it |
+|---|---|---|
+| **OpenTimestamps** | Each edition's *published* digests (`content_sha256`, `raw_sha256`) committed to a Bitcoin block through the four public calendars | Nobody — the block chain |
+| **Internet Archive** | The edition file at its immutable commit URL, the commit page, and the daily hash index | archive.org |
+| **Zenodo** (monthly release) | The published layer per register, with a DOI | CERN |
+
+`scripts/witness.py` runs after every ingest (`.github/workflows/witness.yml`) and once a day. It
+reads the digests from `public/<source>/archive.json` — the numbers already on the site — and
+never opens an edition to change it. Proofs live in `data/<source>/witness/`; what the site shows
+is `public/<source>/witness.json`. An edition whose published digest differs from the digest already
+witnessed stops the run and raises an issue: a rewritten edition is an error, not a new fact.
+
+To check an edition yourself, with nothing we hold:
+
+```bash
+pip install opentimestamps-client
+ots verify -d <content_sha256 from the page> data/<source>/witness/<date>.content.ots
+```
+
+A proof answers `pending` until the calendars anchor it (usually within a day) and `bitcoin`
+afterwards, naming the block. `.github/workflows/release.yml` packages `public/` on the first of
+each month as release `record-YYYY-MM-DD`, with `SHA256SUMS` and a manifest; with the repository
+switched on at zenodo.org each release is archived and given a DOI (see `CITATION.cff`).
+
+---
+
 ## Layout
 
 ```
@@ -134,9 +166,11 @@ engine/
 scripts/
   au_ingest.py     backfill (57 editions) and daily incremental, same code path
   publish.py       static JSON + RSS + llms.txt, with layer enforcement
+  witness.py       OpenTimestamps proofs + Internet Archive captures of every edition
 tests/
   test_engine.py   calibration tests — the ones that stop a false mass-removal
-data/<source>/     the archive. editions/, raw/, changes.jsonl, current.json
+  test_witness.py  the witness layer, offline
+data/<source>/     the archive. editions/, raw/, witness/, changes.jsonl, current.json
 public/            what WordPress serves
 ```
 
@@ -149,6 +183,7 @@ python -m pytest tests/ -q
 python scripts/au_ingest.py --backfill     # one-off: reconstruct 57 editions
 python scripts/au_ingest.py --latest       # daily: ingest anything new
 python scripts/publish.py                  # emit static JSON + RSS
+python scripts/witness.py --no-archive     # stamp every published digest; add captures without the flag
 ```
 
 The backfill is why Australia is built first. data.gov.au keeps every dated edition, so nearly

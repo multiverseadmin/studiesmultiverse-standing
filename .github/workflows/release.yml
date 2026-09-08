@@ -1,0 +1,140 @@
+name: Monthly release
+
+# On the first of each month, package what the site publishes — public/<source>/
+# per register, never data/, so each source's licence layer holds — as a
+# GitHub release with checksums and a manifest. Once the repository is switched
+# on in Zenodo (Settings → GitHub), every release is archived there and given
+# a DOI, which is what a citation needs and what outlives this repository.
+#
+# Optional mirror to a Hugging Face dataset when HF_TOKEN and HF_DATASET_REPO
+# exist as repository secrets; skipped silently otherwise.
+
+on:
+  schedule:
+    - cron: "0 12 1 * *"      # 12:00 UTC on the 1st
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: release
+  cancel-in-progress: false
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Package the published layer
+        id: pack
+        run: |
+          set -euo pipefail
+          tag="record-$(date -u +%Y-%m-%d)"
+          if git rev-parse -q --verify "refs/tags/$tag" >/dev/null; then
+            echo "Release $tag already exists; nothing to do."
+            echo "skip=1" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          mkdir -p dist
+          python - <<'EOF'
+          import datetime as dt, json, os, pathlib, subprocess, tarfile
+          root = pathlib.Path(".")
+          public = root / "public"
+          commit = subprocess.check_output(["git", "rev-parse", "HEAD"], text=True).strip()
+          manifest = {
+              "name": "studiesmultiverse Standing Register",
+              "publisher": "A.I.T. Multiverse Consulting Ltd, Nicosia, Cyprus",
+              "site": "https://studiesmultiverse.com",
+              "repository": "https://github.com/" + os.environ.get("GITHUB_REPOSITORY", "multiverseadmin/studiesmultiverse-standing"),
+              "commit": commit,
+              "generated_at": dt.datetime.now(dt.timezone.utc).replace(microsecond=0).isoformat(),
+              "licence": "CC BY 4.0 for our own outputs; each register carries its source licence in its files",
+              "registers": [],
+          }
+          rows = []
+          for src in sorted(p for p in public.iterdir() if p.is_dir()):
+              archive = json.loads((src / "archive.json").read_text()) if (src / "archive.json").exists() else {}
+              editions = archive.get("editions", [])
+              witness = json.loads((src / "witness.json").read_text()) if (src / "witness.json").exists() else {}
+              name = f"{src.name}.tar.gz"
+              with tarfile.open(root / "dist" / name, "w:gz") as tar:
+                  tar.add(src, arcname=src.name)
+              entry = {
+                  "register": src.name,
+                  "country": archive.get("source", {}).get("country"),
+                  "source": archive.get("source", {}).get("register"),
+                  "publication_layer": archive.get("source", {}).get("publication_layer"),
+                  "source_licence": archive.get("source", {}).get("licence"),
+                  "editions": len(editions),
+                  "first_edition": editions[0]["edition_date"] if editions else None,
+                  "latest_edition": editions[-1]["edition_date"] if editions else None,
+                  "editions_with_bitcoin_attestation": witness.get("summary", {}).get("editions_with_bitcoin_attestation"),
+                  "file": name,
+              }
+              manifest["registers"].append(entry)
+              rows.append(f"| {entry['country'] or src.name} | {entry['source'] or ''} | {entry['editions']} | {entry['first_edition'] or ''} → {entry['latest_edition'] or ''} | {entry['publication_layer'] or ''} |")
+          (root / "dist" / "MANIFEST.json").write_text(json.dumps(manifest, indent=1, ensure_ascii=False) + "\n")
+          notes = [
+              "The Standing Register — the published layer of every register, as of this date.",
+              "",
+              "| Country | Register | Editions held | Span | Layer |",
+              "|---|---|---|---|---|",
+              *rows,
+              "",
+              f"Built from commit `{commit[:12]}`. `SHA256SUMS` covers every file here. "
+              "Each archive holds `register.json`, `changes.json`, `archive.json` (every edition's digests) "
+              "and, where the witness layer has run, `witness.json` (OpenTimestamps proofs and Internet Archive captures).",
+              "",
+              "Our outputs are CC BY 4.0; each register's own licence and attribution travel inside its files. "
+              "A row leaving a register is not evidence of wrongdoing — see the caveat in every file.",
+          ]
+          (root / "dist" / "NOTES.md").write_text("\n".join(notes) + "\n")
+          EOF
+          (cd dist && sha256sum *.tar.gz MANIFEST.json > SHA256SUMS)
+          echo "tag=$tag" >> "$GITHUB_OUTPUT"
+          ls -l dist
+
+      - name: Create the release
+        if: steps.pack.outputs.skip != '1'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "${{ steps.pack.outputs.tag }}" \
+            --title "Standing Register — ${{ steps.pack.outputs.tag }}" \
+            --notes-file dist/NOTES.md \
+            dist/*.tar.gz dist/MANIFEST.json dist/SHA256SUMS
+
+      - name: Mirror to Hugging Face (optional)
+        if: steps.pack.outputs.skip != '1'
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          HF_DATASET_REPO: ${{ secrets.HF_DATASET_REPO }}
+        run: |
+          if [ -z "$HF_TOKEN" ] || [ -z "$HF_DATASET_REPO" ]; then
+            echo "No Hugging Face secrets; mirror skipped."
+            exit 0
+          fi
+          pip install -q huggingface_hub
+          python - <<'EOF'
+          import os
+          from huggingface_hub import HfApi
+          api = HfApi(token=os.environ["HF_TOKEN"])
+          repo = os.environ["HF_DATASET_REPO"]
+          api.create_repo(repo, repo_type="dataset", exist_ok=True)
+          api.upload_folder(folder_path="public", path_in_repo="public", repo_id=repo, repo_type="dataset",
+                            commit_message="Standing Register " + os.environ.get("GITHUB_SHA", "")[:12])
+          api.upload_folder(folder_path="dist", path_in_repo="releases/" + os.popen("date -u +%Y-%m-%d").read().strip(),
+                            repo_id=repo, repo_type="dataset")
+          print("mirrored to", repo)
+          EOF

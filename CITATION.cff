@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use the Standing Register, please cite it. The concept DOI (added after the first Zenodo release) always points to the latest version."
+title: "The Standing Register — which institutions are officially permitted to enrol international students, every dated edition kept"
+type: dataset
+authors:
+  - name: "A.I.T. Multiverse Consulting Ltd"
+    city: Nicosia
+    country: CY
+    website: "https://studiesmultiverse.com"
+repository-code: "https://github.com/multiverseadmin/studiesmultiverse-standing"
+url: "https://studiesmultiverse.com/standing/"
+license: CC-BY-4.0
+keywords:
+  - international students
+  - higher education
+  - CRICOS
+  - designated learning institutions
+  - student sponsor licence
+  - MEXT
+  - open data
+  - change record
+abstract: >-
+  The worldwide record of which institutions are officially permitted to enrol
+  international students: what the official registers say, what they used to
+  say, and what changed. Every dated edition of each source register is kept
+  and hashed after the authority overwrites it; the digests are anchored in the
+  Bitcoin block chain through OpenTimestamps and each edition is captured by
+  the Internet Archive at its immutable commit URL. Our outputs are CC BY 4.0;
+  each register's own licence travels with its files.
