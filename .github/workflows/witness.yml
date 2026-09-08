@@ -1,0 +1,118 @@
+name: Witness — OpenTimestamps and the Internet Archive
+
+# Asks two parties that do not answer to us to hold what the archive says:
+# the OpenTimestamps calendars (each edition's published digest, anchored in
+# a Bitcoin block) and archive.org (the edition file at its immutable commit
+# URL, and the commit page).
+#
+# Runs after each ingest completes. A plain `on: push` would never fire here,
+# because the ingests push with the default GITHUB_TOKEN and GitHub does not
+# chain workflows off those pushes; `workflow_run` is the way through. The
+# daily run upgrades pending proofs to Bitcoin attestations and continues the
+# archive.org captures, which are rate-limited to a handful per run.
+
+on:
+  workflow_run:
+    workflows:
+      - "Australia — CRICOS"
+      - "Canada — designated learning institutions"
+      - "Japan — MEXT accredited institutions"
+      - "United Kingdom — licensed student sponsors"
+    types: [completed]
+  schedule:
+    - cron: "37 9 * * *"      # 09:37 UTC daily — proof upgrades and the capture backlog
+  workflow_dispatch:
+    inputs:
+      archive_limit:
+        description: "archive.org captures per register this run"
+        default: "25"
+        required: false
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: witness
+  cancel-in-progress: false
+
+jobs:
+  witness:
+    # After an ingest: only if it succeeded (a failed ingest published nothing).
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Witness
+        env:
+          IA_ACCESS_KEY: ${{ secrets.IA_ACCESS_KEY }}
+          IA_SECRET_KEY: ${{ secrets.IA_SECRET_KEY }}
+        run: |
+          set -o pipefail
+          python scripts/witness.py --archive-limit "${{ github.event.inputs.archive_limit || '25' }}" 2>&1 | tee run.log
+
+      - name: Commit proofs
+        run: |
+          if [ -z "$(git status --porcelain data public)" ]; then
+            echo "No change — every proof is current and nothing new was captured."
+            exit 0
+          fi
+          git config user.name  "studiesmultiverse-bot"
+          git config user.email "bot@studiesmultiverse.com"
+          git add data/*/witness public/*/witness.json
+          git commit -q -m "Witness $(date -u +%Y-%m-%d)" -m "$(grep -E 'INFO (au-cricos|ca-dli|jp-mext|uk-sponsors):' run.log | sed 's/^INFO //')"
+          # Same rebase-retry loop as the ingests: any two workflows can race for main.
+          pushed=0
+          for attempt in 1 2 3 4 5; do
+            if git pull --rebase -q origin main && git push -q origin HEAD:main; then
+              pushed=1; break
+            fi
+            echo "push attempt $attempt lost a race; retrying"
+            git rebase --abort 2>/dev/null || true
+            sleep $(( attempt * 5 ))
+          done
+          if [ "$pushed" -ne 1 ]; then
+            echo "FATAL: proofs are committed locally but could not be pushed"
+            exit 1
+          fi
+
+      - name: Raise alert on failure
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            let log = '';
+            try { log = fs.readFileSync('run.log', 'utf8').slice(-4000); } catch (e) {}
+            const rewritten = /differs from the witnessed/.test(log);
+            const body = [
+              rewritten
+                ? '**An edition file was rewritten.** The published digest of an edition no longer matches the digest already witnessed. Nothing was stamped for that register. This needs a person: find the commit that changed `data/<source>/editions/<date>.json.gz` and decide whether the edition or the witness record is right. A derived layer never rewrites a record.'
+                : 'The witness run failed. No proof was lost — the previous proofs still stand — but nothing new was stamped or captured this run.',
+              '', '```', log || '(no log captured)', '```', '',
+              `[Run](${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId})`,
+            ].join('\n');
+            const open = (await github.rest.issues.listForRepo({
+              owner: context.repo.owner, repo: context.repo.repo, state: 'open', labels: 'witness-failure',
+            })).data[0];
+            if (open) {
+              await github.rest.issues.createComment({ owner: context.repo.owner, repo: context.repo.repo, issue_number: open.number, body });
+            } else {
+              await github.rest.issues.create({
+                owner: context.repo.owner, repo: context.repo.repo,
+                title: `${rewritten ? 'Edition rewritten' : 'Witness run failed'} — ${new Date().toISOString().slice(0,10)}`,
+                body, labels: ['witness-failure'] });
+            }
