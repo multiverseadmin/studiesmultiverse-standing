@@ -174,13 +174,19 @@ class Calendars:
         return RemoteCalendar(url, user_agent="studiesmultiverse-witness")
 
     def submit(self, msg: bytes) -> list[Timestamp]:
-        out = []
-        for url in self.urls:
+        """All calendars at once, as the reference client does; a slow or
+        dead calendar costs one timeout, not one timeout per stamp."""
+        from concurrent.futures import ThreadPoolExecutor
+
+        def one(url):
             try:
-                out.append(self._remote(url).submit(msg, timeout=self.timeout))
+                return self._remote(url).submit(msg, timeout=self.timeout)
             except Exception as exc:  # noqa: BLE001 — one calendar down is fine
                 log.warning("calendar %s refused the submission: %s", url, exc)
-        return out
+                return None
+
+        with ThreadPoolExecutor(max_workers=len(self.urls) or 1) as pool:
+            return [ts for ts in pool.map(one, self.urls) if ts is not None]
 
     def fetch(self, url: str, commitment: bytes) -> Timestamp | None:
         from opentimestamps.calendar import CommitmentNotFoundError
@@ -304,7 +310,7 @@ class SavePageNow:
                 headers={"User-Agent": "studiesmultiverse-witness"},
             )
         try:
-            with urllib.request.urlopen(req, timeout=90) as resp:
+            with urllib.request.urlopen(req, timeout=60) as resp:
                 location = resp.headers.get("Content-Location") or ""
                 body = resp.read(2000)
         except urllib.error.HTTPError as exc:
@@ -370,7 +376,14 @@ def witness_source(
     archive_limit: int,
     do_upgrade: bool = True,
     now: dt.datetime | None = None,
+    deadline: float | None = None,
 ) -> dict:
+    """
+    ``deadline`` is a time.monotonic() value. Past it, nothing new is started:
+    no stamps, no captures. What was done is saved either way, and the next
+    run continues where this one stopped. This is what keeps a first run over
+    435 editions inside the job's time limit instead of losing all of it.
+    """
     now = now or utcnow()
     archive = read_archive(source)
     index = load_index(source)
@@ -381,6 +394,15 @@ def witness_source(
     captures_left = archive_limit
     index_captured_today = index.get("archive_index_captured_on") == now.date().isoformat()
 
+    def out_of_time() -> bool:
+        return deadline is not None and time.monotonic() > deadline
+
+    def save() -> None:
+        index["updated_at"] = iso(now)
+        save_index(source, index)
+        write_public(source, archive, index)
+
+    since_save = 0
     for ed in archive["editions"]:
         date = ed["edition_date"]
         rec = editions.setdefault(date, {})
@@ -399,6 +421,8 @@ def witness_source(
             fname = f"{date}.{kind}.ots"
             path = wdir / fname
             p = proofs.setdefault(kind, {"file": fname})
+            if out_of_time():
+                continue
             if not path.exists():
                 detached = stamp_digest(digest, calendars)
                 if detached is None:
@@ -409,6 +433,7 @@ def witness_source(
                 status, height = attestation_status(detached)
                 p.update({"stamped_at": iso(now), "status": status, "bitcoin_block_height": height})
                 stats["stamped"] += 1
+                since_save += 1
             elif do_upgrade and p.get("status") == "pending":
                 stamped_at = p.get("stamped_at")
                 if stamped_at and now - dt.datetime.fromisoformat(stamped_at) < UPGRADE_AFTER:
@@ -430,22 +455,28 @@ def witness_source(
                 rec["edition_path"] = edition_path.relative_to(ROOT).as_posix()
 
         # Internet Archive.
-        if spn is not None and rec.get("commit") and captures_left > 0:
+        if spn is not None and rec.get("commit") and captures_left > 0 and not out_of_time():
             wb = rec.setdefault("wayback", {})
             for key, url in (
                 ("edition", permalink(rec["commit"], rec["edition_path"])),
                 ("commit", commit_url(rec["commit"])),
             ):
-                if captures_left <= 0:
+                if captures_left <= 0 or out_of_time():
                     break
                 if wb.get(key, {}).get("ok"):
                     continue
                 wb[key] = spn.capture(url)
                 captures_left -= 1
+                since_save += 1
                 if wb[key].get("ok"):
                     stats["captured"] += 1
 
-    if spn is not None and not index_captured_today and captures_left > 0:
+        # A killed job keeps what was done so far.
+        if since_save >= 20:
+            save()
+            since_save = 0
+
+    if spn is not None and not index_captured_today and captures_left > 0 and not out_of_time():
         url = f"https://raw.githubusercontent.com/{REPO}/main/public/{source}/archive.json"
         result = spn.capture(url)
         if result.get("ok"):
@@ -453,9 +484,10 @@ def witness_source(
             index["archive_index_wayback"] = result.get("wayback")
             stats["captured"] += 1
 
-    index["updated_at"] = iso(now)
-    save_index(source, index)
-    write_public(source, archive, index)
+    if out_of_time():
+        log.warning("%s: time budget reached; the rest continues next run", source)
+        stats["out_of_time"] = True
+    save()
     return stats
 
 
@@ -531,12 +563,19 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("--no-archive", action="store_true", help="skip archive.org")
     ap.add_argument("--no-upgrade", action="store_true", help="skip calendar upgrades")
     ap.add_argument("--archive-limit", type=int, default=25, help="SPN captures per source per run")
-    ap.add_argument("--calendar-timeout", type=int, default=20)
+    ap.add_argument("--calendar-timeout", type=int, default=15)
+    ap.add_argument(
+        "--budget-seconds",
+        type=int,
+        default=1500,
+        help="stop starting new stamps or captures after this many seconds (0 = no limit)",
+    )
     args = ap.parse_args(argv)
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
 
     calendars = Calendars(timeout=args.calendar_timeout)
     spn = None if args.no_archive else SavePageNow(os.environ.get("IA_ACCESS_KEY"), os.environ.get("IA_SECRET_KEY"))
+    deadline = time.monotonic() + args.budget_seconds if args.budget_seconds > 0 else None
 
     rc = 0
     for source in [args.source] if args.source else SOURCES:
@@ -547,6 +586,7 @@ def main(argv: list[str] | None = None) -> int:
                 spn=spn,
                 archive_limit=args.archive_limit,
                 do_upgrade=not args.no_upgrade,
+                deadline=deadline,
             )
         except WitnessError as exc:
             log.error("%s", exc)
