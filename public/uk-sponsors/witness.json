@@ -1,0 +1,271 @@
+{
+ "publisher": "A.I.T. Multiverse Consulting Ltd, Nicosia, Cyprus",
+ "site": "https://studiesmultiverse.com",
+ "generated_at": "2026-09-08T12:53:53+00:00",
+ "our_licence": "CC BY 4.0",
+ "our_licence_url": "https://creativecommons.org/licenses/by/4.0/",
+ "source": {
+  "country": "United Kingdom",
+  "register": "Register of licensed student sponsors",
+  "publisher": "UK Home Office",
+  "url": "https://www.gov.uk/government/publications/register-of-licensed-sponsors-students",
+  "licence": "Open Government Licence v3.0",
+  "licence_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+  "attribution": "Contains public sector information licensed under the Open Government Licence v3.0.",
+  "publication_layer": "mirror"
+ },
+ "what_this_is": "Independent witnesses to the editions in archive.json: OpenTimestamps proofs that commit each edition's published digest to the Bitcoin block chain, and Internet Archive captures of the edition file at its immutable commit URL. Neither is under this publisher's control after the fact.",
+ "how_to_verify": "Install the reference client (pip install opentimestamps-client). Take the content_sha256 shown for an edition on studiesmultiverse.com or in public/<source>/archive.json, download the matching .ots proof from the proof_url, and run: ots verify -d <content_sha256> <date>.content.ots. A proof with status 'bitcoin' verifies against the block chain without trusting this repository or its publisher; a 'pending' proof is held by the calendars named in the file and upgrades on its own. The Wayback Machine links are the Internet Archive's own copies of the edition file at its immutable commit URL and of the commit page.",
+ "archive_index_wayback": null,
+ "summary": {
+  "editions": 9,
+  "editions_stamped": 9,
+  "editions_with_bitcoin_attestation": 0,
+  "editions_archived_at_internet_archive": 0
+ },
+ "editions": [
+  {
+   "edition_date": "2026-08-25",
+   "source_date": "2026-08-25",
+   "row_count": 1306,
+   "content_sha256": "5b66b72703e5c75de778fd8406558acaa47079399a77fa4de6275114b859ccca",
+   "raw_sha256": "fccd717e210902b28975c924230298073da709efa1a29cb8f330d65be41b759e",
+   "commit": "945741afe5c72de25df453b2c6621b0f755b76a8",
+   "commit_url": "https://github.com/multiverseadmin/studiesmultiverse-standing/commit/945741afe5c72de25df453b2c6621b0f755b76a8",
+   "edition_url": "https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/945741afe5c72de25df453b2c6621b0f755b76a8/data/uk-sponsors/editions/2026-08-25.json.gz",
+   "proofs": {
+    "content": {
+     "digest": "5b66b72703e5c75de778fd8406558acaa47079399a77fa4de6275114b859ccca",
+     "proof_url": "https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/main/data/uk-sponsors/witness/2026-08-25.content.ots",
+     "status": "pending",
+     "bitcoin_block_height": null,
+     "stamped_at": "2026-09-08T12:44:16+00:00"
+    },
+    "raw": {
+     "digest": "fccd717e210902b28975c924230298073da709efa1a29cb8f330d65be41b759e",
+     "proof_url": "https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/main/data/uk-sponsors/witness/2026-08-25.raw.ots",
+     "status": "pending",
+     "bitcoin_block_height": null,
+     "stamped_at": "2026-09-08T12:44:16+00:00"
+    }
+   },
+   "wayback": {}
+  },
+  {
+   "edition_date": "2026-08-26",
+   "source_date": "2026-08-26",
+   "row_count": 1305,
+   "content_sha256": "fcd28e19a538e1b7267855ddac2c62cf62efcc8b061c558c4995a2c963c6a89f",
+   "raw_sha256": "23eafc2f985815e618cbc814676329e2818c6d38964a896c66fcf2e71ba6848c",
+   "commit": "c7016a9b550b1da8aee282c007636f2033b383a0",
+   "commit_url": "https://github.com/multiverseadmin/studiesmultiverse-standing/commit/c7016a9b550b1da8aee282c007636f2033b383a0",
+   "edition_url": "https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/c7016a9b550b1da8aee282c007636f2033b383a0/data/uk-sponsors/editions/2026-08-26.json.gz",
+   "proofs": {
+    "content": {
+     "digest": "fcd28e19a538e1b7267855ddac2c62cf62efcc8b061c558c4995a2c963c6a89f",
+     "proof_url": "https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/main/data/uk-sponsors/witness/2026-08-26.content.ots",
+     "status": "pending",
+     "bitcoin_block_height": null,
+     "stamped_at": "2026-09-08T12:44:16+00:00"
+    },
+    "raw": {
+     "digest": "23eafc2f985815e618cbc814676329e2818c6d38964a896c66fcf2e71ba6848c",
+     "proof_url": "https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/main/data/uk-sponsors/witness/2026-08-26.raw.ots",
+     "status": "pending",
+     "bitcoin_block_height": null,
+     "stamped_at": "2026-09-08T12:44:16+00:00"
+    }
+   },
+   "wayback": {}
+  },
+  {
+   "edition_date": "2026-08-27",
+   "source_date": "2026-08-27",
+   "row_count": 1308,
+   "content_sha256": "db22659f6cea513d5cdd931b1f29a6660a1874eea578add785641e197b0ecb6f",
+   "raw_sha256": "cab3edd5b11e06120165c2d607def32d61718d547122bf394c9abfd475bef703",
+   "commit": "7a4b781809cc74f2e6a98fc2ade054700cbda725",
+   "commit_url": "https://github.com/multiverseadmin/studiesmultiverse-standing/commit/7a4b781809cc74f2e6a98fc2ade054700cbda725",
+   "edition_url": "https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/7a4b781809cc74f2e6a98fc2ade054700cbda725/data/uk-sponsors/editions/2026-08-27.json.gz",
+   "proofs": {
+    "content": {
+     "digest": "db22659f6cea513d5cdd931b1f29a6660a1874eea578add785641e197b0ecb6f",
+     "proof_url": "https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/main/data/uk-sponsors/witness/2026-08-27.content.ots",
+     "status": "pending",
+     "bitcoin_block_height": null,
+     "stamped_at": "2026-09-08T12:44:16+00:00"
+    },
+    "raw": {
+     "digest": "cab3edd5b11e06120165c2d607def32d61718d547122bf394c9abfd475bef703",
+     "proof_url": "https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/main/data/uk-sponsors/witness/2026-08-27.raw.ots",
+     "status": "pending",
+     "bitcoin_block_height": null,
+     "stamped_at": "2026-09-08T12:44:16+00:00"
+    }
+   },
+   "wayback": {}
+  },
+  {
+   "edition_date": "2026-08-28",
+   "source_date": "2026-08-28",
+   "row_count": 1308,
+   "content_sha256": "bc8e4cd64c59b6256d80c996e94d20fe4203d87b8792e8f6dde7765d99779b7a",
+   "raw_sha256": "fd9407275971af882a3b9d466d8371ef0610acb707d1bfd7103d2523bbdfef12",
+   "commit": "19655f80e82f3c540f1a7e61d4745c213d4e4da6",
+   "commit_url": "https://github.com/multiverseadmin/studiesmultiverse-standing/commit/19655f80e82f3c540f1a7e61d4745c213d4e4da6",
+   "edition_url": "https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/19655f80e82f3c540f1a7e61d4745c213d4e4da6/data/uk-sponsors/editions/2026-08-28.json.gz",
+   "proofs": {
+    "content": {
+     "digest": "bc8e4cd64c59b6256d80c996e94d20fe4203d87b8792e8f6dde7765d99779b7a",
+     "proof_url": "https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/main/data/uk-sponsors/witness/2026-08-28.content.ots",
+     "status": "pending",
+     "bitcoin_block_height": null,
+     "stamped_at": "2026-09-08T12:44:16+00:00"
+    },
+    "raw": {
+     "digest": "fd9407275971af882a3b9d466d8371ef0610acb707d1bfd7103d2523bbdfef12",
+     "proof_url": "https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/main/data/uk-sponsors/witness/2026-08-28.raw.ots",
+     "status": "pending",
+     "bitcoin_block_height": null,
+     "stamped_at": "2026-09-08T12:44:16+00:00"
+    }
+   },
+   "wayback": {}
+  },
+  {
+   "edition_date": "2026-09-01",
+   "source_date": "2026-09-01",
+   "row_count": 1307,
+   "content_sha256": "8022d3716e68271ead29194002f8bafb4cdffbc7e925d94de28a2c46b6ccf8fe",
+   "raw_sha256": "519ed58bb9c7ca68a800358ab9887744b09b3149f52b71261e82060f0cd46c56",
+   "commit": "069f622522c1d60601eca6362a359da6d0609b23",
+   "commit_url": "https://github.com/multiverseadmin/studiesmultiverse-standing/commit/069f622522c1d60601eca6362a359da6d0609b23",
+   "edition_url": "https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/069f622522c1d60601eca6362a359da6d0609b23/data/uk-sponsors/editions/2026-09-01.json.gz",
+   "proofs": {
+    "content": {
+     "digest": "8022d3716e68271ead29194002f8bafb4cdffbc7e925d94de28a2c46b6ccf8fe",
+     "proof_url": "https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/main/data/uk-sponsors/witness/2026-09-01.content.ots",
+     "status": "pending",
+     "bitcoin_block_height": null,
+     "stamped_at": "2026-09-08T12:44:16+00:00"
+    },
+    "raw": {
+     "digest": "519ed58bb9c7ca68a800358ab9887744b09b3149f52b71261e82060f0cd46c56",
+     "proof_url": "https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/main/data/uk-sponsors/witness/2026-09-01.raw.ots",
+     "status": "pending",
+     "bitcoin_block_height": null,
+     "stamped_at": "2026-09-08T12:44:16+00:00"
+    }
+   },
+   "wayback": {}
+  },
+  {
+   "edition_date": "2026-09-02",
+   "source_date": "2026-09-02",
+   "row_count": 1307,
+   "content_sha256": "03c4c8e1891f185acad1fdb78f80a827334e495a8f27cd0846e63b50865d5d83",
+   "raw_sha256": "7864583cf464ff705bf483b987aec1450516ebbafe33785b591e17d81384f3b9",
+   "commit": "be059e14eb8bdedb8e9e1c0cea8bb56c60ac1fa5",
+   "commit_url": "https://github.com/multiverseadmin/studiesmultiverse-standing/commit/be059e14eb8bdedb8e9e1c0cea8bb56c60ac1fa5",
+   "edition_url": "https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/be059e14eb8bdedb8e9e1c0cea8bb56c60ac1fa5/data/uk-sponsors/editions/2026-09-02.json.gz",
+   "proofs": {
+    "content": {
+     "digest": "03c4c8e1891f185acad1fdb78f80a827334e495a8f27cd0846e63b50865d5d83",
+     "proof_url": "https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/main/data/uk-sponsors/witness/2026-09-02.content.ots",
+     "status": "pending",
+     "bitcoin_block_height": null,
+     "stamped_at": "2026-09-08T12:44:16+00:00"
+    },
+    "raw": {
+     "digest": "7864583cf464ff705bf483b987aec1450516ebbafe33785b591e17d81384f3b9",
+     "proof_url": "https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/main/data/uk-sponsors/witness/2026-09-02.raw.ots",
+     "status": "pending",
+     "bitcoin_block_height": null,
+     "stamped_at": "2026-09-08T12:44:16+00:00"
+    }
+   },
+   "wayback": {}
+  },
+  {
+   "edition_date": "2026-09-03",
+   "source_date": "2026-09-03",
+   "row_count": 1307,
+   "content_sha256": "edceb3abaae4f4faf495bf0a6c4b0f1c8501e920e03242163f871cae6d1b66c8",
+   "raw_sha256": "796155f4588cec0484fe7a53b2b1460315967187d364664f451b9ede53393bd1",
+   "commit": "f0f3d8c56ff3ff1d9844bc1715fff80eb2bc398b",
+   "commit_url": "https://github.com/multiverseadmin/studiesmultiverse-standing/commit/f0f3d8c56ff3ff1d9844bc1715fff80eb2bc398b",
+   "edition_url": "https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/f0f3d8c56ff3ff1d9844bc1715fff80eb2bc398b/data/uk-sponsors/editions/2026-09-03.json.gz",
+   "proofs": {
+    "content": {
+     "digest": "edceb3abaae4f4faf495bf0a6c4b0f1c8501e920e03242163f871cae6d1b66c8",
+     "proof_url": "https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/main/data/uk-sponsors/witness/2026-09-03.content.ots",
+     "status": "pending",
+     "bitcoin_block_height": null,
+     "stamped_at": "2026-09-08T12:44:16+00:00"
+    },
+    "raw": {
+     "digest": "796155f4588cec0484fe7a53b2b1460315967187d364664f451b9ede53393bd1",
+     "proof_url": "https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/main/data/uk-sponsors/witness/2026-09-03.raw.ots",
+     "status": "pending",
+     "bitcoin_block_height": null,
+     "stamped_at": "2026-09-08T12:44:16+00:00"
+    }
+   },
+   "wayback": {}
+  },
+  {
+   "edition_date": "2026-09-04",
+   "source_date": "2026-09-04",
+   "row_count": 1307,
+   "content_sha256": "1933d2008ca64e9778c5c36add546dc48662062e1182bbe42c4cab0f3ba067dc",
+   "raw_sha256": "36aa09e3e46a26405b6313e1cb962140bd5ad1ba6f9644f2b103efd43e209b0f",
+   "commit": "f486da7dcb0559f93730f132b19d98df667d3f59",
+   "commit_url": "https://github.com/multiverseadmin/studiesmultiverse-standing/commit/f486da7dcb0559f93730f132b19d98df667d3f59",
+   "edition_url": "https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/f486da7dcb0559f93730f132b19d98df667d3f59/data/uk-sponsors/editions/2026-09-04.json.gz",
+   "proofs": {
+    "content": {
+     "digest": "1933d2008ca64e9778c5c36add546dc48662062e1182bbe42c4cab0f3ba067dc",
+     "proof_url": "https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/main/data/uk-sponsors/witness/2026-09-04.content.ots",
+     "status": "pending",
+     "bitcoin_block_height": null,
+     "stamped_at": "2026-09-08T12:44:16+00:00"
+    },
+    "raw": {
+     "digest": "36aa09e3e46a26405b6313e1cb962140bd5ad1ba6f9644f2b103efd43e209b0f",
+     "proof_url": "https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/main/data/uk-sponsors/witness/2026-09-04.raw.ots",
+     "status": "pending",
+     "bitcoin_block_height": null,
+     "stamped_at": "2026-09-08T12:44:16+00:00"
+    }
+   },
+   "wayback": {}
+  },
+  {
+   "edition_date": "2026-09-07",
+   "source_date": "2026-09-07",
+   "row_count": 1306,
+   "content_sha256": "4f5ed35032cf419a73ec2de95e8f033359b1af14e449eb8f30489b84cc2cdfdd",
+   "raw_sha256": "ebce85f1c1863830f200bb5b4dd2d9fda87caf0f3ef717b01f9d7e43e3af184b",
+   "commit": "9384d2aed9d53052c2bac1fb0d86904f749273ae",
+   "commit_url": "https://github.com/multiverseadmin/studiesmultiverse-standing/commit/9384d2aed9d53052c2bac1fb0d86904f749273ae",
+   "edition_url": "https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/9384d2aed9d53052c2bac1fb0d86904f749273ae/data/uk-sponsors/editions/2026-09-07.json.gz",
+   "proofs": {
+    "content": {
+     "digest": "4f5ed35032cf419a73ec2de95e8f033359b1af14e449eb8f30489b84cc2cdfdd",
+     "proof_url": "https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/main/data/uk-sponsors/witness/2026-09-07.content.ots",
+     "status": "pending",
+     "bitcoin_block_height": null,
+     "stamped_at": "2026-09-08T12:44:16+00:00"
+    },
+    "raw": {
+     "digest": "ebce85f1c1863830f200bb5b4dd2d9fda87caf0f3ef717b01f9d7e43e3af184b",
+     "proof_url": "https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/main/data/uk-sponsors/witness/2026-09-07.raw.ots",
+     "status": "pending",
+     "bitcoin_block_height": null,
+     "stamped_at": "2026-09-08T12:44:16+00:00"
+    }
+   },
+   "wayback": {}
+  }
+ ]
+}

@@ -1,0 +1,90 @@
+{
+ "editions": {
+  "2026-08-25": {
+   "commit": "8b5a11f7f0f1cf2630c3f17adfb04ea986a380e2",
+   "content_sha256": "175362c3353e9dce6dde38fbe891253daa91dc318d56a6c0b642bbfcebc1d06d",
+   "edition_path": "data/jp-mext/editions/2026-08-25.json.gz",
+   "proofs": {
+    "content": {
+     "bitcoin_block_height": null,
+     "file": "2026-08-25.content.ots",
+     "stamped_at": "2026-09-08T12:44:11+00:00",
+     "status": "pending"
+    }
+   },
+   "raw_sha256": null,
+   "row_count": 96,
+   "source_date": "2026-04-30",
+   "wayback": {
+    "commit": {
+     "error": "<urlopen error [Errno 111] Connection refused>",
+     "ok": false,
+     "requested_at": "2026-09-08T12:51:34+00:00"
+    },
+    "edition": {
+     "error": "<urlopen error [Errno 111] Connection refused>",
+     "ok": false,
+     "requested_at": "2026-09-08T12:51:12+00:00"
+    }
+   }
+  },
+  "2026-08-31": {
+   "commit": "12419d91eb4c004be8a58e300a14bb72c62a5c8d",
+   "content_sha256": "175362c3353e9dce6dde38fbe891253daa91dc318d56a6c0b642bbfcebc1d06d",
+   "edition_path": "data/jp-mext/editions/2026-08-31.json.gz",
+   "proofs": {
+    "content": {
+     "bitcoin_block_height": null,
+     "file": "2026-08-31.content.ots",
+     "stamped_at": "2026-09-08T12:44:11+00:00",
+     "status": "pending"
+    }
+   },
+   "raw_sha256": null,
+   "row_count": 96,
+   "source_date": "2026-04-30",
+   "wayback": {
+    "commit": {
+     "error": "<urlopen error [Errno 111] Connection refused>",
+     "ok": false,
+     "requested_at": "2026-09-08T12:52:18+00:00"
+    },
+    "edition": {
+     "error": "<urlopen error [Errno 111] Connection refused>",
+     "ok": false,
+     "requested_at": "2026-09-08T12:51:56+00:00"
+    }
+   }
+  },
+  "2026-09-07": {
+   "commit": "12419d91eb4c004be8a58e300a14bb72c62a5c8d",
+   "content_sha256": "175362c3353e9dce6dde38fbe891253daa91dc318d56a6c0b642bbfcebc1d06d",
+   "edition_path": "data/jp-mext/editions/2026-09-07.json.gz",
+   "proofs": {
+    "content": {
+     "bitcoin_block_height": null,
+     "file": "2026-09-07.content.ots",
+     "stamped_at": "2026-09-08T12:44:11+00:00",
+     "status": "pending"
+    }
+   },
+   "raw_sha256": null,
+   "row_count": 96,
+   "source_date": "2026-04-30",
+   "wayback": {
+    "commit": {
+     "error": "The read operation timed out",
+     "ok": false,
+     "requested_at": "2026-09-08T12:53:31+00:00"
+    },
+    "edition": {
+     "ok": false,
+     "requested_at": "2026-09-08T12:52:40+00:00",
+     "status": 523
+    }
+   }
+  }
+ },
+ "source": "jp-mext",
+ "updated_at": "2026-09-08T12:50:51+00:00"
+}
