@@ -171,3 +171,18 @@ def test_capture_limit_is_honoured(repo):
     assert stats["captured"] == 1 and len(spn.urls) == 1
     stats = witness.witness_source("uk-sponsors", calendars=cal, spn=spn, archive_limit=1)
     assert stats["captured"] == 1 and len(spn.urls) == 2  # picks up where it left off
+
+
+def test_time_budget_stops_new_work_but_keeps_what_was_done(repo):
+    import time
+
+    cal, spn = FakeCalendars(), FakeSPN()
+    # A deadline already in the past: nothing is stamped or captured, but the
+    # record is still written and the run reports that it ran out of time.
+    stats = witness.witness_source("uk-sponsors", calendars=cal, spn=spn, archive_limit=25, deadline=time.monotonic() - 1)
+    assert stats["stamped"] == 0 and stats["captured"] == 0 and stats.get("out_of_time") is True
+    assert (repo / "public/uk-sponsors/witness.json").exists()
+    assert not (repo / "data/uk-sponsors/witness/2026-09-07.content.ots").exists()
+    # With time, the same run picks everything up.
+    stats = witness.witness_source("uk-sponsors", calendars=cal, spn=spn, archive_limit=25, deadline=time.monotonic() + 60)
+    assert stats["stamped"] == 2 and stats["captured"] == 3 and "out_of_time" not in stats
