@@ -47,7 +47,7 @@ Usage:
     python scripts/witness.py                       # all sources, stamp + upgrade + archive
     python scripts/witness.py --source uk-sponsors
     python scripts/witness.py --no-archive          # calendars only
-    python scripts/witness.py --archive-limit 10    # at most 10 SPN captures per source
+    python scripts/witness.py --archive-limit 25    # more SPN captures per source than the default 10
 """
 
 from __future__ import annotations
@@ -310,7 +310,7 @@ class SavePageNow:
                 headers={"User-Agent": "studiesmultiverse-witness"},
             )
         try:
-            with urllib.request.urlopen(req, timeout=60) as resp:
+            with urllib.request.urlopen(req, timeout=45) as resp:
                 location = resp.headers.get("Content-Location") or ""
                 body = resp.read(2000)
         except urllib.error.HTTPError as exc:
@@ -562,7 +562,7 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("--source", choices=SOURCES)
     ap.add_argument("--no-archive", action="store_true", help="skip archive.org")
     ap.add_argument("--no-upgrade", action="store_true", help="skip calendar upgrades")
-    ap.add_argument("--archive-limit", type=int, default=25, help="SPN captures per source per run")
+    ap.add_argument("--archive-limit", type=int, default=10, help="SPN captures per source per run")
     ap.add_argument("--calendar-timeout", type=int, default=15)
     ap.add_argument(
         "--budget-seconds",
@@ -576,32 +576,49 @@ def main(argv: list[str] | None = None) -> int:
     calendars = Calendars(timeout=args.calendar_timeout)
     spn = None if args.no_archive else SavePageNow(os.environ.get("IA_ACCESS_KEY"), os.environ.get("IA_SECRET_KEY"))
     deadline = time.monotonic() + args.budget_seconds if args.budget_seconds > 0 else None
+    sources = [args.source] if args.source else list(SOURCES)
 
+    # Two passes. Proofs first for every register — they are cheap, and they
+    # are the layer nobody else can reconstruct later. archive.org captures
+    # second, with whatever time is left; anonymous Save Page Now can take a
+    # minute per URL and must never crowd out a stamp.
     rc = 0
-    for source in [args.source] if args.source else SOURCES:
-        try:
-            stats = witness_source(
-                source,
-                calendars=calendars,
-                spn=spn,
-                archive_limit=args.archive_limit,
-                do_upgrade=not args.no_upgrade,
-                deadline=deadline,
-            )
-        except WitnessError as exc:
-            log.error("%s", exc)
-            rc = 2
-            continue
+    totals: dict[str, dict] = {}
+    for pass_name, pass_spn in (("proofs", None), ("captures", spn)):
+        if pass_spn is None and pass_name == "captures":
+            break
+        for source in sources:
+            try:
+                stats = witness_source(
+                    source,
+                    calendars=calendars,
+                    spn=pass_spn,
+                    archive_limit=args.archive_limit,
+                    do_upgrade=not args.no_upgrade and pass_name == "proofs",
+                    deadline=deadline,
+                )
+            except WitnessError as exc:
+                log.error("%s", exc)
+                rc = 2
+                continue
+            t = totals.setdefault(source, {"stamped": 0, "upgraded": 0, "captured": 0, "failed_stamps": 0})
+            for k in t:
+                t[k] += stats.get(k, 0)
+            if stats.get("out_of_time"):
+                t["out_of_time"] = True
+
+    for source, t in totals.items():
         summary = summarise(load_index(source))
         log.info(
-            "%s: stamped %d, upgraded %d, captured %d, failed %d — %d editions, %d with a Bitcoin attestation",
+            "%s: stamped %d, upgraded %d, captured %d, failed %d — %d editions, %d with a Bitcoin attestation%s",
             source,
-            stats["stamped"],
-            stats["upgraded"],
-            stats["captured"],
-            stats["failed_stamps"],
+            t["stamped"],
+            t["upgraded"],
+            t["captured"],
+            t["failed_stamps"],
             summary["editions"],
             summary["editions_with_bitcoin_attestation"],
+            " (time budget reached)" if t.get("out_of_time") else "",
         )
     return rc
 
