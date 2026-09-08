@@ -85,6 +85,34 @@ def test_proof_round_trips_and_reports_status():
     assert len(cal.fetched) == n
 
 
+class RenamingCalendars(FakeCalendars):
+    """A real calendar names *itself* in the attestation, not the pool address
+    the submission went to. a.pool.opentimestamps.org answers naming
+    alice.btc.calendar.opentimestamps.org."""
+
+    NAMES = {"https://a.pool.opentimestamps.org": "https://alice.btc.calendar.opentimestamps.org"}
+
+    def submit(self, msg):
+        self.submitted.append(msg)
+        out = []
+        for url in self.urls:
+            ts = Timestamp(msg)
+            ts.attestations.add(PendingAttestation(self.NAMES[url]))
+            out.append(ts)
+        return out
+
+
+def test_upgrade_asks_the_calendar_the_proof_names():
+    """Regression: filtering the attestation URI against the submission list
+    meant no proof ever upgraded, silently, however long we waited."""
+    cal = RenamingCalendars()
+    detached = witness.stamp_digest(DIGEST, cal)
+    assert witness.attestation_status(detached) == ("pending", None)
+    assert witness.upgrade(detached, cal) is True
+    assert witness.attestation_status(detached) == ("bitcoin", 912345)
+    assert cal.fetched[0][0] == "https://alice.btc.calendar.opentimestamps.org"
+
+
 @pytest.fixture
 def repo(tmp_path, monkeypatch):
     """A one-source repository with a published archive.json and no witness record."""
