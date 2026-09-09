@@ -1,11 +1,11 @@
 {
  "source_id": "uk-sponsors",
- "edition_date": "2026-09-07",
- "source_date": "2026-09-07",
- "fetched_at": "2026-09-08T06:31:58+00:00",
- "row_count": 1306,
- "content_sha256": "4f5ed35032cf419a73ec2de95e8f033359b1af14e449eb8f30489b84cc2cdfdd",
- "raw_sha256": "ebce85f1c1863830f200bb5b4dd2d9fda87caf0f3ef717b01f9d7e43e3af184b",
+ "edition_date": "2026-09-08",
+ "source_date": "2026-09-08",
+ "fetched_at": "2026-09-09T06:32:50+00:00",
+ "row_count": 1307,
+ "content_sha256": "b74108123d38cd06a3aa759769f7b74e22bce2b64e5772425785cd95cbd97751",
+ "raw_sha256": "1325a515ebba623d790293d07ded7ce304350610408c802ad912b616064450ca",
  "provenance": {
   "source_id": "uk-sponsors",
   "country": "United Kingdom",
@@ -20,10 +20,10 @@
   "notes": ""
  },
  "extra": {
-  "attachment_url": "https://assets.publishing.service.gov.uk/media/6a9ea00901bbff0bf8f97ed7/SP_-_Student_and_Child_Student_Web_Register_-_2026-09-07.csv",
-  "public_updated_at": "2026-09-07T13:55:38+01:00",
+  "attachment_url": "https://assets.publishing.service.gov.uk/media/6a9fca736beb520655555640/SP_-_Student_and_Child_Student_Web_Register_-_2026-09-08.csv",
+  "public_updated_at": "2026-09-08T09:44:35+01:00",
   "raw_sha256_note": "the CSV exactly as the Home Office published it"
  },
- "editions_held": 9,
+ "editions_held": 10,
  "earliest_edition": "2026-08-25"
 }
