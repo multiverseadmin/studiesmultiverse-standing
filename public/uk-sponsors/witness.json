@@ -1,7 +1,7 @@
 {
  "publisher": "A.I.T. Multiverse Consulting Ltd, Nicosia, Cyprus",
  "site": "https://studiesmultiverse.com",
- "generated_at": "2026-09-09T04:53:57+00:00",
+ "generated_at": "2026-09-09T06:07:32+00:00",
  "our_licence": "CC BY 4.0",
  "our_licence_url": "https://creativecommons.org/licenses/by/4.0/",
  "source": {
@@ -21,7 +21,7 @@
   "editions": 9,
   "editions_stamped": 9,
   "editions_with_bitcoin_attestation": 9,
-  "editions_archived_at_internet_archive": 1
+  "editions_archived_at_internet_archive": 3
  },
  "editions": [
   {
@@ -50,7 +50,8 @@
     }
    },
    "wayback": {
-    "commit": "https://web.archive.org/web/2/https://github.com/multiverseadmin/studiesmultiverse-standing/commit/945741afe5c72de25df453b2c6621b0f755b76a8"
+    "commit": "https://web.archive.org/web/2/https://github.com/multiverseadmin/studiesmultiverse-standing/commit/945741afe5c72de25df453b2c6621b0f755b76a8",
+    "edition": "https://web.archive.org/web/2/https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/945741afe5c72de25df453b2c6621b0f755b76a8/data/uk-sponsors/editions/2026-08-25.json.gz"
    }
   },
   {
@@ -78,7 +79,9 @@
      "stamped_at": "2026-09-08T12:44:16+00:00"
     }
    },
-   "wayback": {}
+   "wayback": {
+    "edition": "https://web.archive.org/web/2/https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/c7016a9b550b1da8aee282c007636f2033b383a0/data/uk-sponsors/editions/2026-08-26.json.gz"
+   }
   },
   {
    "edition_date": "2026-08-27",

@@ -1,7 +1,7 @@
 {
  "publisher": "A.I.T. Multiverse Consulting Ltd, Nicosia, Cyprus",
  "site": "https://studiesmultiverse.com",
- "generated_at": "2026-09-09T04:46:31+00:00",
+ "generated_at": "2026-09-09T05:55:21+00:00",
  "our_licence": "CC BY 4.0",
  "our_licence_url": "https://creativecommons.org/licenses/by/4.0/",
  "source": {
@@ -21,7 +21,7 @@
   "editions": 366,
   "editions_stamped": 366,
   "editions_with_bitcoin_attestation": 366,
-  "editions_archived_at_internet_archive": 5
+  "editions_archived_at_internet_archive": 7
  },
  "editions": [
   {
@@ -196,6 +196,7 @@
     }
    },
    "wayback": {
+    "commit": "https://web.archive.org/web/2/https://github.com/multiverseadmin/studiesmultiverse-standing/commit/b505a2d2641fc6dacafcce68c768e335badac163",
     "edition": "https://web.archive.org/web/2/https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/b505a2d2641fc6dacafcce68c768e335badac163/data/ca-dli/editions/2018-05-15.json.gz"
    }
   },
@@ -217,7 +218,9 @@
      "stamped_at": "2026-09-08T12:35:53+00:00"
     }
    },
-   "wayback": {}
+   "wayback": {
+    "edition": "https://web.archive.org/web/2/https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/b505a2d2641fc6dacafcce68c768e335badac163/data/ca-dli/editions/2018-07-13.json.gz"
+   }
   },
   {
    "edition_date": "2018-07-28",
@@ -277,7 +280,9 @@
      "stamped_at": "2026-09-08T12:35:53+00:00"
     }
    },
-   "wayback": {}
+   "wayback": {
+    "edition": "https://web.archive.org/web/2/https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/f6b38b0d35590ecb49b9acdb68967204c971cf85/data/ca-dli/editions/2018-10-18.json.gz"
+   }
   },
   {
    "edition_date": "2018-10-26",
@@ -337,7 +342,9 @@
      "stamped_at": "2026-09-08T12:35:53+00:00"
     }
    },
-   "wayback": {}
+   "wayback": {
+    "commit": "https://web.archive.org/web/2/https://github.com/multiverseadmin/studiesmultiverse-standing/commit/b505a2d2641fc6dacafcce68c768e335badac163"
+   }
   },
   {
    "edition_date": "2018-11-15",
