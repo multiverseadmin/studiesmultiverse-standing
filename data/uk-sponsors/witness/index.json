@@ -306,8 +306,30 @@
    "raw_sha256": "ebce85f1c1863830f200bb5b4dd2d9fda87caf0f3ef717b01f9d7e43e3af184b",
    "row_count": 1306,
    "source_date": "2026-09-07"
+  },
+  "2026-09-08": {
+   "commit": "e02dcfabedffb41cb7339e88d0de025a79b378a5",
+   "content_sha256": "b74108123d38cd06a3aa759769f7b74e22bce2b64e5772425785cd95cbd97751",
+   "edition_path": "data/uk-sponsors/editions/2026-09-08.json.gz",
+   "proofs": {
+    "content": {
+     "bitcoin_block_height": null,
+     "file": "2026-09-08.content.ots",
+     "stamped_at": "2026-09-09T06:33:18+00:00",
+     "status": "pending"
+    },
+    "raw": {
+     "bitcoin_block_height": null,
+     "file": "2026-09-08.raw.ots",
+     "stamped_at": "2026-09-09T06:33:18+00:00",
+     "status": "pending"
+    }
+   },
+   "raw_sha256": "1325a515ebba623d790293d07ded7ce304350610408c802ad912b616064450ca",
+   "row_count": 1307,
+   "source_date": "2026-09-08"
   }
  },
  "source": "uk-sponsors",
- "updated_at": "2026-09-09T06:07:32+00:00"
+ "updated_at": "2026-09-09T06:58:30+00:00"
 }
