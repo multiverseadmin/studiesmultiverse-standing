@@ -1,7 +1,7 @@
 {
  "publisher": "A.I.T. Multiverse Consulting Ltd, Nicosia, Cyprus",
  "site": "https://studiesmultiverse.com",
- "generated_at": "2026-09-09T06:58:30+00:00",
+ "generated_at": "2026-09-09T10:09:26+00:00",
  "our_licence": "CC BY 4.0",
  "our_licence_url": "https://creativecommons.org/licenses/by/4.0/",
  "source": {
@@ -20,8 +20,8 @@
  "summary": {
   "editions": 10,
   "editions_stamped": 10,
-  "editions_with_bitcoin_attestation": 9,
-  "editions_archived_at_internet_archive": 3
+  "editions_with_bitcoin_attestation": 10,
+  "editions_archived_at_internet_archive": 5
  },
  "editions": [
   {
@@ -108,7 +108,9 @@
      "stamped_at": "2026-09-08T12:44:16+00:00"
     }
    },
-   "wayback": {}
+   "wayback": {
+    "edition": "https://web.archive.org/web/2/https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/7a4b781809cc74f2e6a98fc2ade054700cbda725/data/uk-sponsors/editions/2026-08-27.json.gz"
+   }
   },
   {
    "edition_date": "2026-08-28",
@@ -247,7 +249,9 @@
      "stamped_at": "2026-09-08T12:44:16+00:00"
     }
    },
-   "wayback": {}
+   "wayback": {
+    "edition": "https://web.archive.org/web/2/https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/f486da7dcb0559f93730f132b19d98df667d3f59/data/uk-sponsors/editions/2026-09-04.json.gz"
+   }
   },
   {
    "edition_date": "2026-09-07",
@@ -289,15 +293,15 @@
     "content": {
      "digest": "b74108123d38cd06a3aa759769f7b74e22bce2b64e5772425785cd95cbd97751",
      "proof_url": "https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/main/data/uk-sponsors/witness/2026-09-08.content.ots",
-     "status": "pending",
-     "bitcoin_block_height": null,
+     "status": "bitcoin",
+     "bitcoin_block_height": 966175,
      "stamped_at": "2026-09-09T06:33:18+00:00"
     },
     "raw": {
      "digest": "1325a515ebba623d790293d07ded7ce304350610408c802ad912b616064450ca",
      "proof_url": "https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/main/data/uk-sponsors/witness/2026-09-08.raw.ots",
-     "status": "pending",
-     "bitcoin_block_height": null,
+     "status": "bitcoin",
+     "bitcoin_block_height": 966175,
      "stamped_at": "2026-09-09T06:33:18+00:00"
     }
    },

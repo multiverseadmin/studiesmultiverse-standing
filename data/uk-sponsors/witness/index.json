@@ -63,7 +63,7 @@
     "commit": {
      "error": "<urlopen error [Errno 111] Connection refused>",
      "ok": false,
-     "requested_at": "2026-09-09T06:08:29+00:00"
+     "requested_at": "2026-09-09T10:09:47+00:00"
     },
     "edition": {
      "ok": true,
@@ -99,12 +99,12 @@
     "commit": {
      "error": "<urlopen error [Errno 111] Connection refused>",
      "ok": false,
-     "requested_at": "2026-09-09T06:09:20+00:00"
+     "requested_at": "2026-09-09T10:10:31+00:00"
     },
     "edition": {
-     "error": "<urlopen error [Errno 111] Connection refused>",
-     "ok": false,
-     "requested_at": "2026-09-09T06:08:50+00:00"
+     "ok": true,
+     "requested_at": "2026-09-09T10:10:10+00:00",
+     "wayback": "https://web.archive.org/web/2/https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/7a4b781809cc74f2e6a98fc2ade054700cbda725/data/uk-sponsors/editions/2026-08-27.json.gz"
     }
    }
   },
@@ -135,12 +135,12 @@
     "commit": {
      "error": "<urlopen error [Errno 111] Connection refused>",
      "ok": false,
-     "requested_at": "2026-09-09T06:10:04+00:00"
+     "requested_at": "2026-09-09T10:11:14+00:00"
     },
     "edition": {
      "error": "<urlopen error [Errno 111] Connection refused>",
      "ok": false,
-     "requested_at": "2026-09-09T06:09:42+00:00"
+     "requested_at": "2026-09-09T10:10:53+00:00"
     }
    }
   },
@@ -169,14 +169,14 @@
    "source_date": "2026-09-01",
    "wayback": {
     "commit": {
-     "error": "The read operation timed out",
+     "error": "<urlopen error [Errno 111] Connection refused>",
      "ok": false,
-     "requested_at": "2026-09-09T06:11:56+00:00"
+     "requested_at": "2026-09-09T10:11:57+00:00"
     },
     "edition": {
-     "error": "<urlopen error _ssl.c:993: The handshake operation timed out>",
+     "error": "<urlopen error [Errno 111] Connection refused>",
      "ok": false,
-     "requested_at": "2026-09-09T06:11:05+00:00"
+     "requested_at": "2026-09-09T10:11:35+00:00"
     }
    }
   },
@@ -212,7 +212,7 @@
     "edition": {
      "error": "<urlopen error [Errno 111] Connection refused>",
      "ok": false,
-     "requested_at": "2026-09-08T17:00:31+00:00"
+     "requested_at": "2026-09-09T10:12:18+00:00"
     }
    }
   },
@@ -241,9 +241,9 @@
    "source_date": "2026-09-03",
    "wayback": {
     "commit": {
-     "error": "<urlopen error [Errno 111] Connection refused>",
+     "error": "<urlopen error _ssl.c:993: The handshake operation timed out>",
      "ok": false,
-     "requested_at": "2026-09-08T17:01:36+00:00"
+     "requested_at": "2026-09-09T10:13:09+00:00"
     },
     "edition": {
      "ok": true,
@@ -276,10 +276,15 @@
    "row_count": 1307,
    "source_date": "2026-09-04",
    "wayback": {
-    "edition": {
+    "commit": {
      "error": "<urlopen error [Errno 111] Connection refused>",
      "ok": false,
-     "requested_at": "2026-09-08T17:01:57+00:00"
+     "requested_at": "2026-09-09T10:14:01+00:00"
+    },
+    "edition": {
+     "ok": true,
+     "requested_at": "2026-09-09T10:13:22+00:00",
+     "wayback": "https://web.archive.org/web/2/https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/f486da7dcb0559f93730f132b19d98df667d3f59/data/uk-sponsors/editions/2026-09-04.json.gz"
     }
    }
   },
@@ -313,16 +318,18 @@
    "edition_path": "data/uk-sponsors/editions/2026-09-08.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966175,
      "file": "2026-09-08.content.ots",
      "stamped_at": "2026-09-09T06:33:18+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-09T09:48:26+00:00"
     },
     "raw": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966175,
      "file": "2026-09-08.raw.ots",
      "stamped_at": "2026-09-09T06:33:18+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-09T09:48:26+00:00"
     }
    },
    "raw_sha256": "1325a515ebba623d790293d07ded7ce304350610408c802ad912b616064450ca",
@@ -331,5 +338,5 @@
   }
  },
  "source": "uk-sponsors",
- "updated_at": "2026-09-09T06:58:30+00:00"
+ "updated_at": "2026-09-09T10:09:26+00:00"
 }

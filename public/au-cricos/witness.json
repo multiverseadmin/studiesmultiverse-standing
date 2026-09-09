@@ -1,7 +1,7 @@
 {
  "publisher": "A.I.T. Multiverse Consulting Ltd, Nicosia, Cyprus",
  "site": "https://studiesmultiverse.com",
- "generated_at": "2026-09-09T06:33:21+00:00",
+ "generated_at": "2026-09-09T09:48:28+00:00",
  "our_licence": "CC BY 4.0",
  "our_licence_url": "https://creativecommons.org/licenses/by/4.0/",
  "source": {
@@ -21,7 +21,7 @@
   "editions": 58,
   "editions_stamped": 58,
   "editions_with_bitcoin_attestation": 58,
-  "editions_archived_at_internet_archive": 13
+  "editions_archived_at_internet_archive": 16
  },
  "editions": [
   {
@@ -603,7 +603,8 @@
     }
    },
    "wayback": {
-    "commit": "https://web.archive.org/web/2/https://github.com/multiverseadmin/studiesmultiverse-standing/commit/eb0d55eff268179046391c2391925c893059a71b"
+    "commit": "https://web.archive.org/web/2/https://github.com/multiverseadmin/studiesmultiverse-standing/commit/eb0d55eff268179046391c2391925c893059a71b",
+    "edition": "https://web.archive.org/web/2/https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/eb0d55eff268179046391c2391925c893059a71b/data/au-cricos/editions/2023-06-01.json.gz"
    }
   },
   {
@@ -661,7 +662,9 @@
      "stamped_at": "2026-09-08T12:33:03+00:00"
     }
    },
-   "wayback": {}
+   "wayback": {
+    "edition": "https://web.archive.org/web/2/https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/eb0d55eff268179046391c2391925c893059a71b/data/au-cricos/editions/2023-08-07.json.gz"
+   }
   },
   {
    "edition_date": "2023-09-01",
@@ -773,7 +776,9 @@
      "stamped_at": "2026-09-08T12:33:03+00:00"
     }
    },
-   "wayback": {}
+   "wayback": {
+    "edition": "https://web.archive.org/web/2/https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/eb0d55eff268179046391c2391925c893059a71b/data/au-cricos/editions/2023-12-01.json.gz"
+   }
   },
   {
    "edition_date": "2024-01-02",
