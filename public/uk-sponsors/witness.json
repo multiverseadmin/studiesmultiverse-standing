@@ -1,7 +1,7 @@
 {
  "publisher": "A.I.T. Multiverse Consulting Ltd, Nicosia, Cyprus",
  "site": "https://studiesmultiverse.com",
- "generated_at": "2026-09-10T06:58:33+00:00",
+ "generated_at": "2026-09-10T10:08:53+00:00",
  "our_licence": "CC BY 4.0",
  "our_licence_url": "https://creativecommons.org/licenses/by/4.0/",
  "source": {
@@ -20,8 +20,8 @@
  "summary": {
   "editions": 11,
   "editions_stamped": 11,
-  "editions_with_bitcoin_attestation": 10,
-  "editions_archived_at_internet_archive": 5
+  "editions_with_bitcoin_attestation": 11,
+  "editions_archived_at_internet_archive": 6
  },
  "editions": [
   {
@@ -164,7 +164,9 @@
      "stamped_at": "2026-09-08T12:44:16+00:00"
     }
    },
-   "wayback": {}
+   "wayback": {
+    "commit": "https://web.archive.org/web/2/https://github.com/multiverseadmin/studiesmultiverse-standing/commit/069f622522c1d60601eca6362a359da6d0609b23"
+   }
   },
   {
    "edition_date": "2026-09-02",
@@ -305,7 +307,9 @@
      "stamped_at": "2026-09-09T06:33:18+00:00"
     }
    },
-   "wayback": {}
+   "wayback": {
+    "edition": "https://web.archive.org/web/2/https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/e02dcfabedffb41cb7339e88d0de025a79b378a5/data/uk-sponsors/editions/2026-09-08.json.gz"
+   }
   },
   {
    "edition_date": "2026-09-09",
@@ -320,15 +324,15 @@
     "content": {
      "digest": "49653ebbe39da881e049e9699f164c9baa90081769daa29d185638b0b09764b7",
      "proof_url": "https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/main/data/uk-sponsors/witness/2026-09-09.content.ots",
-     "status": "pending",
-     "bitcoin_block_height": null,
+     "status": "bitcoin",
+     "bitcoin_block_height": 966317,
      "stamped_at": "2026-09-10T06:32:46+00:00"
     },
     "raw": {
      "digest": "499de3b3c67d3144d0e5df51d1cefad4156c2803a1cb4d1204e2031a525bd66e",
      "proof_url": "https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/main/data/uk-sponsors/witness/2026-09-09.raw.ots",
-     "status": "pending",
-     "bitcoin_block_height": null,
+     "status": "bitcoin",
+     "bitcoin_block_height": 966317,
      "stamped_at": "2026-09-10T06:32:46+00:00"
     }
    },
