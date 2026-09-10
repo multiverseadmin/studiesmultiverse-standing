@@ -313,9 +313,9 @@
    "source_date": "2022-07-01",
    "wayback": {
     "commit": {
-     "error": "<urlopen error [Errno 111] Connection refused>",
+     "error": "The read operation timed out",
      "ok": false,
-     "requested_at": "2026-09-10T04:29:02+00:00"
+     "requested_at": "2026-09-10T05:47:27+00:00"
     },
     "edition": {
      "ok": true,
@@ -390,9 +390,9 @@
      "wayback": "https://web.archive.org/web/2/https://github.com/multiverseadmin/studiesmultiverse-standing/commit/74cb1304fa70ee02af283e2e7c5abb35aa4b28e4"
     },
     "edition": {
-     "error": "<urlopen error [Errno 111] Connection refused>",
-     "ok": false,
-     "requested_at": "2026-09-10T04:29:23+00:00"
+     "ok": true,
+     "requested_at": "2026-09-10T05:47:40+00:00",
+     "wayback": "https://web.archive.org/web/2/https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/74cb1304fa70ee02af283e2e7c5abb35aa4b28e4/data/au-cricos/editions/2022-09-01.json.gz"
     }
    }
   },
@@ -423,12 +423,12 @@
     "commit": {
      "error": "<urlopen error [Errno 111] Connection refused>",
      "ok": false,
-     "requested_at": "2026-09-10T04:30:06+00:00"
+     "requested_at": "2026-09-10T05:48:53+00:00"
     },
     "edition": {
-     "error": "<urlopen error [Errno 111] Connection refused>",
+     "error": "The read operation timed out",
      "ok": false,
-     "requested_at": "2026-09-10T04:29:45+00:00"
+     "requested_at": "2026-09-10T05:48:31+00:00"
     }
    }
   },
@@ -459,7 +459,7 @@
     "commit": {
      "error": "<urlopen error [Errno 111] Connection refused>",
      "ok": false,
-     "requested_at": "2026-09-10T04:30:28+00:00"
+     "requested_at": "2026-09-10T05:49:14+00:00"
     },
     "edition": {
      "ok": true,
@@ -534,9 +534,9 @@
      "wayback": "https://web.archive.org/web/2/https://github.com/multiverseadmin/studiesmultiverse-standing/commit/eb0d55eff268179046391c2391925c893059a71b"
     },
     "edition": {
-     "error": "<urlopen error _ssl.c:993: The handshake operation timed out>",
+     "error": "<urlopen error [Errno 111] Connection refused>",
      "ok": false,
-     "requested_at": "2026-09-10T04:31:21+00:00"
+     "requested_at": "2026-09-10T05:49:36+00:00"
     }
    }
   },
@@ -572,7 +572,7 @@
     "edition": {
      "error": "<urlopen error [Errno 111] Connection refused>",
      "ok": false,
-     "requested_at": "2026-09-10T04:32:47+00:00"
+     "requested_at": "2026-09-10T05:49:57+00:00"
     }
    }
   },
@@ -608,7 +608,7 @@
     "edition": {
      "error": "<urlopen error [Errno 111] Connection refused>",
      "ok": false,
-     "requested_at": "2026-09-10T04:33:08+00:00"
+     "requested_at": "2026-09-10T05:50:19+00:00"
     }
    }
   },
@@ -637,14 +637,14 @@
    "source_date": "2023-04-12",
    "wayback": {
     "commit": {
-     "error": "<urlopen error [Errno 111] Connection refused>",
-     "ok": false,
-     "requested_at": "2026-09-10T04:33:51+00:00"
+     "ok": true,
+     "requested_at": "2026-09-10T05:50:44+00:00",
+     "wayback": "https://web.archive.org/web/2/https://github.com/multiverseadmin/studiesmultiverse-standing/commit/eb0d55eff268179046391c2391925c893059a71b"
     },
     "edition": {
-     "error": "<urlopen error [Errno 111] Connection refused>",
-     "ok": false,
-     "requested_at": "2026-09-10T04:33:30+00:00"
+     "ok": true,
+     "requested_at": "2026-09-10T05:50:31+00:00",
+     "wayback": "https://web.archive.org/web/2/https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/eb0d55eff268179046391c2391925c893059a71b/data/au-cricos/editions/2023-04-12.json.gz"
     }
    }
   },
@@ -783,7 +783,7 @@
     "commit": {
      "error": "<urlopen error [Errno 111] Connection refused>",
      "ok": false,
-     "requested_at": "2026-09-10T04:34:13+00:00"
+     "requested_at": "2026-09-10T05:51:12+00:00"
     },
     "edition": {
      "ok": true,
@@ -891,12 +891,12 @@
     "commit": {
      "error": "<urlopen error [Errno 111] Connection refused>",
      "ok": false,
-     "requested_at": "2026-09-10T04:35:29+00:00"
+     "requested_at": "2026-09-10T05:51:55+00:00"
     },
     "edition": {
      "error": "<urlopen error [Errno 111] Connection refused>",
      "ok": false,
-     "requested_at": "2026-09-10T04:35:07+00:00"
+     "requested_at": "2026-09-10T05:51:33+00:00"
     }
    }
   },
@@ -927,7 +927,7 @@
     "commit": {
      "error": "<urlopen error [Errno 111] Connection refused>",
      "ok": false,
-     "requested_at": "2026-09-10T04:35:50+00:00"
+     "requested_at": "2026-09-10T05:52:17+00:00"
     },
     "edition": {
      "ok": true,
@@ -961,14 +961,14 @@
    "source_date": "2024-01-02",
    "wayback": {
     "commit": {
-     "error": "<urlopen error [Errno 111] Connection refused>",
+     "error": "<urlopen error _ssl.c:993: The handshake operation timed out>",
      "ok": false,
-     "requested_at": "2026-09-10T04:36:33+00:00"
+     "requested_at": "2026-09-10T05:53:29+00:00"
     },
     "edition": {
      "error": "<urlopen error [Errno 111] Connection refused>",
      "ok": false,
-     "requested_at": "2026-09-10T04:36:11+00:00"
+     "requested_at": "2026-09-10T05:52:38+00:00"
     }
    }
   },
@@ -1002,9 +1002,9 @@
      "wayback": "https://web.archive.org/web/2/https://github.com/multiverseadmin/studiesmultiverse-standing/commit/eb0d55eff268179046391c2391925c893059a71b"
     },
     "edition": {
-     "error": "<urlopen error _ssl.c:993: The handshake operation timed out>",
-     "ok": false,
-     "requested_at": "2026-09-10T04:37:24+00:00"
+     "ok": true,
+     "requested_at": "2026-09-10T05:53:42+00:00",
+     "wayback": "https://web.archive.org/web/2/https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/eb0d55eff268179046391c2391925c893059a71b/data/au-cricos/editions/2024-02-01.json.gz"
     }
    }
   },
@@ -1035,12 +1035,12 @@
     "commit": {
      "error": "<urlopen error [Errno 111] Connection refused>",
      "ok": false,
-     "requested_at": "2026-09-10T04:38:14+00:00"
+     "requested_at": "2026-09-10T05:54:25+00:00"
     },
     "edition": {
-     "ok": false,
-     "requested_at": "2026-09-10T04:37:50+00:00",
-     "status": 523
+     "ok": true,
+     "requested_at": "2026-09-10T05:53:55+00:00",
+     "wayback": "https://web.archive.org/web/2/https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/eb0d55eff268179046391c2391925c893059a71b/data/au-cricos/editions/2024-03-01.json.gz"
     }
    }
   },
@@ -1066,7 +1066,19 @@
    },
    "raw_sha256": "f5e03bbda19ef9250e7036e0690fbb2f2cf5ff2e9170c8332909e1023ab3335b",
    "row_count": 1479,
-   "source_date": "2024-04-02"
+   "source_date": "2024-04-02",
+   "wayback": {
+    "commit": {
+     "error": "<urlopen error [Errno 111] Connection refused>",
+     "ok": false,
+     "requested_at": "2026-09-10T05:55:07+00:00"
+    },
+    "edition": {
+     "error": "<urlopen error [Errno 111] Connection refused>",
+     "ok": false,
+     "requested_at": "2026-09-10T05:54:46+00:00"
+    }
+   }
   },
   "2024-05-01": {
    "commit": "eb0d55eff268179046391c2391925c893059a71b",
@@ -1090,7 +1102,19 @@
    },
    "raw_sha256": "a2d69b363ecc925d35a3597a85fc75dbaaae196db0f06494127e61b529851d5d",
    "row_count": 1483,
-   "source_date": "2024-05-01"
+   "source_date": "2024-05-01",
+   "wayback": {
+    "commit": {
+     "error": "<urlopen error [Errno 111] Connection refused>",
+     "ok": false,
+     "requested_at": "2026-09-10T05:55:50+00:00"
+    },
+    "edition": {
+     "error": "<urlopen error [Errno 111] Connection refused>",
+     "ok": false,
+     "requested_at": "2026-09-10T05:55:29+00:00"
+    }
+   }
   },
   "2024-06-03": {
    "commit": "eb0d55eff268179046391c2391925c893059a71b",
@@ -1114,7 +1138,19 @@
    },
    "raw_sha256": "3d1532bd57bfd52ccac0477bde388e6581fd9c41f8c7b1bfa5264ddab4cd7928",
    "row_count": 1489,
-   "source_date": "2024-06-03"
+   "source_date": "2024-06-03",
+   "wayback": {
+    "commit": {
+     "ok": true,
+     "requested_at": "2026-09-10T05:56:55+00:00",
+     "wayback": "https://web.archive.org/web/2/https://github.com/multiverseadmin/studiesmultiverse-standing/commit/eb0d55eff268179046391c2391925c893059a71b"
+    },
+    "edition": {
+     "error": "<urlopen error _ssl.c:993: The handshake operation timed out>",
+     "ok": false,
+     "requested_at": "2026-09-10T05:56:42+00:00"
+    }
+   }
   },
   "2024-07-01": {
    "commit": "eb0d55eff268179046391c2391925c893059a71b",
@@ -1742,5 +1778,5 @@
   }
  },
  "source": "au-cricos",
- "updated_at": "2026-09-10T04:28:18+00:00"
+ "updated_at": "2026-09-10T05:46:42+00:00"
 }

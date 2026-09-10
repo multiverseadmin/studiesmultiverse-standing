@@ -63,7 +63,7 @@
     "commit": {
      "error": "<urlopen error [Errno 111] Connection refused>",
      "ok": false,
-     "requested_at": "2026-09-10T04:50:14+00:00"
+     "requested_at": "2026-09-10T06:09:23+00:00"
     },
     "edition": {
      "ok": true,
@@ -99,7 +99,7 @@
     "commit": {
      "error": "<urlopen error [Errno 111] Connection refused>",
      "ok": false,
-     "requested_at": "2026-09-10T04:50:36+00:00"
+     "requested_at": "2026-09-10T06:09:45+00:00"
     },
     "edition": {
      "ok": true,
@@ -135,12 +135,12 @@
     "commit": {
      "error": "<urlopen error [Errno 111] Connection refused>",
      "ok": false,
-     "requested_at": "2026-09-10T04:51:49+00:00"
+     "requested_at": "2026-09-10T06:10:27+00:00"
     },
     "edition": {
      "error": "<urlopen error [Errno 111] Connection refused>",
      "ok": false,
-     "requested_at": "2026-09-10T04:50:57+00:00"
+     "requested_at": "2026-09-10T06:10:06+00:00"
     }
    }
   },
@@ -169,14 +169,14 @@
    "source_date": "2026-09-01",
    "wayback": {
     "commit": {
-     "error": "<urlopen error [Errno 111] Connection refused>",
+     "error": "The read operation timed out",
      "ok": false,
-     "requested_at": "2026-09-10T04:52:32+00:00"
+     "requested_at": "2026-09-10T06:12:12+00:00"
     },
     "edition": {
-     "error": "<urlopen error [Errno 111] Connection refused>",
+     "error": "<urlopen error _ssl.c:993: The handshake operation timed out>",
      "ok": false,
-     "requested_at": "2026-09-10T04:52:11+00:00"
+     "requested_at": "2026-09-10T06:11:21+00:00"
     }
    }
   },
@@ -338,5 +338,5 @@
   }
  },
  "source": "uk-sponsors",
- "updated_at": "2026-09-10T04:49:53+00:00"
+ "updated_at": "2026-09-10T06:09:01+00:00"
 }
