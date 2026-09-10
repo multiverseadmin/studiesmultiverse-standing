@@ -1,7 +1,7 @@
 {
  "publisher": "A.I.T. Multiverse Consulting Ltd, Nicosia, Cyprus",
  "site": "https://studiesmultiverse.com",
- "generated_at": "2026-09-10T06:09:01+00:00",
+ "generated_at": "2026-09-10T06:58:33+00:00",
  "our_licence": "CC BY 4.0",
  "our_licence_url": "https://creativecommons.org/licenses/by/4.0/",
  "source": {
@@ -18,8 +18,8 @@
  "how_to_verify": "Install the reference client (pip install opentimestamps-client). Take the content_sha256 shown for an edition on studiesmultiverse.com or in public/<source>/archive.json, download the matching .ots proof from the proof_url, and run: ots verify -d <content_sha256> <date>.content.ots. A proof with status 'bitcoin' verifies against the block chain without trusting this repository or its publisher; a 'pending' proof is held by the calendars named in the file and upgrades on its own. The Wayback Machine links are the Internet Archive's own copies of the edition file at its immutable commit URL and of the commit page.",
  "archive_index_wayback": null,
  "summary": {
-  "editions": 10,
-  "editions_stamped": 10,
+  "editions": 11,
+  "editions_stamped": 11,
   "editions_with_bitcoin_attestation": 10,
   "editions_archived_at_internet_archive": 5
  },
@@ -303,6 +303,33 @@
      "status": "bitcoin",
      "bitcoin_block_height": 966175,
      "stamped_at": "2026-09-09T06:33:18+00:00"
+    }
+   },
+   "wayback": {}
+  },
+  {
+   "edition_date": "2026-09-09",
+   "source_date": "2026-09-09",
+   "row_count": 1308,
+   "content_sha256": "49653ebbe39da881e049e9699f164c9baa90081769daa29d185638b0b09764b7",
+   "raw_sha256": "499de3b3c67d3144d0e5df51d1cefad4156c2803a1cb4d1204e2031a525bd66e",
+   "commit": "1db44f8bae78b3b16adfad8923e7a87de971e1b9",
+   "commit_url": "https://github.com/multiverseadmin/studiesmultiverse-standing/commit/1db44f8bae78b3b16adfad8923e7a87de971e1b9",
+   "edition_url": "https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/1db44f8bae78b3b16adfad8923e7a87de971e1b9/data/uk-sponsors/editions/2026-09-09.json.gz",
+   "proofs": {
+    "content": {
+     "digest": "49653ebbe39da881e049e9699f164c9baa90081769daa29d185638b0b09764b7",
+     "proof_url": "https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/main/data/uk-sponsors/witness/2026-09-09.content.ots",
+     "status": "pending",
+     "bitcoin_block_height": null,
+     "stamped_at": "2026-09-10T06:32:46+00:00"
+    },
+    "raw": {
+     "digest": "499de3b3c67d3144d0e5df51d1cefad4156c2803a1cb4d1204e2031a525bd66e",
+     "proof_url": "https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/main/data/uk-sponsors/witness/2026-09-09.raw.ots",
+     "status": "pending",
+     "bitcoin_block_height": null,
+     "stamped_at": "2026-09-10T06:32:46+00:00"
     }
    },
    "wayback": {}
