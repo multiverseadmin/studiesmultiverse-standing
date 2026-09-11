@@ -1,5 +1,7 @@
 # studiesmultiverse — Standing Register
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22705188.svg)](https://doi.org/10.5281/zenodo.22705188)
+
 The worldwide record of which institutions are officially permitted to enrol international
 students: what the official registers say, what they used to say, and what it means for the
 student.
