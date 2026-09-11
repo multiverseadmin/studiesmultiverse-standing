@@ -83,13 +83,13 @@
      "wayback": "https://web.archive.org/web/2/https://github.com/multiverseadmin/studiesmultiverse-standing/commit/12419d91eb4c004be8a58e300a14bb72c62a5c8d"
     },
     "edition": {
-     "error": "<urlopen error [Errno 111] Connection refused>",
      "ok": false,
-     "requested_at": "2026-09-11T04:49:55+00:00"
+     "requested_at": "2026-09-11T06:06:12+00:00",
+     "status": 523
     }
    }
   }
  },
  "source": "jp-mext",
- "updated_at": "2026-09-11T04:49:33+00:00"
+ "updated_at": "2026-09-11T06:06:00+00:00"
 }

@@ -1,7 +1,7 @@
 {
  "publisher": "A.I.T. Multiverse Consulting Ltd, Nicosia, Cyprus",
  "site": "https://studiesmultiverse.com",
- "generated_at": "2026-09-11T04:50:16+00:00",
+ "generated_at": "2026-09-11T06:06:33+00:00",
  "our_licence": "CC BY 4.0",
  "our_licence_url": "https://creativecommons.org/licenses/by/4.0/",
  "source": {
@@ -224,6 +224,7 @@
     }
    },
    "wayback": {
+    "commit": "https://web.archive.org/web/2/https://github.com/multiverseadmin/studiesmultiverse-standing/commit/f0f3d8c56ff3ff1d9844bc1715fff80eb2bc398b",
     "edition": "https://web.archive.org/web/2/https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/f0f3d8c56ff3ff1d9844bc1715fff80eb2bc398b/data/uk-sponsors/editions/2026-09-03.json.gz"
    }
   },
