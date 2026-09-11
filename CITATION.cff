@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "If you use the Standing Register, please cite it. The concept DOI (added after the first Zenodo release) always points to the latest version."
+message: "If you use the Standing Register, please cite it. The concept DOI always resolves to the latest edition; each dated edition also has a version DOI of its own."
 title: "The Standing Register — which institutions are officially permitted to enrol international students, every dated edition kept"
 type: dataset
 authors:
@@ -10,7 +10,8 @@ authors:
 repository-code: "https://github.com/multiverseadmin/studiesmultiverse-standing"
 url: "https://studiesmultiverse.com/standing/"
 license: CC-BY-4.0
-version: 1.0.0
+version: 1.0.1
+doi: 10.5281/zenodo.22705188
 date-released: 2026-09-11
 keywords:
   - international students
