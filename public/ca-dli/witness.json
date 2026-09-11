@@ -1,7 +1,7 @@
 {
  "publisher": "A.I.T. Multiverse Consulting Ltd, Nicosia, Cyprus",
  "site": "https://studiesmultiverse.com",
- "generated_at": "2026-09-10T09:57:30+00:00",
+ "generated_at": "2026-09-11T04:38:48+00:00",
  "our_licence": "CC BY 4.0",
  "our_licence_url": "https://creativecommons.org/licenses/by/4.0/",
  "source": {
@@ -21,7 +21,7 @@
   "editions": 366,
   "editions_stamped": 366,
   "editions_with_bitcoin_attestation": 366,
-  "editions_archived_at_internet_archive": 16
+  "editions_archived_at_internet_archive": 19
  },
  "editions": [
   {
@@ -156,7 +156,9 @@
      "stamped_at": "2026-09-08T12:35:53+00:00"
     }
    },
-   "wayback": {}
+   "wayback": {
+    "commit": "https://web.archive.org/web/2/https://github.com/multiverseadmin/studiesmultiverse-standing/commit/f6b38b0d35590ecb49b9acdb68967204c971cf85"
+   }
   },
   {
    "edition_date": "2018-03-30",
@@ -446,7 +448,8 @@
     }
    },
    "wayback": {
-    "commit": "https://web.archive.org/web/2/https://github.com/multiverseadmin/studiesmultiverse-standing/commit/b505a2d2641fc6dacafcce68c768e335badac163"
+    "commit": "https://web.archive.org/web/2/https://github.com/multiverseadmin/studiesmultiverse-standing/commit/b505a2d2641fc6dacafcce68c768e335badac163",
+    "edition": "https://web.archive.org/web/2/https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/b505a2d2641fc6dacafcce68c768e335badac163/data/ca-dli/editions/2018-12-30.json.gz"
    }
   },
   {
@@ -467,7 +470,9 @@
      "stamped_at": "2026-09-08T12:35:53+00:00"
     }
    },
-   "wayback": {}
+   "wayback": {
+    "edition": "https://web.archive.org/web/2/https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/f6b38b0d35590ecb49b9acdb68967204c971cf85/data/ca-dli/editions/2019-01-09.json.gz"
+   }
   },
   {
    "edition_date": "2019-01-22",
@@ -592,7 +597,9 @@
      "stamped_at": "2026-09-08T12:35:53+00:00"
     }
    },
-   "wayback": {}
+   "wayback": {
+    "commit": "https://web.archive.org/web/2/https://github.com/multiverseadmin/studiesmultiverse-standing/commit/f6b38b0d35590ecb49b9acdb68967204c971cf85"
+   }
   },
   {
    "edition_date": "2019-07-02",
@@ -613,7 +620,8 @@
     }
    },
    "wayback": {
-    "commit": "https://web.archive.org/web/2/https://github.com/multiverseadmin/studiesmultiverse-standing/commit/96db1cd0119ae63b1502d959b260b9de84f876dd"
+    "commit": "https://web.archive.org/web/2/https://github.com/multiverseadmin/studiesmultiverse-standing/commit/96db1cd0119ae63b1502d959b260b9de84f876dd",
+    "edition": "https://web.archive.org/web/2/https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/96db1cd0119ae63b1502d959b260b9de84f876dd/data/ca-dli/editions/2019-07-02.json.gz"
    }
   },
   {
