@@ -438,16 +438,18 @@
    "edition_path": "data/uk-sponsors/editions/2026-09-11.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966631,
      "file": "2026-09-11.content.ots",
      "stamped_at": "2026-09-12T06:30:25+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-12T09:45:21+00:00"
     },
     "raw": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966631,
      "file": "2026-09-11.raw.ots",
      "stamped_at": "2026-09-12T06:30:25+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-12T09:45:21+00:00"
     }
    },
    "raw_sha256": "4f5683e5c3292d459953f194abffe4a4afa471126644896a3148d232175f4dc2",
@@ -456,5 +458,5 @@
   }
  },
  "source": "uk-sponsors",
- "updated_at": "2026-09-12T06:55:37+00:00"
+ "updated_at": "2026-09-12T10:11:01+00:00"
 }
