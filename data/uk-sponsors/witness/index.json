@@ -431,8 +431,30 @@
      "requested_at": "2026-09-12T06:07:40+00:00"
     }
    }
+  },
+  "2026-09-11": {
+   "commit": "f65cf1ba39c2d5ae176ef6bd0011ad6afbda07d4",
+   "content_sha256": "89e324283acdcafd1556d376edb66b5a878d489e9d88d33ba6456dde48120fc3",
+   "edition_path": "data/uk-sponsors/editions/2026-09-11.json.gz",
+   "proofs": {
+    "content": {
+     "bitcoin_block_height": null,
+     "file": "2026-09-11.content.ots",
+     "stamped_at": "2026-09-12T06:30:25+00:00",
+     "status": "pending"
+    },
+    "raw": {
+     "bitcoin_block_height": null,
+     "file": "2026-09-11.raw.ots",
+     "stamped_at": "2026-09-12T06:30:25+00:00",
+     "status": "pending"
+    }
+   },
+   "raw_sha256": "4f5683e5c3292d459953f194abffe4a4afa471126644896a3148d232175f4dc2",
+   "row_count": 1307,
+   "source_date": "2026-09-11"
   }
  },
  "source": "uk-sponsors",
- "updated_at": "2026-09-12T06:03:06+00:00"
+ "updated_at": "2026-09-12T06:55:37+00:00"
 }

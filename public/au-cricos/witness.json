@@ -1,7 +1,7 @@
 {
  "publisher": "A.I.T. Multiverse Consulting Ltd, Nicosia, Cyprus",
  "site": "https://studiesmultiverse.com",
- "generated_at": "2026-09-12T05:44:41+00:00",
+ "generated_at": "2026-09-12T06:30:32+00:00",
  "our_licence": "CC BY 4.0",
  "our_licence_url": "https://creativecommons.org/licenses/by/4.0/",
  "source": {
@@ -800,6 +800,7 @@
     }
    },
    "wayback": {
+    "commit": "https://web.archive.org/web/2/https://github.com/multiverseadmin/studiesmultiverse-standing/commit/eb0d55eff268179046391c2391925c893059a71b",
     "edition": "https://web.archive.org/web/2/https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/eb0d55eff268179046391c2391925c893059a71b/data/au-cricos/editions/2023-12-01.json.gz"
    }
   },
@@ -1397,6 +1398,7 @@
     }
    },
    "wayback": {
+    "commit": "https://web.archive.org/web/2/https://github.com/multiverseadmin/studiesmultiverse-standing/commit/eb0d55eff268179046391c2391925c893059a71b",
     "edition": "https://web.archive.org/web/2/https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/eb0d55eff268179046391c2391925c893059a71b/data/au-cricos/editions/2025-08-01.json.gz"
    }
   },
@@ -1426,6 +1428,7 @@
     }
    },
    "wayback": {
+    "commit": "https://web.archive.org/web/2/https://github.com/multiverseadmin/studiesmultiverse-standing/commit/eb0d55eff268179046391c2391925c893059a71b",
     "edition": "https://web.archive.org/web/2/https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/eb0d55eff268179046391c2391925c893059a71b/data/au-cricos/editions/2025-09-01.json.gz"
    }
   },
@@ -1573,7 +1576,9 @@
      "stamped_at": "2026-09-08T12:33:03+00:00"
     }
    },
-   "wayback": {}
+   "wayback": {
+    "commit": "https://web.archive.org/web/2/https://github.com/multiverseadmin/studiesmultiverse-standing/commit/eb0d55eff268179046391c2391925c893059a71b"
+   }
   },
   {
    "edition_date": "2026-03-02",
@@ -1601,6 +1606,7 @@
     }
    },
    "wayback": {
+    "commit": "https://web.archive.org/web/2/https://github.com/multiverseadmin/studiesmultiverse-standing/commit/eb0d55eff268179046391c2391925c893059a71b",
     "edition": "https://web.archive.org/web/2/https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/eb0d55eff268179046391c2391925c893059a71b/data/au-cricos/editions/2026-03-02.json.gz"
    }
   },
@@ -1657,6 +1663,7 @@
     }
    },
    "wayback": {
+    "commit": "https://web.archive.org/web/2/https://github.com/multiverseadmin/studiesmultiverse-standing/commit/eb0d55eff268179046391c2391925c893059a71b",
     "edition": "https://web.archive.org/web/2/https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/eb0d55eff268179046391c2391925c893059a71b/data/au-cricos/editions/2026-05-01.json.gz"
    }
   },
@@ -1686,6 +1693,7 @@
     }
    },
    "wayback": {
+    "commit": "https://web.archive.org/web/2/https://github.com/multiverseadmin/studiesmultiverse-standing/commit/eb0d55eff268179046391c2391925c893059a71b",
     "edition": "https://web.archive.org/web/2/https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/eb0d55eff268179046391c2391925c893059a71b/data/au-cricos/editions/2026-06-01.json.gz"
    }
   },
@@ -1741,7 +1749,9 @@
      "stamped_at": "2026-09-08T12:33:03+00:00"
     }
    },
-   "wayback": {}
+   "wayback": {
+    "commit": "https://web.archive.org/web/2/https://github.com/multiverseadmin/studiesmultiverse-standing/commit/57e1006265d768b2abe29b8ff819673bbd92e16c"
+   }
   }
  ]
 }
