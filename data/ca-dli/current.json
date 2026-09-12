@@ -1,10 +1,10 @@
 {
  "source_id": "ca-dli",
- "edition_date": "2026-09-01",
- "source_date": "2026-09-01",
- "fetched_at": "2026-09-02T05:46:15+00:00",
- "row_count": 1441,
- "content_sha256": "91f9bd51b1b4638a01ee82fcc6c759e68545675ea384d387eac2a9a6d66c1d7c",
+ "edition_date": "2026-09-11",
+ "source_date": "2026-09-11",
+ "fetched_at": "2026-09-12T05:44:14+00:00",
+ "row_count": 1440,
+ "content_sha256": "498b41a5927eefa311e7763b30cbe2de956434c0f1f641dcf24dcdf68cd330d4",
  "raw_sha256": null,
  "provenance": {
   "source_id": "ca-dli",
@@ -15,14 +15,14 @@
   "licence": "Crown copyright — commercial redistribution requires prior written permission",
   "licence_url": "https://www.canada.ca/en/transparency/terms.html",
   "attribution": "Source: Immigration, Refugees and Citizenship Canada.",
-  "publication_layer": "change-record",
+  "publication_layer": "statistics",
   "language": "en",
-  "notes": "Verified 25 Aug 2026: canada.ca permits non-commercial reproduction with attribution but requires written permission for commercial redistribution. Permission request pending."
+  "notes": "Verified 25 Aug 2026 and re-read 7 Sep 2026: canada.ca permits non-commercial reproduction with attribution but requires written permission for commercial redistribution. This site carries advertising, which makes our use commercial, so the named change record was withdrawn on 7 Sep 2026 and the source moved from change-record to statistics: dated counts only, no institution name and no register key anywhere in public/. Permission request pending; on a written grant this returns to change-record, and only then."
  },
  "extra": {
-  "parsed_rows": 1441,
-  "unique_keys": 1432
+  "parsed_rows": 1440,
+  "unique_keys": 1431
  },
- "editions_held": 366,
+ "editions_held": 367,
  "earliest_edition": "2018-02-01"
 }
