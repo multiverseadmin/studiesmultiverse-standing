@@ -112,7 +112,7 @@
     "edition": {
      "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-11T10:04:32+00:00"
+     "requested_at": "2026-09-12T04:41:28+00:00"
     }
    }
   },
@@ -168,9 +168,9 @@
      "wayback": "https://web.archive.org/web/2/https://github.com/multiverseadmin/studiesmultiverse-standing/commit/f6b38b0d35590ecb49b9acdb68967204c971cf85"
     },
     "edition": {
-     "error": "<urlopen error timed out>",
-     "ok": false,
-     "requested_at": "2026-09-11T10:05:23+00:00"
+     "ok": true,
+     "requested_at": "2026-09-12T04:41:47+00:00",
+     "wayback": "https://web.archive.org/web/2/https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/f6b38b0d35590ecb49b9acdb68967204c971cf85/data/ca-dli/editions/2018-03-19.json.gz"
     }
    }
   },
@@ -395,9 +395,9 @@
    "source_date": "2018-10-25",
    "wayback": {
     "commit": {
-     "error": "The read operation timed out",
+     "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-11T10:06:14+00:00"
+     "requested_at": "2026-09-12T04:42:56+00:00"
     },
     "edition": {
      "ok": true,
@@ -429,9 +429,9 @@
      "wayback": "https://web.archive.org/web/2/https://github.com/multiverseadmin/studiesmultiverse-standing/commit/b505a2d2641fc6dacafcce68c768e335badac163"
     },
     "edition": {
-     "error": "<urlopen error _ssl.c:993: The handshake operation timed out>",
+     "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-11T10:07:06+00:00"
+     "requested_at": "2026-09-12T04:43:47+00:00"
     }
    }
   },
@@ -569,9 +569,9 @@
    "source_date": "2018-12-13",
    "wayback": {
     "commit": {
-     "error": "The read operation timed out",
+     "error": "<urlopen error _ssl.c:993: The handshake operation timed out>",
      "ok": false,
-     "requested_at": "2026-09-11T10:07:57+00:00"
+     "requested_at": "2026-09-12T04:44:38+00:00"
     },
     "edition": {
      "ok": true,
@@ -598,9 +598,9 @@
    "source_date": "2019-01-21",
    "wayback": {
     "commit": {
-     "error": "<urlopen error timed out>",
-     "ok": false,
-     "requested_at": "2026-09-11T10:08:48+00:00"
+     "ok": true,
+     "requested_at": "2026-09-12T04:44:51+00:00",
+     "wayback": "https://web.archive.org/web/2/https://github.com/multiverseadmin/studiesmultiverse-standing/commit/b505a2d2641fc6dacafcce68c768e335badac163"
     },
     "edition": {
      "ok": true,
@@ -627,9 +627,9 @@
    "source_date": "2019-03-26",
    "wayback": {
     "commit": {
-     "error": "<urlopen error _ssl.c:993: The handshake operation timed out>",
+     "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-11T10:09:57+00:00"
+     "requested_at": "2026-09-12T04:46:00+00:00"
     },
     "edition": {
      "ok": true,
@@ -685,14 +685,14 @@
    "source_date": "2019-04-11",
    "wayback": {
     "commit": {
-     "error": "<urlopen error timed out>",
-     "ok": false,
-     "requested_at": "2026-09-11T10:11:46+00:00"
+     "ok": true,
+     "requested_at": "2026-09-12T04:47:03+00:00",
+     "wayback": "https://web.archive.org/web/2/https://github.com/multiverseadmin/studiesmultiverse-standing/commit/b505a2d2641fc6dacafcce68c768e335badac163"
     },
     "edition": {
      "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-11T10:10:55+00:00"
+     "requested_at": "2026-09-12T04:46:51+00:00"
     }
    }
   },
@@ -720,7 +720,7 @@
     },
     "edition": {
      "ok": false,
-     "requested_at": "2026-09-11T10:12:33+00:00",
+     "requested_at": "2026-09-12T04:47:20+00:00",
      "status": 523
     }
    }
@@ -750,7 +750,7 @@
     "edition": {
      "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-11T10:13:42+00:00"
+     "requested_at": "2026-09-12T04:48:11+00:00"
     }
    }
   },
@@ -801,9 +801,9 @@
    "source_date": "2019-07-16",
    "wayback": {
     "commit": {
-     "error": "<urlopen error [Errno 111] Connection refused>",
+     "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-11T06:03:00+00:00"
+     "requested_at": "2026-09-12T04:49:02+00:00"
     },
     "edition": {
      "ok": true,
@@ -830,14 +830,14 @@
    "source_date": "2019-07-16",
    "wayback": {
     "commit": {
-     "error": "<urlopen error [Errno 111] Connection refused>",
-     "ok": false,
-     "requested_at": "2026-09-11T06:03:51+00:00"
+     "ok": true,
+     "requested_at": "2026-09-12T04:50:18+00:00",
+     "wayback": "https://web.archive.org/web/2/https://github.com/multiverseadmin/studiesmultiverse-standing/commit/f6b38b0d35590ecb49b9acdb68967204c971cf85"
     },
     "edition": {
-     "error": "<urlopen error [Errno 111] Connection refused>",
+     "error": "<urlopen error _ssl.c:993: The handshake operation timed out>",
      "ok": false,
-     "requested_at": "2026-09-11T06:03:30+00:00"
+     "requested_at": "2026-09-12T04:49:53+00:00"
     }
    }
   },
@@ -859,14 +859,14 @@
    "source_date": "2019-07-16",
    "wayback": {
     "commit": {
-     "error": "<urlopen error _ssl.c:993: The handshake operation timed out>",
+     "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-11T06:05:10+00:00"
+     "requested_at": "2026-09-12T04:51:21+00:00"
     },
     "edition": {
-     "error": "<urlopen error [Errno 111] Connection refused>",
-     "ok": false,
-     "requested_at": "2026-09-11T06:04:13+00:00"
+     "ok": true,
+     "requested_at": "2026-09-12T04:50:30+00:00",
+     "wayback": "https://web.archive.org/web/2/https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/96db1cd0119ae63b1502d959b260b9de84f876dd/data/ca-dli/editions/2019-07-26.json.gz"
     }
    }
   },
@@ -917,9 +917,9 @@
    "source_date": "2019-08-13",
    "wayback": {
     "edition": {
-     "error": "<urlopen error [Errno 111] Connection refused>",
+     "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-11T06:06:00+00:00"
+     "requested_at": "2026-09-12T04:52:13+00:00"
     }
    }
   },
@@ -6603,5 +6603,5 @@
   }
  },
  "source": "ca-dli",
- "updated_at": "2026-09-11T10:03:41+00:00"
+ "updated_at": "2026-09-12T04:40:37+00:00"
 }

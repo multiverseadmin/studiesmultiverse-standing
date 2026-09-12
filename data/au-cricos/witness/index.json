@@ -925,9 +925,9 @@
    "source_date": "2023-12-01",
    "wayback": {
     "commit": {
-     "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-11T09:49:23+00:00"
+     "requested_at": "2026-09-12T04:26:56+00:00",
+     "status": 520
     },
     "edition": {
      "ok": true,
@@ -1074,9 +1074,9 @@
      "wayback": "https://web.archive.org/web/2/https://github.com/multiverseadmin/studiesmultiverse-standing/commit/eb0d55eff268179046391c2391925c893059a71b"
     },
     "edition": {
-     "error": "<urlopen error timed out>",
-     "ok": false,
-     "requested_at": "2026-09-11T09:50:14+00:00"
+     "ok": true,
+     "requested_at": "2026-09-12T04:27:09+00:00",
+     "wayback": "https://web.archive.org/web/2/https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/eb0d55eff268179046391c2391925c893059a71b/data/au-cricos/editions/2024-04-02.json.gz"
     }
    }
   },
@@ -1254,9 +1254,9 @@
      "wayback": "https://web.archive.org/web/2/https://github.com/multiverseadmin/studiesmultiverse-standing/commit/eb0d55eff268179046391c2391925c893059a71b"
     },
     "edition": {
-     "error": "<urlopen error _ssl.c:993: The handshake operation timed out>",
+     "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-11T09:51:24+00:00"
+     "requested_at": "2026-09-12T04:28:00+00:00"
     }
    }
   },
@@ -1290,9 +1290,9 @@
      "wayback": "https://web.archive.org/web/2/https://github.com/multiverseadmin/studiesmultiverse-standing/commit/eb0d55eff268179046391c2391925c893059a71b"
     },
     "edition": {
+     "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-11T09:51:31+00:00",
-     "status": 429
+     "requested_at": "2026-09-12T04:28:51+00:00"
     }
    }
   },
@@ -1362,9 +1362,9 @@
      "wayback": "https://web.archive.org/web/2/https://github.com/multiverseadmin/studiesmultiverse-standing/commit/eb0d55eff268179046391c2391925c893059a71b"
     },
     "edition": {
-     "error": "<urlopen error timed out>",
-     "ok": false,
-     "requested_at": "2026-09-11T09:52:41+00:00"
+     "ok": true,
+     "requested_at": "2026-09-12T04:29:10+00:00",
+     "wayback": "https://web.archive.org/web/2/https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/eb0d55eff268179046391c2391925c893059a71b/data/au-cricos/editions/2024-12-02.json.gz"
     }
    }
   },
@@ -1470,9 +1470,9 @@
      "wayback": "https://web.archive.org/web/2/https://github.com/multiverseadmin/studiesmultiverse-standing/commit/eb0d55eff268179046391c2391925c893059a71b"
     },
     "edition": {
-     "error": "<urlopen error timed out>",
-     "ok": false,
-     "requested_at": "2026-09-11T09:53:32+00:00"
+     "ok": true,
+     "requested_at": "2026-09-12T04:29:23+00:00",
+     "wayback": "https://web.archive.org/web/2/https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/eb0d55eff268179046391c2391925c893059a71b/data/au-cricos/editions/2025-03-11.json.gz"
     }
    }
   },
@@ -1503,7 +1503,7 @@
     "commit": {
      "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-11T09:54:53+00:00"
+     "requested_at": "2026-09-12T04:30:14+00:00"
     },
     "edition": {
      "ok": true,
@@ -1544,7 +1544,7 @@
     "edition": {
      "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-11T09:55:44+00:00"
+     "requested_at": "2026-09-12T04:31:05+00:00"
     }
    }
   },
@@ -1578,9 +1578,9 @@
      "wayback": "https://web.archive.org/web/2/https://github.com/multiverseadmin/studiesmultiverse-standing/commit/eb0d55eff268179046391c2391925c893059a71b"
     },
     "edition": {
-     "ok": false,
-     "requested_at": "2026-09-11T09:56:09+00:00",
-     "status": 429
+     "ok": true,
+     "requested_at": "2026-09-12T04:31:22+00:00",
+     "wayback": "https://web.archive.org/web/2/https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/eb0d55eff268179046391c2391925c893059a71b/data/au-cricos/editions/2025-06-03.json.gz"
     }
    }
   },
@@ -1645,9 +1645,9 @@
    "source_date": "2025-08-01",
    "wayback": {
     "commit": {
-     "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-11T09:57:49+00:00"
+     "requested_at": "2026-09-12T04:31:34+00:00",
+     "status": 520
     },
     "edition": {
      "ok": true,
@@ -1683,7 +1683,7 @@
     "commit": {
      "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-11T09:58:40+00:00"
+     "requested_at": "2026-09-12T04:32:25+00:00"
     },
     "edition": {
      "ok": true,
@@ -1722,9 +1722,9 @@
      "wayback": "https://web.archive.org/web/2/https://github.com/multiverseadmin/studiesmultiverse-standing/commit/eb0d55eff268179046391c2391925c893059a71b"
     },
     "edition": {
-     "error": "<urlopen error _ssl.c:993: The handshake operation timed out>",
+     "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-11T10:00:07+00:00"
+     "requested_at": "2026-09-12T04:33:16+00:00"
     }
    }
   },
@@ -1753,9 +1753,9 @@
    "source_date": "2025-11-03",
    "wayback": {
     "commit": {
-     "error": "<urlopen error timed out>",
+     "error": "<urlopen error _ssl.c:993: The handshake operation timed out>",
      "ok": false,
-     "requested_at": "2026-09-11T10:01:29+00:00"
+     "requested_at": "2026-09-12T04:34:07+00:00"
     },
     "edition": {
      "ok": true,
@@ -1789,14 +1789,14 @@
    "source_date": "2025-12-01",
    "wayback": {
     "commit": {
-     "error": "<urlopen error _ssl.c:993: The handshake operation timed out>",
      "ok": false,
-     "requested_at": "2026-09-11T10:03:16+00:00"
+     "requested_at": "2026-09-12T04:34:33+00:00",
+     "status": 520
     },
     "edition": {
-     "error": "<urlopen error timed out>",
-     "ok": false,
-     "requested_at": "2026-09-11T10:02:20+00:00"
+     "ok": true,
+     "requested_at": "2026-09-12T04:34:20+00:00",
+     "wayback": "https://web.archive.org/web/2/https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/eb0d55eff268179046391c2391925c893059a71b/data/au-cricos/editions/2025-12-01.json.gz"
     }
    }
   },
@@ -1858,7 +1858,19 @@
    },
    "raw_sha256": "95a90de80184af29354c246a1b4ea5f464d7656b25a898d26218fc61f5fde089",
    "row_count": 1541,
-   "source_date": "2026-02-02"
+   "source_date": "2026-02-02",
+   "wayback": {
+    "commit": {
+     "error": "<urlopen error timed out>",
+     "ok": false,
+     "requested_at": "2026-09-12T04:36:15+00:00"
+    },
+    "edition": {
+     "error": "<urlopen error timed out>",
+     "ok": false,
+     "requested_at": "2026-09-12T04:35:24+00:00"
+    }
+   }
   },
   "2026-03-02": {
    "commit": "eb0d55eff268179046391c2391925c893059a71b",
@@ -1882,7 +1894,19 @@
    },
    "raw_sha256": "d9b60011fd6c8cedbd3f8c9178aed4969a3b597f0d46df6d44ad1145da85d534",
    "row_count": 1548,
-   "source_date": "2026-03-02"
+   "source_date": "2026-03-02",
+   "wayback": {
+    "commit": {
+     "ok": false,
+     "requested_at": "2026-09-12T04:36:41+00:00",
+     "status": 520
+    },
+    "edition": {
+     "ok": true,
+     "requested_at": "2026-09-12T04:36:28+00:00",
+     "wayback": "https://web.archive.org/web/2/https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/eb0d55eff268179046391c2391925c893059a71b/data/au-cricos/editions/2026-03-02.json.gz"
+    }
+   }
   },
   "2026-04-01": {
    "commit": "eb0d55eff268179046391c2391925c893059a71b",
@@ -1906,7 +1930,19 @@
    },
    "raw_sha256": "2241676dd1097357bba587b843d636a11c5e5ea7af438ba52ce61ad889d23c67",
    "row_count": 1556,
-   "source_date": "2026-04-01"
+   "source_date": "2026-04-01",
+   "wayback": {
+    "commit": {
+     "error": "<urlopen error timed out>",
+     "ok": false,
+     "requested_at": "2026-09-12T04:38:29+00:00"
+    },
+    "edition": {
+     "error": "<urlopen error timed out>",
+     "ok": false,
+     "requested_at": "2026-09-12T04:37:38+00:00"
+    }
+   }
   },
   "2026-05-01": {
    "commit": "eb0d55eff268179046391c2391925c893059a71b",
@@ -1930,7 +1966,19 @@
    },
    "raw_sha256": "9d0329c8fd8966d0d543b8815e68166830f9233b08a0f10621d89110b0089c8f",
    "row_count": 1533,
-   "source_date": "2026-05-01"
+   "source_date": "2026-05-01",
+   "wayback": {
+    "commit": {
+     "ok": false,
+     "requested_at": "2026-09-12T04:39:32+00:00",
+     "status": 520
+    },
+    "edition": {
+     "error": "<urlopen error _ssl.c:993: The handshake operation timed out>",
+     "ok": false,
+     "requested_at": "2026-09-12T04:39:20+00:00"
+    }
+   }
   },
   "2026-06-01": {
    "commit": "eb0d55eff268179046391c2391925c893059a71b",
@@ -1954,7 +2002,19 @@
    },
    "raw_sha256": "9e9bd5c15a5d501ccb6fb6314c86672c18ec8ec5270d84ff6ec5d17f7d19ef7a",
    "row_count": 1544,
-   "source_date": "2026-06-01"
+   "source_date": "2026-06-01",
+   "wayback": {
+    "commit": {
+     "error": "<urlopen error timed out>",
+     "ok": false,
+     "requested_at": "2026-09-12T04:40:37+00:00"
+    },
+    "edition": {
+     "ok": true,
+     "requested_at": "2026-09-12T04:39:46+00:00",
+     "wayback": "https://web.archive.org/web/2/https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/eb0d55eff268179046391c2391925c893059a71b/data/au-cricos/editions/2026-06-01.json.gz"
+    }
+   }
   },
   "2026-07-01": {
    "commit": "eb0d55eff268179046391c2391925c893059a71b",
@@ -2006,5 +2066,5 @@
   }
  },
  "source": "au-cricos",
- "updated_at": "2026-09-11T09:47:48+00:00"
+ "updated_at": "2026-09-12T04:26:44+00:00"
 }
