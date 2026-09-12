@@ -1,7 +1,7 @@
 {
  "publisher": "A.I.T. Multiverse Consulting Ltd, Nicosia, Cyprus",
  "site": "https://studiesmultiverse.com",
- "generated_at": "2026-09-12T04:40:37+00:00",
+ "generated_at": "2026-09-12T05:52:49+00:00",
  "our_licence": "CC BY 4.0",
  "our_licence_url": "https://creativecommons.org/licenses/by/4.0/",
  "source": {
@@ -18,8 +18,8 @@
  "how_to_verify": "Install the reference client (pip install opentimestamps-client). Take the content_sha256 shown for an edition on studiesmultiverse.com or in public/<source>/archive.json, download the matching .ots proof from the proof_url, and run: ots verify -d <content_sha256> <date>.content.ots. A proof with status 'bitcoin' verifies against the block chain without trusting this repository or its publisher; a 'pending' proof is held by the calendars named in the file and upgrades on its own. The Wayback Machine links are the Internet Archive's own copies of the edition file at its immutable commit URL and of the commit page.",
  "archive_index_wayback": null,
  "summary": {
-  "editions": 366,
-  "editions_stamped": 366,
+  "editions": 367,
+  "editions_stamped": 367,
   "editions_with_bitcoin_attestation": 366,
   "editions_archived_at_internet_archive": 25
  },
@@ -341,6 +341,7 @@
     }
    },
    "wayback": {
+    "commit": "https://web.archive.org/web/2/https://github.com/multiverseadmin/studiesmultiverse-standing/commit/b505a2d2641fc6dacafcce68c768e335badac163",
     "edition": "https://web.archive.org/web/2/https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/b505a2d2641fc6dacafcce68c768e335badac163/data/ca-dli/editions/2018-10-27.json.gz"
    }
   },
@@ -804,7 +805,9 @@
      "stamped_at": "2026-09-08T12:35:53+00:00"
     }
    },
-   "wayback": {}
+   "wayback": {
+    "commit": "https://web.archive.org/web/2/https://github.com/multiverseadmin/studiesmultiverse-standing/commit/f6b38b0d35590ecb49b9acdb68967204c971cf85"
+   }
   },
   {
    "edition_date": "2019-09-23",
@@ -7422,6 +7425,26 @@
      "status": "bitcoin",
      "bitcoin_block_height": 966079,
      "stamped_at": "2026-09-08T12:35:53+00:00"
+    }
+   },
+   "wayback": {}
+  },
+  {
+   "edition_date": "2026-09-11",
+   "source_date": "2026-09-11",
+   "row_count": 1440,
+   "content_sha256": "498b41a5927eefa311e7763b30cbe2de956434c0f1f641dcf24dcdf68cd330d4",
+   "raw_sha256": null,
+   "commit": "eed9c6737012ed92874c862ffd959a14c9cd0f36",
+   "commit_url": "https://github.com/multiverseadmin/studiesmultiverse-standing/commit/eed9c6737012ed92874c862ffd959a14c9cd0f36",
+   "edition_url": "https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/eed9c6737012ed92874c862ffd959a14c9cd0f36/data/ca-dli/editions/2026-09-11.json.gz",
+   "proofs": {
+    "content": {
+     "digest": "498b41a5927eefa311e7763b30cbe2de956434c0f1f641dcf24dcdf68cd330d4",
+     "proof_url": "https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/main/data/ca-dli/witness/2026-09-11.content.ots",
+     "status": "pending",
+     "bitcoin_block_height": null,
+     "stamped_at": "2026-09-12T05:44:40+00:00"
     }
    },
    "wayback": {}

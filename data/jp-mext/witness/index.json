@@ -1,5 +1,5 @@
 {
- "archive_index_captured_on": "2026-09-08",
+ "archive_index_captured_on": "2026-09-12",
  "archive_index_wayback": "https://web.archive.org/web/2/https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/main/public/jp-mext/archive.json",
  "editions": {
   "2026-08-25": {
@@ -83,13 +83,13 @@
      "wayback": "https://web.archive.org/web/2/https://github.com/multiverseadmin/studiesmultiverse-standing/commit/12419d91eb4c004be8a58e300a14bb72c62a5c8d"
     },
     "edition": {
+     "error": "<urlopen error _ssl.c:993: The handshake operation timed out>",
      "ok": false,
-     "requested_at": "2026-09-11T06:06:12+00:00",
-     "status": 523
+     "requested_at": "2026-09-12T06:02:52+00:00"
     }
    }
   }
  },
  "source": "jp-mext",
- "updated_at": "2026-09-12T04:52:13+00:00"
+ "updated_at": "2026-09-12T06:01:58+00:00"
 }
