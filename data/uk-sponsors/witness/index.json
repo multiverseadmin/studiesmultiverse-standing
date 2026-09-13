@@ -97,9 +97,9 @@
    "source_date": "2026-08-27",
    "wayback": {
     "commit": {
-     "error": "<urlopen error [Errno 111] Connection refused>",
      "ok": false,
-     "requested_at": "2026-09-12T06:03:46+00:00"
+     "requested_at": "2026-09-13T06:03:18+00:00",
+     "status": 500
     },
     "edition": {
      "ok": true,
@@ -133,14 +133,14 @@
    "source_date": "2026-08-28",
    "wayback": {
     "commit": {
-     "error": "<urlopen error [Errno 111] Connection refused>",
      "ok": false,
-     "requested_at": "2026-09-12T06:04:29+00:00"
+     "requested_at": "2026-09-13T06:04:56+00:00",
+     "status": 500
     },
     "edition": {
-     "error": "<urlopen error [Errno 111] Connection refused>",
+     "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-12T06:04:07+00:00"
+     "requested_at": "2026-09-13T06:04:09+00:00"
     }
    }
   },
@@ -174,9 +174,9 @@
      "wayback": "https://web.archive.org/web/2/https://github.com/multiverseadmin/studiesmultiverse-standing/commit/069f622522c1d60601eca6362a359da6d0609b23"
     },
     "edition": {
-     "error": "<urlopen error [Errno 111] Connection refused>",
      "ok": false,
-     "requested_at": "2026-09-12T06:04:50+00:00"
+     "requested_at": "2026-09-13T06:05:08+00:00",
+     "status": 500
     }
    }
   },
@@ -210,9 +210,9 @@
      "wayback": "https://web.archive.org/web/2/https://github.com/multiverseadmin/studiesmultiverse-standing/commit/be059e14eb8bdedb8e9e1c0cea8bb56c60ac1fa5"
     },
     "edition": {
-     "error": "<urlopen error [Errno 111] Connection refused>",
      "ok": false,
-     "requested_at": "2026-09-12T06:05:11+00:00"
+     "requested_at": "2026-09-13T06:05:21+00:00",
+     "status": 500
     }
    }
   },
@@ -313,9 +313,9 @@
    "source_date": "2026-09-07",
    "wayback": {
     "commit": {
-     "error": "<urlopen error [Errno 111] Connection refused>",
+     "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-12T06:06:14+00:00"
+     "requested_at": "2026-09-13T06:06:12+00:00"
     },
     "edition": {
      "ok": true,
@@ -349,9 +349,9 @@
    "source_date": "2026-09-08",
    "wayback": {
     "commit": {
-     "error": "<urlopen error [Errno 111] Connection refused>",
      "ok": false,
-     "requested_at": "2026-09-12T06:06:36+00:00"
+     "requested_at": "2026-09-13T06:06:58+00:00",
+     "status": 500
     },
     "edition": {
      "ok": true,
@@ -385,14 +385,14 @@
    "source_date": "2026-09-09",
    "wayback": {
     "commit": {
-     "error": "<urlopen error [Errno 111] Connection refused>",
      "ok": false,
-     "requested_at": "2026-09-12T06:07:19+00:00"
+     "requested_at": "2026-09-13T06:07:23+00:00",
+     "status": 500
     },
     "edition": {
-     "error": "<urlopen error [Errno 111] Connection refused>",
      "ok": false,
-     "requested_at": "2026-09-12T06:06:57+00:00"
+     "requested_at": "2026-09-13T06:07:11+00:00",
+     "status": 500
     }
    }
   },
@@ -421,14 +421,14 @@
    "source_date": "2026-09-10",
    "wayback": {
     "commit": {
-     "error": "<urlopen error _ssl.c:993: The handshake operation timed out>",
      "ok": false,
-     "requested_at": "2026-09-12T06:08:50+00:00"
+     "requested_at": "2026-09-13T06:09:01+00:00",
+     "status": 500
     },
     "edition": {
-     "error": "<urlopen error [Errno 111] Connection refused>",
+     "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-12T06:07:40+00:00"
+     "requested_at": "2026-09-13T06:08:14+00:00"
     }
    }
   },
@@ -454,9 +454,21 @@
    },
    "raw_sha256": "4f5683e5c3292d459953f194abffe4a4afa471126644896a3148d232175f4dc2",
    "row_count": 1307,
-   "source_date": "2026-09-11"
+   "source_date": "2026-09-11",
+   "wayback": {
+    "commit": {
+     "ok": false,
+     "requested_at": "2026-09-13T06:09:25+00:00",
+     "status": 500
+    },
+    "edition": {
+     "ok": false,
+     "requested_at": "2026-09-13T06:09:13+00:00",
+     "status": 500
+    }
+   }
   }
  },
  "source": "uk-sponsors",
- "updated_at": "2026-09-12T10:11:01+00:00"
+ "updated_at": "2026-09-13T06:03:06+00:00"
 }
