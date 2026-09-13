@@ -83,13 +83,13 @@
      "wayback": "https://web.archive.org/web/2/https://github.com/multiverseadmin/studiesmultiverse-standing/commit/12419d91eb4c004be8a58e300a14bb72c62a5c8d"
     },
     "edition": {
+     "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-13T06:02:54+00:00",
-     "status": 500
+     "requested_at": "2026-09-13T06:30:06+00:00"
     }
    }
   }
  },
  "source": "jp-mext",
- "updated_at": "2026-09-13T06:02:07+00:00"
+ "updated_at": "2026-09-13T06:29:15+00:00"
 }

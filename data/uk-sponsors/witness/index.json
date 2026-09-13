@@ -98,7 +98,7 @@
    "wayback": {
     "commit": {
      "ok": false,
-     "requested_at": "2026-09-13T06:03:18+00:00",
+     "requested_at": "2026-09-13T06:30:41+00:00",
      "status": 500
     },
     "edition": {
@@ -133,14 +133,14 @@
    "source_date": "2026-08-28",
    "wayback": {
     "commit": {
+     "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-13T06:04:56+00:00",
-     "status": 500
+     "requested_at": "2026-09-13T06:32:23+00:00"
     },
     "edition": {
      "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-13T06:04:09+00:00"
+     "requested_at": "2026-09-13T06:31:32+00:00"
     }
    }
   },
@@ -175,7 +175,7 @@
     },
     "edition": {
      "ok": false,
-     "requested_at": "2026-09-13T06:05:08+00:00",
+     "requested_at": "2026-09-13T06:32:46+00:00",
      "status": 500
     }
    }
@@ -211,7 +211,7 @@
     },
     "edition": {
      "ok": false,
-     "requested_at": "2026-09-13T06:05:21+00:00",
+     "requested_at": "2026-09-13T06:32:58+00:00",
      "status": 500
     }
    }
@@ -315,7 +315,7 @@
     "commit": {
      "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-13T06:06:12+00:00"
+     "requested_at": "2026-09-13T06:33:49+00:00"
     },
     "edition": {
      "ok": true,
@@ -349,9 +349,9 @@
    "source_date": "2026-09-08",
    "wayback": {
     "commit": {
+     "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-13T06:06:58+00:00",
-     "status": 500
+     "requested_at": "2026-09-13T06:34:40+00:00"
     },
     "edition": {
      "ok": true,
@@ -391,7 +391,7 @@
     },
     "edition": {
      "ok": false,
-     "requested_at": "2026-09-13T06:07:11+00:00",
+     "requested_at": "2026-09-13T06:35:03+00:00",
      "status": 500
     }
    }
@@ -470,5 +470,5 @@
   }
  },
  "source": "uk-sponsors",
- "updated_at": "2026-09-13T06:03:06+00:00"
+ "updated_at": "2026-09-13T06:30:29+00:00"
 }
