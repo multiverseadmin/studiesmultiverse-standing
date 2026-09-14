@@ -85,11 +85,39 @@
     "edition": {
      "error": "<urlopen error [Errno 111] Connection refused>",
      "ok": false,
-     "requested_at": "2026-09-14T06:45:57+00:00"
+     "requested_at": "2026-09-14T07:02:21+00:00"
+    }
+   }
+  },
+  "2026-09-14": {
+   "commit": "b140af14fe2abd729c312d823a51b0b5bc2a52e0",
+   "content_sha256": "175362c3353e9dce6dde38fbe891253daa91dc318d56a6c0b642bbfcebc1d06d",
+   "edition_path": "data/jp-mext/editions/2026-09-14.json.gz",
+   "proofs": {
+    "content": {
+     "bitcoin_block_height": null,
+     "file": "2026-09-14.content.ots",
+     "stamped_at": "2026-09-14T06:51:19+00:00",
+     "status": "pending"
+    }
+   },
+   "raw_sha256": null,
+   "row_count": 96,
+   "source_date": "2026-04-30",
+   "wayback": {
+    "commit": {
+     "ok": false,
+     "requested_at": "2026-09-14T07:02:55+00:00",
+     "status": 500
+    },
+    "edition": {
+     "error": "<urlopen error [Errno 111] Connection refused>",
+     "ok": false,
+     "requested_at": "2026-09-14T07:02:43+00:00"
     }
    }
   }
  },
  "source": "jp-mext",
- "updated_at": "2026-09-14T06:45:35+00:00"
+ "updated_at": "2026-09-14T07:02:00+00:00"
 }

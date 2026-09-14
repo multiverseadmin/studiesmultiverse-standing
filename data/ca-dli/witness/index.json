@@ -112,7 +112,7 @@
     "edition": {
      "error": "<urlopen error [Errno 111] Connection refused>",
      "ok": false,
-     "requested_at": "2026-09-14T06:37:30+00:00"
+     "requested_at": "2026-09-14T06:54:25+00:00"
     }
    }
   },
@@ -431,7 +431,7 @@
     "edition": {
      "error": "<urlopen error [Errno 111] Connection refused>",
      "ok": false,
-     "requested_at": "2026-09-14T06:37:51+00:00"
+     "requested_at": "2026-09-14T06:54:47+00:00"
     }
    }
   },
@@ -571,7 +571,7 @@
     "commit": {
      "error": "<urlopen error [Errno 111] Connection refused>",
      "ok": false,
-     "requested_at": "2026-09-14T06:38:13+00:00"
+     "requested_at": "2026-09-14T06:55:09+00:00"
     },
     "edition": {
      "ok": true,
@@ -629,7 +629,7 @@
     "commit": {
      "error": "<urlopen error [Errno 111] Connection refused>",
      "ok": false,
-     "requested_at": "2026-09-14T06:38:35+00:00"
+     "requested_at": "2026-09-14T06:55:30+00:00"
     },
     "edition": {
      "ok": true,
@@ -721,7 +721,7 @@
     "edition": {
      "error": "<urlopen error [Errno 111] Connection refused>",
      "ok": false,
-     "requested_at": "2026-09-14T06:38:57+00:00"
+     "requested_at": "2026-09-14T06:55:52+00:00"
     }
    }
   },
@@ -749,8 +749,8 @@
     },
     "edition": {
      "ok": false,
-     "requested_at": "2026-09-14T06:39:09+00:00",
-     "status": 500
+     "requested_at": "2026-09-14T06:55:59+00:00",
+     "status": 429
     }
    }
   },
@@ -802,7 +802,7 @@
    "wayback": {
     "commit": {
      "ok": false,
-     "requested_at": "2026-09-14T06:39:28+00:00",
+     "requested_at": "2026-09-14T06:56:14+00:00",
      "status": 500
     },
     "edition": {
@@ -837,7 +837,7 @@
     "edition": {
      "error": "<urlopen error [Errno 111] Connection refused>",
      "ok": false,
-     "requested_at": "2026-09-14T06:39:49+00:00"
+     "requested_at": "2026-09-14T06:56:37+00:00"
     }
    }
   },
@@ -861,7 +861,7 @@
     "commit": {
      "error": "<urlopen error [Errno 111] Connection refused>",
      "ok": false,
-     "requested_at": "2026-09-14T06:40:11+00:00"
+     "requested_at": "2026-09-14T06:56:59+00:00"
     },
     "edition": {
      "ok": true,
@@ -948,12 +948,12 @@
     "commit": {
      "error": "<urlopen error [Errno 111] Connection refused>",
      "ok": false,
-     "requested_at": "2026-09-14T06:40:54+00:00"
+     "requested_at": "2026-09-14T06:57:42+00:00"
     },
     "edition": {
      "error": "<urlopen error [Errno 111] Connection refused>",
      "ok": false,
-     "requested_at": "2026-09-14T06:40:33+00:00"
+     "requested_at": "2026-09-14T06:57:20+00:00"
     }
    }
   },
@@ -1011,7 +1011,7 @@
     "edition": {
      "error": "<urlopen error [Errno 111] Connection refused>",
      "ok": false,
-     "requested_at": "2026-09-14T06:41:16+00:00"
+     "requested_at": "2026-09-14T06:58:04+00:00"
     }
    }
   },
@@ -1033,13 +1033,13 @@
    "source_date": "2019-09-16",
    "wayback": {
     "commit": {
-     "error": "<urlopen error [Errno 111] Connection refused>",
      "ok": false,
-     "requested_at": "2026-09-14T06:41:44+00:00"
+     "requested_at": "2026-09-14T06:58:34+00:00",
+     "status": 500
     },
     "edition": {
      "ok": false,
-     "requested_at": "2026-09-14T06:41:22+00:00",
+     "requested_at": "2026-09-14T06:58:11+00:00",
      "status": 429
     }
    }
@@ -1064,12 +1064,12 @@
     "commit": {
      "error": "<urlopen error [Errno 111] Connection refused>",
      "ok": false,
-     "requested_at": "2026-09-14T06:42:36+00:00"
+     "requested_at": "2026-09-14T06:59:18+00:00"
     },
     "edition": {
      "error": "<urlopen error [Errno 111] Connection refused>",
      "ok": false,
-     "requested_at": "2026-09-14T06:42:06+00:00"
+     "requested_at": "2026-09-14T06:58:56+00:00"
     }
    }
   },
@@ -1093,12 +1093,12 @@
     "commit": {
      "error": "<urlopen error [Errno 111] Connection refused>",
      "ok": false,
-     "requested_at": "2026-09-14T06:43:19+00:00"
+     "requested_at": "2026-09-14T07:00:01+00:00"
     },
     "edition": {
      "error": "<urlopen error [Errno 111] Connection refused>",
      "ok": false,
-     "requested_at": "2026-09-14T06:42:58+00:00"
+     "requested_at": "2026-09-14T06:59:40+00:00"
     }
    }
   },
@@ -1121,13 +1121,13 @@
    "wayback": {
     "commit": {
      "ok": false,
-     "requested_at": "2026-09-14T06:43:54+00:00",
+     "requested_at": "2026-09-14T07:00:36+00:00",
      "status": 500
     },
     "edition": {
+     "error": "<urlopen error [Errno 111] Connection refused>",
      "ok": false,
-     "requested_at": "2026-09-14T06:43:42+00:00",
-     "status": 500
+     "requested_at": "2026-09-14T07:00:23+00:00"
     }
    }
   },
@@ -1149,14 +1149,14 @@
    "source_date": "2020-03-06",
    "wayback": {
     "commit": {
-     "error": "<urlopen error [Errno 111] Connection refused>",
      "ok": false,
-     "requested_at": "2026-09-14T06:44:29+00:00"
+     "requested_at": "2026-09-14T07:00:55+00:00",
+     "status": 500
     },
     "edition": {
      "ok": false,
-     "requested_at": "2026-09-14T06:44:07+00:00",
-     "status": 500
+     "requested_at": "2026-09-14T07:00:42+00:00",
+     "status": 429
     }
    }
   },
@@ -1180,12 +1180,12 @@
     "commit": {
      "error": "<urlopen error [Errno 111] Connection refused>",
      "ok": false,
-     "requested_at": "2026-09-14T06:45:14+00:00"
+     "requested_at": "2026-09-14T07:01:38+00:00"
     },
     "edition": {
      "error": "<urlopen error [Errno 111] Connection refused>",
      "ok": false,
-     "requested_at": "2026-09-14T06:44:52+00:00"
+     "requested_at": "2026-09-14T07:01:16+00:00"
     }
    }
   },
@@ -1209,7 +1209,7 @@
     "edition": {
      "error": "<urlopen error [Errno 111] Connection refused>",
      "ok": false,
-     "requested_at": "2026-09-14T06:45:35+00:00"
+     "requested_at": "2026-09-14T07:02:00+00:00"
     }
    }
   },
@@ -6740,5 +6740,5 @@
   }
  },
  "source": "ca-dli",
- "updated_at": "2026-09-14T06:37:08+00:00"
+ "updated_at": "2026-09-14T06:53:55+00:00"
 }

@@ -1,7 +1,7 @@
 {
  "publisher": "A.I.T. Multiverse Consulting Ltd, Nicosia, Cyprus",
  "site": "https://studiesmultiverse.com",
- "generated_at": "2026-09-14T06:45:35+00:00",
+ "generated_at": "2026-09-14T07:02:00+00:00",
  "our_licence": "CC BY 4.0",
  "our_licence_url": "https://creativecommons.org/licenses/by/4.0/",
  "source": {
@@ -18,8 +18,8 @@
  "how_to_verify": "Install the reference client (pip install opentimestamps-client). Take the content_sha256 shown for an edition on studiesmultiverse.com or in public/<source>/archive.json, download the matching .ots proof from the proof_url, and run: ots verify -d <content_sha256> <date>.content.ots. A proof with status 'bitcoin' verifies against the block chain without trusting this repository or its publisher; a 'pending' proof is held by the calendars named in the file and upgrades on its own. The Wayback Machine links are the Internet Archive's own copies of the edition file at its immutable commit URL and of the commit page.",
  "archive_index_wayback": "https://web.archive.org/web/2/https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/main/public/jp-mext/archive.json",
  "summary": {
-  "editions": 3,
-  "editions_stamped": 3,
+  "editions": 4,
+  "editions_stamped": 4,
   "editions_with_bitcoin_attestation": 3,
   "editions_archived_at_internet_archive": 2
  },
@@ -91,6 +91,26 @@
    "wayback": {
     "commit": "https://web.archive.org/web/2/https://github.com/multiverseadmin/studiesmultiverse-standing/commit/12419d91eb4c004be8a58e300a14bb72c62a5c8d"
    }
+  },
+  {
+   "edition_date": "2026-09-14",
+   "source_date": "2026-04-30",
+   "row_count": 96,
+   "content_sha256": "175362c3353e9dce6dde38fbe891253daa91dc318d56a6c0b642bbfcebc1d06d",
+   "raw_sha256": null,
+   "commit": "b140af14fe2abd729c312d823a51b0b5bc2a52e0",
+   "commit_url": "https://github.com/multiverseadmin/studiesmultiverse-standing/commit/b140af14fe2abd729c312d823a51b0b5bc2a52e0",
+   "edition_url": "https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/b140af14fe2abd729c312d823a51b0b5bc2a52e0/data/jp-mext/editions/2026-09-14.json.gz",
+   "proofs": {
+    "content": {
+     "digest": "175362c3353e9dce6dde38fbe891253daa91dc318d56a6c0b642bbfcebc1d06d",
+     "proof_url": "https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/main/data/jp-mext/witness/2026-09-14.content.ots",
+     "status": "pending",
+     "bitcoin_block_height": null,
+     "stamped_at": "2026-09-14T06:51:19+00:00"
+    }
+   },
+   "wayback": {}
   }
  ]
 }
