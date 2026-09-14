@@ -85,11 +85,11 @@
     "edition": {
      "error": "<urlopen error [Errno 111] Connection refused>",
      "ok": false,
-     "requested_at": "2026-09-14T05:58:22+00:00"
+     "requested_at": "2026-09-14T06:45:57+00:00"
     }
    }
   }
  },
  "source": "jp-mext",
- "updated_at": "2026-09-14T05:58:00+00:00"
+ "updated_at": "2026-09-14T06:45:35+00:00"
 }
