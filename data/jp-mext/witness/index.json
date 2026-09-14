@@ -83,9 +83,9 @@
      "wayback": "https://web.archive.org/web/2/https://github.com/multiverseadmin/studiesmultiverse-standing/commit/12419d91eb4c004be8a58e300a14bb72c62a5c8d"
     },
     "edition": {
-     "error": "<urlopen error [Errno 111] Connection refused>",
      "ok": false,
-     "requested_at": "2026-09-14T07:02:21+00:00"
+     "requested_at": "2026-09-14T10:06:26+00:00",
+     "status": 500
     }
    }
   },
@@ -95,10 +95,11 @@
    "edition_path": "data/jp-mext/editions/2026-09-14.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 966933,
      "file": "2026-09-14.content.ots",
      "stamped_at": "2026-09-14T06:51:19+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-14T09:49:28+00:00"
     }
    },
    "raw_sha256": null,
@@ -106,18 +107,18 @@
    "source_date": "2026-04-30",
    "wayback": {
     "commit": {
+     "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-14T07:02:55+00:00",
-     "status": 500
+     "requested_at": "2026-09-14T10:08:08+00:00"
     },
     "edition": {
-     "error": "<urlopen error [Errno 111] Connection refused>",
+     "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-14T07:02:43+00:00"
+     "requested_at": "2026-09-14T10:07:17+00:00"
     }
    }
   }
  },
  "source": "jp-mext",
- "updated_at": "2026-09-14T07:02:00+00:00"
+ "updated_at": "2026-09-14T10:06:12+00:00"
 }

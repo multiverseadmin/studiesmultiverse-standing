@@ -1,7 +1,7 @@
 {
  "publisher": "A.I.T. Multiverse Consulting Ltd, Nicosia, Cyprus",
  "site": "https://studiesmultiverse.com",
- "generated_at": "2026-09-14T07:02:00+00:00",
+ "generated_at": "2026-09-14T10:06:12+00:00",
  "our_licence": "CC BY 4.0",
  "our_licence_url": "https://creativecommons.org/licenses/by/4.0/",
  "source": {
@@ -20,7 +20,7 @@
  "summary": {
   "editions": 4,
   "editions_stamped": 4,
-  "editions_with_bitcoin_attestation": 3,
+  "editions_with_bitcoin_attestation": 4,
   "editions_archived_at_internet_archive": 2
  },
  "editions": [
@@ -105,8 +105,8 @@
     "content": {
      "digest": "175362c3353e9dce6dde38fbe891253daa91dc318d56a6c0b642bbfcebc1d06d",
      "proof_url": "https://raw.githubusercontent.com/multiverseadmin/studiesmultiverse-standing/main/data/jp-mext/witness/2026-09-14.content.ots",
-     "status": "pending",
-     "bitcoin_block_height": null,
+     "status": "bitcoin",
+     "bitcoin_block_height": 966933,
      "stamped_at": "2026-09-14T06:51:19+00:00"
     }
    },
