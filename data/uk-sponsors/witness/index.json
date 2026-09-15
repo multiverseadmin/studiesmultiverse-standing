@@ -97,9 +97,9 @@
    "source_date": "2026-08-27",
    "wayback": {
     "commit": {
-     "error": "<urlopen error [Errno 111] Connection refused>",
      "ok": false,
-     "requested_at": "2026-09-15T06:46:36+00:00"
+     "requested_at": "2026-09-15T10:08:28+00:00",
+     "status": 500
     },
     "edition": {
      "ok": true,
@@ -133,14 +133,14 @@
    "source_date": "2026-08-28",
    "wayback": {
     "commit": {
-     "error": "<urlopen error [Errno 111] Connection refused>",
+     "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-15T06:47:19+00:00"
+     "requested_at": "2026-09-15T10:10:11+00:00"
     },
     "edition": {
-     "error": "<urlopen error [Errno 111] Connection refused>",
+     "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-15T06:46:58+00:00"
+     "requested_at": "2026-09-15T10:09:19+00:00"
     }
    }
   },
@@ -174,9 +174,9 @@
      "wayback": "https://web.archive.org/web/2/https://github.com/multiverseadmin/studiesmultiverse-standing/commit/069f622522c1d60601eca6362a359da6d0609b23"
     },
     "edition": {
-     "error": "<urlopen error [Errno 111] Connection refused>",
      "ok": false,
-     "requested_at": "2026-09-15T06:47:41+00:00"
+     "requested_at": "2026-09-15T10:10:23+00:00",
+     "status": 500
     }
    }
   },
@@ -211,7 +211,7 @@
     },
     "edition": {
      "ok": false,
-     "requested_at": "2026-09-15T06:47:48+00:00",
+     "requested_at": "2026-09-15T10:10:29+00:00",
      "status": 429
     }
    }
@@ -313,9 +313,9 @@
    "source_date": "2026-09-07",
    "wayback": {
     "commit": {
+     "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-15T06:48:03+00:00",
-     "status": 500
+     "requested_at": "2026-09-15T10:11:20+00:00"
     },
     "edition": {
      "ok": true,
@@ -349,9 +349,9 @@
    "source_date": "2026-09-08",
    "wayback": {
     "commit": {
-     "error": "<urlopen error [Errno 111] Connection refused>",
+     "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-15T06:48:26+00:00"
+     "requested_at": "2026-09-15T10:12:11+00:00"
     },
     "edition": {
      "ok": true,
@@ -385,14 +385,14 @@
    "source_date": "2026-09-09",
    "wayback": {
     "commit": {
-     "error": "<urlopen error [Errno 111] Connection refused>",
      "ok": false,
-     "requested_at": "2026-09-15T06:49:09+00:00"
+     "requested_at": "2026-09-15T10:12:36+00:00",
+     "status": 500
     },
     "edition": {
-     "error": "<urlopen error [Errno 111] Connection refused>",
      "ok": false,
-     "requested_at": "2026-09-15T06:48:47+00:00"
+     "requested_at": "2026-09-15T10:12:23+00:00",
+     "status": 500
     }
    }
   },
@@ -421,14 +421,14 @@
    "source_date": "2026-09-10",
    "wayback": {
     "commit": {
-     "error": "<urlopen error [Errno 111] Connection refused>",
+     "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-15T06:49:52+00:00"
+     "requested_at": "2026-09-15T10:13:39+00:00"
     },
     "edition": {
-     "error": "<urlopen error [Errno 111] Connection refused>",
      "ok": false,
-     "requested_at": "2026-09-15T06:49:31+00:00"
+     "requested_at": "2026-09-15T10:12:48+00:00",
+     "status": 500
     }
    }
   },
@@ -458,13 +458,13 @@
    "wayback": {
     "commit": {
      "ok": false,
-     "requested_at": "2026-09-15T06:50:21+00:00",
+     "requested_at": "2026-09-15T10:14:32+00:00",
      "status": 500
     },
     "edition": {
      "ok": false,
-     "requested_at": "2026-09-15T06:50:07+00:00",
-     "status": 500
+     "requested_at": "2026-09-15T10:14:20+00:00",
+     "status": 429
     }
    }
   },
@@ -474,16 +474,18 @@
    "edition_path": "data/uk-sponsors/editions/2026-09-14.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 967085,
      "file": "2026-09-14.content.ots",
      "stamped_at": "2026-09-15T06:33:55+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-15T09:50:01+00:00"
     },
     "raw": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 967085,
      "file": "2026-09-14.raw.ots",
      "stamped_at": "2026-09-15T06:33:55+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-15T09:50:01+00:00"
     }
    },
    "raw_sha256": "21d7a3182c9adbfa4baf051af5b30ffbce9944c85c9c4e3106bd2f59bcb7523f",
@@ -491,18 +493,18 @@
    "source_date": "2026-09-14",
    "wayback": {
     "commit": {
-     "error": "<urlopen error [Errno 111] Connection refused>",
+     "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-15T06:51:07+00:00"
+     "requested_at": "2026-09-15T10:15:35+00:00"
     },
     "edition": {
-     "error": "<urlopen error [Errno 111] Connection refused>",
      "ok": false,
-     "requested_at": "2026-09-15T06:50:45+00:00"
+     "requested_at": "2026-09-15T10:14:44+00:00",
+     "status": 500
     }
    }
   }
  },
  "source": "uk-sponsors",
- "updated_at": "2026-09-15T06:46:15+00:00"
+ "updated_at": "2026-09-15T10:08:16+00:00"
 }
