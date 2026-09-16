@@ -1504,7 +1504,7 @@
    "wayback": {
     "commit": {
      "ok": false,
-     "requested_at": "2026-09-15T09:50:11+00:00",
+     "requested_at": "2026-09-16T04:28:26+00:00",
      "status": 500
     },
     "edition": {
@@ -1545,8 +1545,8 @@
     },
     "edition": {
      "ok": false,
-     "requested_at": "2026-09-15T09:50:17+00:00",
-     "status": 429
+     "requested_at": "2026-09-16T04:28:39+00:00",
+     "status": 500
     }
    }
   },
@@ -1724,9 +1724,9 @@
      "wayback": "https://web.archive.org/web/2/https://github.com/multiverseadmin/studiesmultiverse-standing/commit/eb0d55eff268179046391c2391925c893059a71b"
     },
     "edition": {
+     "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-15T09:50:23+00:00",
-     "status": 429
+     "requested_at": "2026-09-16T04:29:30+00:00"
     }
    }
   },
@@ -1868,9 +1868,9 @@
      "wayback": "https://web.archive.org/web/2/https://github.com/multiverseadmin/studiesmultiverse-standing/commit/eb0d55eff268179046391c2391925c893059a71b"
     },
     "edition": {
+     "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-15T09:50:35+00:00",
-     "status": 500
+     "requested_at": "2026-09-16T04:30:21+00:00"
     }
    }
   },
@@ -1936,13 +1936,13 @@
    "wayback": {
     "commit": {
      "ok": false,
-     "requested_at": "2026-09-15T09:52:13+00:00",
+     "requested_at": "2026-09-16T04:30:45+00:00",
      "status": 500
     },
     "edition": {
-     "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-15T09:51:26+00:00"
+     "requested_at": "2026-09-16T04:30:33+00:00",
+     "status": 500
     }
    }
   },
@@ -2045,11 +2045,11 @@
     "commit": {
      "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-15T09:53:16+00:00"
+     "requested_at": "2026-09-16T04:31:49+00:00"
     },
     "edition": {
      "ok": false,
-     "requested_at": "2026-09-15T09:52:25+00:00",
+     "requested_at": "2026-09-16T04:30:57+00:00",
      "status": 500
     }
    }
@@ -2084,13 +2084,13 @@
      "wayback": "https://web.archive.org/web/2/https://github.com/multiverseadmin/studiesmultiverse-standing/commit/57e1006265d768b2abe29b8ff819673bbd92e16c"
     },
     "edition": {
-     "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-15T09:54:07+00:00"
+     "requested_at": "2026-09-16T04:32:36+00:00",
+     "status": 500
     }
    }
   }
  },
  "source": "au-cricos",
- "updated_at": "2026-09-15T09:50:05+00:00"
+ "updated_at": "2026-09-16T04:28:20+00:00"
 }

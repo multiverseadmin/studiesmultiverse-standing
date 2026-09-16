@@ -97,9 +97,9 @@
    "source_date": "2026-08-27",
    "wayback": {
     "commit": {
+     "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-15T10:08:28+00:00",
-     "status": 500
+     "requested_at": "2026-09-16T04:48:12+00:00"
     },
     "edition": {
      "ok": true,
@@ -133,14 +133,14 @@
    "source_date": "2026-08-28",
    "wayback": {
     "commit": {
-     "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-15T10:10:11+00:00"
+     "requested_at": "2026-09-16T04:49:11+00:00",
+     "status": 500
     },
     "edition": {
-     "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-15T10:09:19+00:00"
+     "requested_at": "2026-09-16T04:48:59+00:00",
+     "status": 500
     }
    }
   },
@@ -175,7 +175,7 @@
     },
     "edition": {
      "ok": false,
-     "requested_at": "2026-09-15T10:10:23+00:00",
+     "requested_at": "2026-09-16T04:49:23+00:00",
      "status": 500
     }
    }
@@ -210,9 +210,9 @@
      "wayback": "https://web.archive.org/web/2/https://github.com/multiverseadmin/studiesmultiverse-standing/commit/be059e14eb8bdedb8e9e1c0cea8bb56c60ac1fa5"
     },
     "edition": {
+     "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-15T10:10:29+00:00",
-     "status": 429
+     "requested_at": "2026-09-16T04:50:14+00:00"
     }
    }
   },
@@ -313,9 +313,9 @@
    "source_date": "2026-09-07",
    "wayback": {
     "commit": {
-     "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-15T10:11:20+00:00"
+     "requested_at": "2026-09-16T04:51:01+00:00",
+     "status": 500
     },
     "edition": {
      "ok": true,
@@ -349,9 +349,9 @@
    "source_date": "2026-09-08",
    "wayback": {
     "commit": {
-     "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-15T10:12:11+00:00"
+     "requested_at": "2026-09-16T04:51:14+00:00",
+     "status": 500
     },
     "edition": {
      "ok": true,
@@ -385,13 +385,13 @@
    "source_date": "2026-09-09",
    "wayback": {
     "commit": {
+     "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-15T10:12:36+00:00",
-     "status": 500
+     "requested_at": "2026-09-16T04:52:17+00:00"
     },
     "edition": {
      "ok": false,
-     "requested_at": "2026-09-15T10:12:23+00:00",
+     "requested_at": "2026-09-16T04:51:26+00:00",
      "status": 500
     }
    }
@@ -421,13 +421,13 @@
    "source_date": "2026-09-10",
    "wayback": {
     "commit": {
-     "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-15T10:13:39+00:00"
+     "requested_at": "2026-09-16T04:53:16+00:00",
+     "status": 500
     },
     "edition": {
      "ok": false,
-     "requested_at": "2026-09-15T10:12:48+00:00",
+     "requested_at": "2026-09-16T04:53:04+00:00",
      "status": 500
     }
    }
@@ -462,9 +462,9 @@
      "status": 500
     },
     "edition": {
+     "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-15T10:14:20+00:00",
-     "status": 429
+     "requested_at": "2026-09-16T04:54:07+00:00"
     }
    }
   },
@@ -506,5 +506,5 @@
   }
  },
  "source": "uk-sponsors",
- "updated_at": "2026-09-15T10:08:16+00:00"
+ "updated_at": "2026-09-16T04:47:21+00:00"
 }

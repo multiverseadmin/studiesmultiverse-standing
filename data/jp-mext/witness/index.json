@@ -83,9 +83,9 @@
      "wayback": "https://web.archive.org/web/2/https://github.com/multiverseadmin/studiesmultiverse-standing/commit/12419d91eb4c004be8a58e300a14bb72c62a5c8d"
     },
     "edition": {
+     "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-15T10:06:22+00:00",
-     "status": 500
+     "requested_at": "2026-09-16T04:46:09+00:00"
     }
    }
   },
@@ -107,18 +107,18 @@
    "source_date": "2026-04-30",
    "wayback": {
     "commit": {
-     "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-15T10:08:04+00:00"
+     "requested_at": "2026-09-16T04:47:09+00:00",
+     "status": 500
     },
     "edition": {
-     "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-15T10:07:13+00:00"
+     "requested_at": "2026-09-16T04:46:57+00:00",
+     "status": 500
     }
    }
   }
  },
  "source": "jp-mext",
- "updated_at": "2026-09-15T10:06:10+00:00"
+ "updated_at": "2026-09-16T04:45:18+00:00"
 }
