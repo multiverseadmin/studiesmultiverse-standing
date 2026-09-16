@@ -97,9 +97,9 @@
    "source_date": "2026-08-27",
    "wayback": {
     "commit": {
-     "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-16T06:06:39+00:00"
+     "requested_at": "2026-09-16T06:55:55+00:00",
+     "status": 500
     },
     "edition": {
      "ok": true,
@@ -133,14 +133,14 @@
    "source_date": "2026-08-28",
    "wayback": {
     "commit": {
+     "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-16T06:07:03+00:00",
-     "status": 500
+     "requested_at": "2026-09-16T06:57:37+00:00"
     },
     "edition": {
+     "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-16T06:06:45+00:00",
-     "status": 429
+     "requested_at": "2026-09-16T06:56:46+00:00"
     }
    }
   },
@@ -174,9 +174,9 @@
      "wayback": "https://web.archive.org/web/2/https://github.com/multiverseadmin/studiesmultiverse-standing/commit/069f622522c1d60601eca6362a359da6d0609b23"
     },
     "edition": {
-     "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-16T06:07:54+00:00"
+     "requested_at": "2026-09-16T06:57:54+00:00",
+     "status": 429
     }
    }
   },
@@ -212,7 +212,7 @@
     "edition": {
      "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-16T06:08:45+00:00"
+     "requested_at": "2026-09-16T06:58:45+00:00"
     }
    }
   },
@@ -503,8 +503,30 @@
      "status": 500
     }
    }
+  },
+  "2026-09-15": {
+   "commit": "f4e063a9e2d51e9629b369ab00d0e9d5330fdafe",
+   "content_sha256": "3ac7ddecacd536960ee1404f76dcd3516faf330655bc1c3615d0fbdd5fc72ac4",
+   "edition_path": "data/uk-sponsors/editions/2026-09-15.json.gz",
+   "proofs": {
+    "content": {
+     "bitcoin_block_height": null,
+     "file": "2026-09-15.content.ots",
+     "stamped_at": "2026-09-16T06:32:58+00:00",
+     "status": "pending"
+    },
+    "raw": {
+     "bitcoin_block_height": null,
+     "file": "2026-09-15.raw.ots",
+     "stamped_at": "2026-09-16T06:32:58+00:00",
+     "status": "pending"
+    }
+   },
+   "raw_sha256": "689c0df7ccd333d205c20f70b6b209bc7a2de5a1684328826775639e45b7eca2",
+   "row_count": 1307,
+   "source_date": "2026-09-15"
   }
  },
  "source": "uk-sponsors",
- "updated_at": "2026-09-16T06:05:48+00:00"
+ "updated_at": "2026-09-16T06:55:32+00:00"
 }

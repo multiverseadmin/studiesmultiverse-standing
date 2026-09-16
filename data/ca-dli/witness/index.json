@@ -111,7 +111,7 @@
     },
     "edition": {
      "ok": false,
-     "requested_at": "2026-09-16T05:51:49+00:00",
+     "requested_at": "2026-09-16T06:38:44+00:00",
      "status": 500
     }
    }
@@ -429,9 +429,9 @@
      "wayback": "https://web.archive.org/web/2/https://github.com/multiverseadmin/studiesmultiverse-standing/commit/b505a2d2641fc6dacafcce68c768e335badac163"
     },
     "edition": {
+     "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-16T05:52:01+00:00",
-     "status": 500
+     "requested_at": "2026-09-16T06:39:36+00:00"
     }
    }
   },
@@ -571,7 +571,7 @@
     "commit": {
      "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-16T05:52:52+00:00"
+     "requested_at": "2026-09-16T06:40:27+00:00"
     },
     "edition": {
      "ok": true,
@@ -627,9 +627,9 @@
    "source_date": "2019-03-26",
    "wayback": {
     "commit": {
-     "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-16T05:53:43+00:00"
+     "requested_at": "2026-09-16T06:40:49+00:00",
+     "status": 500
     },
     "edition": {
      "ok": true,
@@ -720,7 +720,7 @@
     },
     "edition": {
      "ok": false,
-     "requested_at": "2026-09-16T05:53:50+00:00",
+     "requested_at": "2026-09-16T06:40:59+00:00",
      "status": 429
     }
    }
@@ -748,9 +748,9 @@
      "wayback": "https://web.archive.org/web/2/https://github.com/multiverseadmin/studiesmultiverse-standing/commit/f6b38b0d35590ecb49b9acdb68967204c971cf85"
     },
     "edition": {
+     "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-16T05:54:02+00:00",
-     "status": 500
+     "requested_at": "2026-09-16T06:41:50+00:00"
     }
    }
   },
@@ -801,9 +801,9 @@
    "source_date": "2019-07-16",
    "wayback": {
     "commit": {
+     "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-16T05:54:14+00:00",
-     "status": 500
+     "requested_at": "2026-09-16T06:42:41+00:00"
     },
     "edition": {
      "ok": true,
@@ -835,9 +835,9 @@
      "wayback": "https://web.archive.org/web/2/https://github.com/multiverseadmin/studiesmultiverse-standing/commit/f6b38b0d35590ecb49b9acdb68967204c971cf85"
     },
     "edition": {
-     "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-16T05:55:06+00:00"
+     "requested_at": "2026-09-16T06:43:23+00:00",
+     "status": 429
     }
    }
   },
@@ -859,9 +859,9 @@
    "source_date": "2019-07-16",
    "wayback": {
     "commit": {
-     "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-16T05:55:57+00:00"
+     "requested_at": "2026-09-16T06:43:35+00:00",
+     "status": 500
     },
     "edition": {
      "ok": true,
@@ -946,13 +946,13 @@
    "source_date": "2019-08-28",
    "wayback": {
     "commit": {
+     "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-16T05:56:21+00:00",
-     "status": 500
+     "requested_at": "2026-09-16T06:44:39+00:00"
     },
     "edition": {
      "ok": false,
-     "requested_at": "2026-09-16T05:56:09+00:00",
+     "requested_at": "2026-09-16T06:43:48+00:00",
      "status": 500
     }
    }
@@ -1011,7 +1011,7 @@
     "edition": {
      "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-16T05:57:12+00:00"
+     "requested_at": "2026-09-16T06:45:30+00:00"
     }
    }
   },
@@ -1034,13 +1034,13 @@
    "wayback": {
     "commit": {
      "ok": false,
-     "requested_at": "2026-09-16T05:58:16+00:00",
+     "requested_at": "2026-09-16T06:46:02+00:00",
      "status": 500
     },
     "edition": {
-     "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-16T05:58:03+00:00"
+     "requested_at": "2026-09-16T06:45:47+00:00",
+     "status": 429
     }
    }
   },
@@ -1062,14 +1062,14 @@
    "source_date": "2019-11-14",
    "wayback": {
     "commit": {
+     "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-16T05:58:34+00:00",
-     "status": 500
+     "requested_at": "2026-09-16T06:47:45+00:00"
     },
     "edition": {
+     "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-16T05:58:22+00:00",
-     "status": 429
+     "requested_at": "2026-09-16T06:46:53+00:00"
     }
    }
   },
@@ -1091,14 +1091,14 @@
    "source_date": "2019-11-22",
    "wayback": {
     "commit": {
-     "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-16T06:00:16+00:00"
+     "requested_at": "2026-09-16T06:48:30+00:00",
+     "status": 500
     },
     "edition": {
-     "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-16T05:59:25+00:00"
+     "requested_at": "2026-09-16T06:48:17+00:00",
+     "status": 500
     }
    }
   },
@@ -1120,14 +1120,14 @@
    "source_date": "2020-02-04",
    "wayback": {
     "commit": {
+     "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-16T06:00:41+00:00",
-     "status": 500
+     "requested_at": "2026-09-16T06:50:12+00:00"
     },
     "edition": {
+     "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-16T06:00:29+00:00",
-     "status": 500
+     "requested_at": "2026-09-16T06:49:21+00:00"
     }
    }
   },
@@ -1149,14 +1149,14 @@
    "source_date": "2020-03-06",
    "wayback": {
     "commit": {
-     "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-16T06:02:23+00:00"
+     "requested_at": "2026-09-16T06:50:57+00:00",
+     "status": 500
     },
     "edition": {
-     "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-16T06:01:32+00:00"
+     "requested_at": "2026-09-16T06:50:43+00:00",
+     "status": 500
     }
    }
   },
@@ -1178,14 +1178,14 @@
    "source_date": "2020-03-06",
    "wayback": {
     "commit": {
+     "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-16T06:02:50+00:00",
-     "status": 500
+     "requested_at": "2026-09-16T06:52:40+00:00"
     },
     "edition": {
+     "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-16T06:02:35+00:00",
-     "status": 500
+     "requested_at": "2026-09-16T06:51:49+00:00"
     }
    }
   },
@@ -1207,9 +1207,9 @@
    "source_date": "2020-03-06",
    "wayback": {
     "edition": {
-     "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-16T06:03:41+00:00"
+     "requested_at": "2026-09-16T06:53:05+00:00",
+     "status": 429
     }
    }
   },
@@ -6740,5 +6740,5 @@
   }
  },
  "source": "ca-dli",
- "updated_at": "2026-09-16T05:51:37+00:00"
+ "updated_at": "2026-09-16T06:38:32+00:00"
 }

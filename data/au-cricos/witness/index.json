@@ -1504,7 +1504,7 @@
    "wayback": {
     "commit": {
      "ok": false,
-     "requested_at": "2026-09-16T05:47:17+00:00",
+     "requested_at": "2026-09-16T06:33:07+00:00",
      "status": 500
     },
     "edition": {
@@ -1545,7 +1545,7 @@
     },
     "edition": {
      "ok": false,
-     "requested_at": "2026-09-16T05:47:29+00:00",
+     "requested_at": "2026-09-16T06:33:20+00:00",
      "status": 500
     }
    }
@@ -1726,7 +1726,7 @@
     "edition": {
      "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-16T05:48:20+00:00"
+     "requested_at": "2026-09-16T06:34:11+00:00"
     }
    }
   },
@@ -1870,7 +1870,7 @@
     "edition": {
      "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-16T05:49:12+00:00"
+     "requested_at": "2026-09-16T06:35:02+00:00"
     }
    }
   },
@@ -1936,12 +1936,12 @@
    "wayback": {
     "commit": {
      "ok": false,
-     "requested_at": "2026-09-16T05:49:30+00:00",
+     "requested_at": "2026-09-16T06:35:56+00:00",
      "status": 500
     },
     "edition": {
      "ok": false,
-     "requested_at": "2026-09-16T05:49:18+00:00",
+     "requested_at": "2026-09-16T06:35:43+00:00",
      "status": 429
     }
    }
@@ -2045,12 +2045,12 @@
     "commit": {
      "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-16T05:50:33+00:00"
+     "requested_at": "2026-09-16T06:37:38+00:00"
     },
     "edition": {
+     "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-16T05:49:42+00:00",
-     "status": 500
+     "requested_at": "2026-09-16T06:36:47+00:00"
     }
    }
   },
@@ -2084,13 +2084,13 @@
      "wayback": "https://web.archive.org/web/2/https://github.com/multiverseadmin/studiesmultiverse-standing/commit/57e1006265d768b2abe29b8ff819673bbd92e16c"
     },
     "edition": {
-     "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-16T05:51:24+00:00"
+     "requested_at": "2026-09-16T06:38:19+00:00",
+     "status": 429
     }
    }
   }
  },
  "source": "au-cricos",
- "updated_at": "2026-09-16T05:47:11+00:00"
+ "updated_at": "2026-09-16T06:33:01+00:00"
 }
