@@ -99,7 +99,7 @@
     "commit": {
      "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-16T04:48:12+00:00"
+     "requested_at": "2026-09-16T06:06:39+00:00"
     },
     "edition": {
      "ok": true,
@@ -134,13 +134,13 @@
    "wayback": {
     "commit": {
      "ok": false,
-     "requested_at": "2026-09-16T04:49:11+00:00",
+     "requested_at": "2026-09-16T06:07:03+00:00",
      "status": 500
     },
     "edition": {
      "ok": false,
-     "requested_at": "2026-09-16T04:48:59+00:00",
-     "status": 500
+     "requested_at": "2026-09-16T06:06:45+00:00",
+     "status": 429
     }
    }
   },
@@ -174,9 +174,9 @@
      "wayback": "https://web.archive.org/web/2/https://github.com/multiverseadmin/studiesmultiverse-standing/commit/069f622522c1d60601eca6362a359da6d0609b23"
     },
     "edition": {
+     "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-16T04:49:23+00:00",
-     "status": 500
+     "requested_at": "2026-09-16T06:07:54+00:00"
     }
    }
   },
@@ -212,7 +212,7 @@
     "edition": {
      "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-16T04:50:14+00:00"
+     "requested_at": "2026-09-16T06:08:45+00:00"
     }
    }
   },
@@ -314,7 +314,7 @@
    "wayback": {
     "commit": {
      "ok": false,
-     "requested_at": "2026-09-16T04:51:01+00:00",
+     "requested_at": "2026-09-16T06:08:58+00:00",
      "status": 500
     },
     "edition": {
@@ -350,7 +350,7 @@
    "wayback": {
     "commit": {
      "ok": false,
-     "requested_at": "2026-09-16T04:51:14+00:00",
+     "requested_at": "2026-09-16T06:09:10+00:00",
      "status": 500
     },
     "edition": {
@@ -387,12 +387,12 @@
     "commit": {
      "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-16T04:52:17+00:00"
+     "requested_at": "2026-09-16T06:10:52+00:00"
     },
     "edition": {
+     "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-16T04:51:26+00:00",
-     "status": 500
+     "requested_at": "2026-09-16T06:10:01+00:00"
     }
    }
   },
@@ -422,13 +422,13 @@
    "wayback": {
     "commit": {
      "ok": false,
-     "requested_at": "2026-09-16T04:53:16+00:00",
+     "requested_at": "2026-09-16T06:11:17+00:00",
      "status": 500
     },
     "edition": {
      "ok": false,
-     "requested_at": "2026-09-16T04:53:04+00:00",
-     "status": 500
+     "requested_at": "2026-09-16T06:10:58+00:00",
+     "status": 429
     }
    }
   },
@@ -457,14 +457,14 @@
    "source_date": "2026-09-11",
    "wayback": {
     "commit": {
+     "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-15T10:14:32+00:00",
-     "status": 500
+     "requested_at": "2026-09-16T06:12:59+00:00"
     },
     "edition": {
      "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-16T04:54:07+00:00"
+     "requested_at": "2026-09-16T06:12:08+00:00"
     }
    }
   },
@@ -506,5 +506,5 @@
   }
  },
  "source": "uk-sponsors",
- "updated_at": "2026-09-16T04:47:21+00:00"
+ "updated_at": "2026-09-16T06:05:48+00:00"
 }
