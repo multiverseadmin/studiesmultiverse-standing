@@ -99,7 +99,7 @@
     "commit": {
      "error": "<urlopen error [Errno 111] Connection refused>",
      "ok": false,
-     "requested_at": "2026-09-16T10:00:43+00:00"
+     "requested_at": "2026-09-17T04:40:54+00:00"
     },
     "edition": {
      "ok": true,
@@ -135,12 +135,12 @@
     "commit": {
      "error": "<urlopen error [Errno 111] Connection refused>",
      "ok": false,
-     "requested_at": "2026-09-16T10:01:26+00:00"
+     "requested_at": "2026-09-17T04:41:37+00:00"
     },
     "edition": {
      "error": "<urlopen error [Errno 111] Connection refused>",
      "ok": false,
-     "requested_at": "2026-09-16T10:01:05+00:00"
+     "requested_at": "2026-09-17T04:41:15+00:00"
     }
    }
   },
@@ -174,9 +174,9 @@
      "wayback": "https://web.archive.org/web/2/https://github.com/multiverseadmin/studiesmultiverse-standing/commit/069f622522c1d60601eca6362a359da6d0609b23"
     },
     "edition": {
-     "error": "<urlopen error [Errno 111] Connection refused>",
      "ok": false,
-     "requested_at": "2026-09-16T10:01:48+00:00"
+     "requested_at": "2026-09-17T04:41:49+00:00",
+     "status": 500
     }
    }
   },
@@ -211,7 +211,7 @@
     },
     "edition": {
      "ok": false,
-     "requested_at": "2026-09-16T10:02:01+00:00",
+     "requested_at": "2026-09-17T04:42:01+00:00",
      "status": 500
     }
    }
@@ -313,9 +313,9 @@
    "source_date": "2026-09-07",
    "wayback": {
     "commit": {
+     "error": "<urlopen error [Errno 111] Connection refused>",
      "ok": false,
-     "requested_at": "2026-09-16T10:02:13+00:00",
-     "status": 500
+     "requested_at": "2026-09-17T04:42:23+00:00"
     },
     "edition": {
      "ok": true,
@@ -351,7 +351,7 @@
     "commit": {
      "error": "<urlopen error [Errno 111] Connection refused>",
      "ok": false,
-     "requested_at": "2026-09-16T10:02:43+00:00"
+     "requested_at": "2026-09-17T04:42:44+00:00"
     },
     "edition": {
      "ok": true,
@@ -387,12 +387,12 @@
     "commit": {
      "error": "<urlopen error [Errno 111] Connection refused>",
      "ok": false,
-     "requested_at": "2026-09-16T10:03:27+00:00"
+     "requested_at": "2026-09-17T04:43:27+00:00"
     },
     "edition": {
      "error": "<urlopen error [Errno 111] Connection refused>",
      "ok": false,
-     "requested_at": "2026-09-16T10:03:05+00:00"
+     "requested_at": "2026-09-17T04:43:05+00:00"
     }
    }
   },
@@ -421,14 +421,14 @@
    "source_date": "2026-09-10",
    "wayback": {
     "commit": {
-     "error": "<urlopen error [Errno 111] Connection refused>",
      "ok": false,
-     "requested_at": "2026-09-16T10:04:10+00:00"
+     "requested_at": "2026-09-17T04:44:01+00:00",
+     "status": 500
     },
     "edition": {
      "error": "<urlopen error [Errno 111] Connection refused>",
      "ok": false,
-     "requested_at": "2026-09-16T10:03:48+00:00"
+     "requested_at": "2026-09-17T04:43:48+00:00"
     }
    }
   },
@@ -458,12 +458,12 @@
    "wayback": {
     "commit": {
      "ok": false,
-     "requested_at": "2026-09-16T10:04:35+00:00",
+     "requested_at": "2026-09-17T04:44:26+00:00",
      "status": 500
     },
     "edition": {
      "ok": false,
-     "requested_at": "2026-09-16T10:04:23+00:00",
+     "requested_at": "2026-09-17T04:44:13+00:00",
      "status": 500
     }
    }
@@ -495,12 +495,12 @@
     "commit": {
      "error": "<urlopen error [Errno 111] Connection refused>",
      "ok": false,
-     "requested_at": "2026-09-16T10:05:27+00:00"
+     "requested_at": "2026-09-17T04:45:08+00:00"
     },
     "edition": {
      "error": "<urlopen error [Errno 111] Connection refused>",
      "ok": false,
-     "requested_at": "2026-09-16T10:05:05+00:00"
+     "requested_at": "2026-09-17T04:44:47+00:00"
     }
    }
   },
@@ -531,16 +531,16 @@
     "commit": {
      "error": "<urlopen error [Errno 111] Connection refused>",
      "ok": false,
-     "requested_at": "2026-09-16T10:06:10+00:00"
+     "requested_at": "2026-09-17T04:45:51+00:00"
     },
     "edition": {
      "error": "<urlopen error [Errno 111] Connection refused>",
      "ok": false,
-     "requested_at": "2026-09-16T10:05:48+00:00"
+     "requested_at": "2026-09-17T04:45:30+00:00"
     }
    }
   }
  },
  "source": "uk-sponsors",
- "updated_at": "2026-09-16T10:00:21+00:00"
+ "updated_at": "2026-09-17T04:40:33+00:00"
 }
