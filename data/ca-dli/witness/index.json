@@ -111,7 +111,7 @@
     },
     "edition": {
      "ok": false,
-     "requested_at": "2026-09-17T06:35:50+00:00",
+     "requested_at": "2026-09-17T09:52:35+00:00",
      "status": 500
     }
    }
@@ -429,9 +429,9 @@
      "wayback": "https://web.archive.org/web/2/https://github.com/multiverseadmin/studiesmultiverse-standing/commit/b505a2d2641fc6dacafcce68c768e335badac163"
     },
     "edition": {
-     "error": "<urlopen error [Errno 111] Connection refused>",
+     "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-17T06:36:12+00:00"
+     "requested_at": "2026-09-17T09:53:26+00:00"
     }
    }
   },
@@ -569,9 +569,9 @@
    "source_date": "2018-12-13",
    "wayback": {
     "commit": {
-     "error": "<urlopen error [Errno 111] Connection refused>",
+     "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-17T06:36:35+00:00"
+     "requested_at": "2026-09-17T09:54:17+00:00"
     },
     "edition": {
      "ok": true,
@@ -627,9 +627,9 @@
    "source_date": "2019-03-26",
    "wayback": {
     "commit": {
-     "error": "<urlopen error [Errno 111] Connection refused>",
      "ok": false,
-     "requested_at": "2026-09-17T06:36:57+00:00"
+     "requested_at": "2026-09-17T09:54:29+00:00",
+     "status": 500
     },
     "edition": {
      "ok": true,
@@ -719,9 +719,9 @@
      "wayback": "https://web.archive.org/web/2/https://github.com/multiverseadmin/studiesmultiverse-standing/commit/b505a2d2641fc6dacafcce68c768e335badac163"
     },
     "edition": {
-     "error": "<urlopen error [Errno 111] Connection refused>",
      "ok": false,
-     "requested_at": "2026-09-17T06:37:19+00:00"
+     "requested_at": "2026-09-17T09:54:36+00:00",
+     "status": 429
     }
    }
   },
@@ -748,9 +748,9 @@
      "wayback": "https://web.archive.org/web/2/https://github.com/multiverseadmin/studiesmultiverse-standing/commit/f6b38b0d35590ecb49b9acdb68967204c971cf85"
     },
     "edition": {
-     "error": "<urlopen error [Errno 111] Connection refused>",
      "ok": false,
-     "requested_at": "2026-09-17T06:37:40+00:00"
+     "requested_at": "2026-09-17T09:54:42+00:00",
+     "status": 429
     }
    }
   },
@@ -802,7 +802,7 @@
    "wayback": {
     "commit": {
      "ok": false,
-     "requested_at": "2026-09-17T06:37:53+00:00",
+     "requested_at": "2026-09-17T09:54:54+00:00",
      "status": 500
     },
     "edition": {
@@ -835,9 +835,9 @@
      "wayback": "https://web.archive.org/web/2/https://github.com/multiverseadmin/studiesmultiverse-standing/commit/f6b38b0d35590ecb49b9acdb68967204c971cf85"
     },
     "edition": {
+     "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-17T06:38:09+00:00",
-     "status": 500
+     "requested_at": "2026-09-17T09:55:45+00:00"
     }
    }
   },
@@ -860,7 +860,7 @@
    "wayback": {
     "commit": {
      "ok": false,
-     "requested_at": "2026-09-17T06:38:21+00:00",
+     "requested_at": "2026-09-17T09:56:32+00:00",
      "status": 500
     },
     "edition": {
@@ -946,14 +946,14 @@
    "source_date": "2019-08-28",
    "wayback": {
     "commit": {
-     "error": "<urlopen error [Errno 111] Connection refused>",
+     "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-17T06:39:05+00:00"
+     "requested_at": "2026-09-17T09:57:35+00:00"
     },
     "edition": {
-     "error": "<urlopen error [Errno 111] Connection refused>",
      "ok": false,
-     "requested_at": "2026-09-17T06:38:43+00:00"
+     "requested_at": "2026-09-17T09:56:44+00:00",
+     "status": 500
     }
    }
   },
@@ -1009,9 +1009,9 @@
      "wayback": "https://web.archive.org/web/2/https://github.com/multiverseadmin/studiesmultiverse-standing/commit/f6b38b0d35590ecb49b9acdb68967204c971cf85"
     },
     "edition": {
-     "error": "<urlopen error [Errno 111] Connection refused>",
+     "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-17T06:39:26+00:00"
+     "requested_at": "2026-09-17T09:58:26+00:00"
     }
    }
   },
@@ -1033,14 +1033,14 @@
    "source_date": "2019-09-16",
    "wayback": {
     "commit": {
-     "error": "<urlopen error [Errno 111] Connection refused>",
      "ok": false,
-     "requested_at": "2026-09-17T06:40:10+00:00"
+     "requested_at": "2026-09-17T09:58:45+00:00",
+     "status": 500
     },
     "edition": {
-     "error": "<urlopen error [Errno 111] Connection refused>",
      "ok": false,
-     "requested_at": "2026-09-17T06:39:48+00:00"
+     "requested_at": "2026-09-17T09:58:32+00:00",
+     "status": 429
     }
    }
   },
@@ -1062,14 +1062,14 @@
    "source_date": "2019-11-14",
    "wayback": {
     "commit": {
+     "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-17T06:40:34+00:00",
-     "status": 500
+     "requested_at": "2026-09-17T10:00:27+00:00"
     },
     "edition": {
+     "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-17T06:40:22+00:00",
-     "status": 500
+     "requested_at": "2026-09-17T09:59:36+00:00"
     }
    }
   },
@@ -1091,14 +1091,14 @@
    "source_date": "2019-11-22",
    "wayback": {
     "commit": {
-     "error": "<urlopen error [Errno 111] Connection refused>",
      "ok": false,
-     "requested_at": "2026-09-17T06:41:08+00:00"
+     "requested_at": "2026-09-17T10:00:45+00:00",
+     "status": 500
     },
     "edition": {
      "ok": false,
-     "requested_at": "2026-09-17T06:40:47+00:00",
-     "status": 500
+     "requested_at": "2026-09-17T10:00:33+00:00",
+     "status": 429
     }
    }
   },
@@ -1120,14 +1120,14 @@
    "source_date": "2020-02-04",
    "wayback": {
     "commit": {
-     "error": "<urlopen error [Errno 111] Connection refused>",
+     "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-17T06:42:00+00:00"
+     "requested_at": "2026-09-17T10:01:42+00:00"
     },
     "edition": {
-     "error": "<urlopen error [Errno 111] Connection refused>",
      "ok": false,
-     "requested_at": "2026-09-17T06:41:38+00:00"
+     "requested_at": "2026-09-17T10:00:51+00:00",
+     "status": 429
     }
    }
   },
@@ -1150,13 +1150,13 @@
    "wayback": {
     "commit": {
      "ok": false,
-     "requested_at": "2026-09-17T06:42:45+00:00",
+     "requested_at": "2026-09-17T10:02:45+00:00",
      "status": 500
     },
     "edition": {
-     "error": "<urlopen error [Errno 111] Connection refused>",
+     "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-17T06:42:22+00:00"
+     "requested_at": "2026-09-17T10:02:33+00:00"
     }
    }
   },
@@ -1178,14 +1178,14 @@
    "source_date": "2020-03-06",
    "wayback": {
     "commit": {
-     "error": "<urlopen error [Errno 111] Connection refused>",
      "ok": false,
-     "requested_at": "2026-09-17T06:43:27+00:00"
+     "requested_at": "2026-09-17T10:03:04+00:00",
+     "status": 500
     },
     "edition": {
      "ok": false,
-     "requested_at": "2026-09-17T06:42:57+00:00",
-     "status": 500
+     "requested_at": "2026-09-17T10:02:51+00:00",
+     "status": 429
     }
    }
   },
@@ -1207,9 +1207,9 @@
    "source_date": "2020-03-06",
    "wayback": {
     "edition": {
-     "error": "<urlopen error [Errno 111] Connection refused>",
+     "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-17T06:43:49+00:00"
+     "requested_at": "2026-09-17T10:03:55+00:00"
     }
    }
   },
@@ -6744,10 +6744,11 @@
    "edition_path": "data/ca-dli/editions/2026-09-16.json.gz",
    "proofs": {
     "content": {
-     "bitcoin_block_height": null,
+     "bitcoin_block_height": 967380,
      "file": "2026-09-16.content.ots",
      "stamped_at": "2026-09-17T05:47:05+00:00",
-     "status": "pending"
+     "status": "bitcoin",
+     "upgraded_at": "2026-09-17T09:48:05+00:00"
     }
    },
    "raw_sha256": null,
@@ -6756,5 +6757,5 @@
   }
  },
  "source": "ca-dli",
- "updated_at": "2026-09-17T06:35:37+00:00"
+ "updated_at": "2026-09-17T09:52:23+00:00"
 }
