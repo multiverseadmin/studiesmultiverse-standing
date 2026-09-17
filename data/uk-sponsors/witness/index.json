@@ -97,9 +97,9 @@
    "source_date": "2026-08-27",
    "wayback": {
     "commit": {
-     "error": "<urlopen error [Errno 111] Connection refused>",
      "ok": false,
-     "requested_at": "2026-09-17T04:40:54+00:00"
+     "requested_at": "2026-09-17T06:11:47+00:00",
+     "status": 500
     },
     "edition": {
      "ok": true,
@@ -138,9 +138,9 @@
      "requested_at": "2026-09-17T04:41:37+00:00"
     },
     "edition": {
-     "error": "<urlopen error [Errno 111] Connection refused>",
+     "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-17T04:41:15+00:00"
+     "requested_at": "2026-09-17T06:12:39+00:00"
     }
    }
   },
@@ -542,5 +542,5 @@
   }
  },
  "source": "uk-sponsors",
- "updated_at": "2026-09-17T04:40:33+00:00"
+ "updated_at": "2026-09-17T06:11:34+00:00"
 }

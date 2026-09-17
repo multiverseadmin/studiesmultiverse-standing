@@ -84,7 +84,7 @@
     },
     "edition": {
      "ok": false,
-     "requested_at": "2026-09-17T04:39:38+00:00",
+     "requested_at": "2026-09-17T06:09:03+00:00",
      "status": 500
     }
    }
@@ -107,18 +107,18 @@
    "source_date": "2026-04-30",
    "wayback": {
     "commit": {
-     "error": "<urlopen error [Errno 111] Connection refused>",
+     "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-17T04:40:12+00:00"
+     "requested_at": "2026-09-17T06:10:45+00:00"
     },
     "edition": {
+     "error": "<urlopen error timed out>",
      "ok": false,
-     "requested_at": "2026-09-17T04:39:50+00:00",
-     "status": 500
+     "requested_at": "2026-09-17T06:09:54+00:00"
     }
    }
   }
  },
  "source": "jp-mext",
- "updated_at": "2026-09-17T04:39:26+00:00"
+ "updated_at": "2026-09-17T06:08:50+00:00"
 }
